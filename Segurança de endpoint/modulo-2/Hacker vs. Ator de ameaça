@@ -1,0 +1,17 @@
+Hacker vs. Ator de ameaça
+Como sabemos, “hacker” é um termo comum usado para descrever um ator de ameaça. No entanto, o termo “hacker” tem uma variedade de significados, como se segue:
+
+Um programador inteligente capaz de desenvolver novos programas e codificar alterações em programas existentes para torná-los mais eficientes.
+Um profissional de rede que usa habilidades sofisticadas de programação para garantir que as redes não sejam vulneráveis a ataques.
+Uma pessoa que tenta obter acesso não autorizado a dispositivos na internet.
+Um indivíduo que executa programas para impedir ou retardar o acesso à rede a um grande número de usuários, ou corromper ou eliminar dados em servidores.
+Um vetor de ataque é um caminho pelo qual um atacante poder obter acesso a um servidor, equipamento ou rede. Os vetores de ataque são originários de dentro ou de fora da rede corporativa, conforme mostrado na figura. Por exemplo, os atacantes podem direcionar uma rede pela Internet, para interromper as operações da rede e criar um ataque de negação de serviço (DoS).
+
+
+Conforme mostrado na figura, os termos hacker de White Hat, hacker de Black Hat e hacker de Gray Hat são freqüentemente usados para descrever hackers.
+
+Hackers de White Hat são hackers éticos que usam suas habilidades de programação para propósitos bons, éticos e legais. Eles podem realizar testes de penetração de rede na tentativa de comprometer redes e sistemas, usando seu conhecimento de sistemas de segurança de computador para descobrir vulnerabilidades de rede. As vulnerabilidades de segurança são relatadas aos desenvolvedores e equipes de segurança que tentam consertar a vulnerabilidade antes que ela possa ser explorada. Algumas organizações concedem prêmios ou recompensas a hackers de chapéu branco quando fornecem informações que ajudam a identificar vulnerabilidades.
+Hackers Gray Hat são indivíduos que cometem crimes e fazem coisas possivelmente antiéticas, mas não para ganho pessoal ou para causar danos. Um exemplo seria alguém que compromete uma rede sem permissão e, em seguida, divulga publicamente a vulnerabilidade. Os hackers Grey hat podem divulgar uma vulnerabilidade à empresa afetada, depois de ter comprometido sua rede. Isso permite que a empresa corrija o problema.
+Os hackers Black Hat são criminosos antiéticos que violam a segurança do computador e da rede para ganho pessoal ou por motivos maliciosos, como ataques a redes. Os hackers Black Hat exploram vulnerabilidades para comprometer os sistemas de computador e rede.
+Bom ou ruim, hacking é um aspecto importante da segurança da rede. Neste curso, o termo ator de ameaça é usado quando se refere a indivíduos ou grupos que podem ser classificados como hackers grey ou black hat.
+

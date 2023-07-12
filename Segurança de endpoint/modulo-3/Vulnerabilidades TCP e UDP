@@ -1,0 +1,59 @@
+ Vulnerabilidades TCP e UDP
+
+  Cabeçalho do Segmento TCP
+Enquanto alguns ataques têm como alvo o IP, este tópico discute ataques que têm como alvo o TCP e o UDP.
+
+As informações do segmento TCP aparecem imediatamente após o cabeçalho IP. Os campos do segmento TCP e os sinalizadores para o campo bits de controle são exibidos na figura.
+
+A seguir estão os seis bits de controle dos segmentos TCP
+
+URG - Campo de ponteiro urgente significativo
+ACK - Campo de confirmação significativo
+PSH - Função Push
+RST - Redefinir a conexão
+SYN - Sincroniza os números da sequência
+FIN - Não há mais dados do remetente
+
+Serviços TCP
+O TCP fornece estes serviços:
+
+Entrega confiável - O TCP incorpora reconhecimentos para garantir a entrega, em vez de depender de protocolos de camada superior para detectar e resolver erros. Se uma confirmação não for recebida à tempo, o remetente retransmitirá os dados. Exigir reconhecimentos dos dados recebidos pode causar atrasos substanciais. Exemplos de protocolos da camada de aplicação que usam a confiabilidade do TCP incluem HTTP, SSL / TLS, FTP, transferências de zona DNS e outros.
+Controle de fluxo - TCP implementa controle de fluxo para resolver esse problema. Em vez de reconhecer um segmento de cada vez, vários segmentos podem ser reconhecidos com um único segmento de reconhecimento.
+Comunicação stateful - A comunicação com estado do TCP entre duas partes ocorre durante o handshake de três vias do TCP. Antes que os dados possam ser transferidos usando o TCP, um aperto de mãos triplo abre a conexão TCP, conforme mostrado na figura. Se ambos os lados concordarem com a conexão TCP, os dados poderão ser enviados e recebidos por ambas as partes usando o TCP.
+
+A conexão TCP é estabelecida em três etapas:
+
+O cliente iniciador requisita uma sessão de comunicação cliente-servidor com o servidor.
+O servidor reconhece a sessão de comunicação cliente-servidor e solicita uma sessão de comunicação servidor-cliente.
+O cliente inicial reconhece a sessão de comunicação servidor-cliente.
+
+Ataques TCP
+Aplicações em Rede usam portas TCP ou UDP. Os atores de ameaças realizam varreduras de portas dos dispositivos de destino para descobrir quais serviços eles oferecem.
+
+Ataque de Inundação de SYN TCP
+
+O ataque de inundação SYN TCP explora o aperto de mãos triplo do TCP. A figura mostra um agente de ameaça enviando continuamente pacotes de solicitação de sessão TCP SYN com um endereço IP de origem falsificado aleatoriamente para um destino. O dispositivo de destino responde com um pacote TCP SYN-ACK ao endereço IP falsificado e aguarda um pacote TCP ACK. Essas respostas nunca chegam. Eventualmente, o host de destino é sobrecarregado com conexões TCP semi-abertas e os serviços TCP são negados a usuários legítimos.
+
+Ataque de Inundação de SYN TCP
+
+
+O agente da ameaça envia várias solicitações SYN para o servidor web.
+O servidor web responde com SYN-ACK's para cada solicitação SYN e espera completar o handshake de três vias. O ator de tratamento não responde aos SYN-ACK's.
+O usuário válido não pode acessar o servidor web porque o servidor web tem muitas conexões TCP semi-abertas.
+Ataque de redefinição de TCP
+
+Um ataque de redefinição de TCP pode ser usado para encerrar as comunicações TCP entre dois hosts. A figura mostra como o TCP usa uma troca de quatro direções para fechar a conexão TCP usando um par de segmentos FIN e ACK de cada extremidade da conexão TCP. Uma conexão TCP termina quando recebe um bit RST. Essa é uma maneira abrupta de interromper a conexão TCP e informar o host de recebimento para parar imediatamente de usar a conexão TCP. Um agente de ameaça pode fazer um ataque de redefinição de TCP e enviar um pacote falsificado contendo um TCP RST para um ou ambos os pontos de extremidade.
+
+Terminando uma conexão TCP
+
+O encerramento de uma sessão TCP usa o seguinte processo de troca de quatro vias:
+
+Quando o cliente não tem mais dados para enviar no fluxo, ele envia um segmento com o sinalizador FIN definido.
+O servidor envia um ACK para confirmar o recebimento do FIN para encerrar a sessão do cliente para o servidor.
+O servidor envia o FIN ao cliente para encerrar a sessão de servidor para cliente.
+O cliente responde com um ACK para reconhecer o FIN do servidor.
+
+Sequestro de sessão TCP
+
+Sequestro de sessão TCP é outra vulnerabilidade do TCP. Embora seja difícil de conduzir, um agente de ameaça assume um host já autenticado quando ele se comunica com o alvo. O agente de ameaça deve falsificar o endereço IP de um dos hosts, prever o próximo número de sequência e enviar um ACK para o outro host. Se for bem-sucedido, o agente da ameaça poderá enviar, mas não receber, dados do dispositivo de destino.
+

@@ -1,0 +1,29 @@
+As redes são alvos
+As redes estão sob ataque rotineiramente. É comum ler as notícias sobre outra rede que foi comprometida. Uma rápida pesquisa na Internet para ataques de rede retornará muitos artigos sobre ataques de rede, incluindo notícias sobre organizações que foram comprometidas, as mais recentes ameaças à segurança de rede, ferramentas para mitigar ataques e muito mais.
+
+Para ajudá-lo a compreender a gravidade da situação, Kapersky mantém a exibição interativa do Mapa em Tempo Real de Ameaças Cibernéticas dos atuais ataques de rede. Os dados de ataque são enviados a partir de produtos de segurança de rede Kapersky que são implantados em todo o mundo. A figura exibe uma captura de tela de amostra desta ferramenta web, que mostra esses ataques em tempo real. Muitas ferramentas semelhantes estão disponíveis na internet e podem ser encontradas pesquisando mapas de ameaças cibernéticas.
+
+Razões para a segurança da rede
+A segurança da rede está diretamente relacionada à continuidade dos negócios de uma organização. As violações de segurança de rede podem interromper o comércio eletrônico, causar a perda de dados comerciais, ameaçar a privacidade das pessoas e comprometer a integridade das informações. Essas violações podem resultar em perda de receita para empresas, roubo de propriedade intelectual, ações judiciais e até ameaçar a segurança pública.
+
+Manter uma rede segura garante a segurança dos usuários da rede e protege os interesses comerciais. Manter uma rede segura requer vigilância por parte dos profissionais de segurança de rede de uma organização. Eles devem estar constantemente cientes de novas e em evolução ameaças e ataques a redes e vulnerabilidades de dispositivos e aplicativos.
+
+Muitas ferramentas estão disponíveis para ajudar os administradores de rede a adaptar, desenvolver e implementar técnicas de mitigação de ameaças. Por exemplo, o site do Cisco Talos Intelligence Group, mostrado na figura, fornece inteligência abrangente de segurança e ameaça para defender clientes e proteger seus ativos.
+
+Outro grupo, chamado de Cisco Product Security Incident Response Team (PSIRT), é responsável por investigar e mitigar vulnerabilidades potenciais em produtos Cisco. A figura indica uma página dos avisos de segurança Cisco da amostra que lista estas vulnerabilidades em tempo real e forneça aos administradores de rede a informação para ajudar a mitigar-las.
+
+Vetores de ataques de rede
+Um vetor de ataque é um caminho pelo qual um atacante poder obter acesso a um servidor, equipamento ou rede. Os vetores de ataque são originários de dentro ou de fora da rede corporativa, conforme mostrado na figura. Por exemplo, os atacantes podem direcionar uma rede pela Internet, para interromper as operações da rede e criar um ataque de negação de serviço (DoS).
+
+Um ataque de DoS ocorre quando um dispositivo ou aplicativo de rede está incapacitado e não é mais capaz de suportar solicitações de usuários legítimos.
+
+Um usuário interno, como um funcionário, pode acidentalmente ou intencionalmente:
+
+Roubar e copiar dados confidenciais para mídia removível, email, software de mensagens e outras mídias.
+Comprometer servidores internos ou dispositivos de infraestrutura de rede.
+Desconectar uma conexão de rede crítica e cause uma interrupção na rede.
+Conectar uma unidade USB infectada a um sistema de computador corporativo.
+Ameaças internas têm o potencial de causar maior dano que as ameaças externas, pois os usuários internos têm acesso direto ao edifício e a seus dispositivos de infraestrutura. Os funcionários normalmente têm conhecimento da rede corporativa, seus recursos e seus dados confidenciais.
+
+Os profissionais de segurança de rede devem implementar ferramentas e aplicar técnicas para mitigar ameaças externas e internas.
+

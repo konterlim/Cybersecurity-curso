@@ -1,0 +1,34 @@
+Vulnerabilidades de IP
+
+Existem diferentes tipos de ataques que visam IP. A tabela a seguir lista alguns dos ataques comuns relacionados a IP:
+
+Os atores de ameaças usam pacotes de eco (pings) do ICMP (Internet Control Message Protocol) para descobrir sub-redes e hosts em uma rede protegida, gerar ataques de inundação de DoS e alterar as tabelas de roteamento de hosts.
+
+Os atores da ameaça tentam impedir que usuários legítimos acessem informações ou serviços.
+
+Semelhante a um ataque DoS, mas apresenta um ataque simultâneo e coordenado de várias máquinas de origem.
+
+Os atores da ameaça falsificam o endereço IP de origem na tentativa de executar falsificação cega ou não cega.
+
+Os agentes de ameaças se posicionam entre uma fonte e um destino para monitorar, capturar e controlar de forma transparente a comunicação. Eles poderiam simplesmente espiar inspecionando os pacotes capturados ou alterando os pacotes e encaminhando-os ao seu destino original.
+
+Os atores da ameaça obtêm acesso à rede física e, em seguida, usam um ataque MiTM para sequestrar uma sessão.
+
+Ataques ICMP
+O ICMP foi desenvolvido para transportar mensagens de diagnóstico e relatar condições de erro quando rotas, hosts e portas não estão disponíveis. Mensagens ICMP são geradas por dispositivos quando ocorre um erro de rede ou uma interrupção. O comando ping é uma mensagem ICMP gerada pelo usuário, chamada de solicitação de eco, usada para verificar a conectividade com um destino.
+
+Os agentes de ameaças usam o ICMP para ataques de reconhecimento e varredura. Isso permite que eles lancem ataques de coleta de informações para mapear uma topologia de rede, descobrir quais hosts estão ativos (acessíveis), identificar o sistema operacional do host (impressão digital do sistema operacional) e determinar o estado de um firewall.
+
+Os atores de ameaças também usam ICMP para ataques DoS e DDoS, conforme mostrado no ataque de inundação ICMP na figura.
+
+ICMP para IPv4 (ICMPv4) e ICMP para IPv6 (ICMPv6) são suscetíveis a tipos semelhantes de ataques.
+
+Isso é usado para executar verificação de host e ataques de DoS.
+Isso é usado para executar ataques de reconhecimento e varredura de rede.
+Isso é usado para mapear uma rede IP interna.
+Isso é usado para atrair um host alvo para enviar todo o tráfego através de um dispositivo comprometido e criar um ataque MiTM.
+
+Isso é usado para injetar entradas de rota falsas na tabela de roteamento de um host de destino.
+
+As redes devem ter uma filtragem rigorosa da lista de controle de acesso ICMP (ACL) na borda da rede para evitar a sondagem ICMP vindo da Internet. Os analistas de segurança devem ser capazes de detectar ataques relacionados ao ICMP, observando o tráfego capturado e os arquivos de log. No caso de grandes redes, os dispositivos de segurança, como firewalls e sistemas de detecção de intrusão (IDS), devem detectar tais ataques e gerar alertas para os analistas de segurança.
+
