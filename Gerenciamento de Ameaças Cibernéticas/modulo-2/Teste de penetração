@@ -1,0 +1,38 @@
+Teste de penetração
+
+Teste de penetração
+This component is a flipcard comprised of flippable cards containing display image. Select the front face image to flip to the back face of these card to display associated text.
+O teste de penetração (pen testing) é um método de testar áreas de fraquezas em sistemas usando várias técnicas maliciosas. Um teste de penetração simula os métodos que um invasor usaria para obter acesso não autorizado a uma rede e comprometer os sistemas, além de permitir que uma empresa entenda como toleraria um ataque real.
+
+É importante observar que o pen testing não é o mesmo que teste de vulnerabilidade, que apenas identifica possíveis problemas. O teste de caneta envolve invadir um site, rede ou servidor com a permissão de uma empresa para tentar obter acesso a recursos usando vários métodos que os hackers black-hat da vida real usariam.
+
+Um dos motivos principais por que uma empresa usa o pen testing é encontrar e corrigir todas as vulnerabilidades, antes dos criminosos virtuais. Testes de penetração são também conhecidos como ataque ético de hacker.
+
+O teste de caixa preta é o menos demorado e mais barato. Ao realizar o teste de caixa preta, o especialista não tem conhecimento do funcionamento interno do sistema e tenta atacá-lo do ponto de vista de um usuário regular.
+O teste de caixa cinza é uma combinação de caixa preta e teste de caixa branca. O especialista terá algum conhecimento limitado sobre o sistema, então é um ambiente parcialmente conhecido, o que dá alguma vantagem a essas tentativas de invasão.
+O teste de white box é o mais demorado e mais caro, porque é realizado por um especialista com conhecimento de como o sistema funciona. É, portanto, um ambiente conhecido quando eles tentam invadi-lo, emulando um ataque mal-intencionado por alguém de dentro ou por alguém que tenha conseguido obter essas informações antecipadamente, na fase de reconhecimento.
+
+ Fase de penetração
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Há quatro fases que compõem um teste de penetração.
+
+Estabelece as regras de compromisso para a realização do teste.
+
+Realização de reconhecimento sobre o alvo para obter informações. Isso pode incluir:
+
+Técnicas passivas, que não exigem engajamento ativo com o sistema de destino e são conhecidas como footprinting, por exemplo, você pode consultar o site da empresa ou outras fontes públicas para obter informações.
+Reconhecimento ativo, como varredura de porta, que requer o envolvimento ativo com o alvo.
+
+Nessa fase, você procura obter acesso ou penetrar no sistema usando as informações coletadas na fase anterior. O testador tenta obter privilégios escalados e talvez se aprofundar na rede por meio de movimento lateral. Para se mover lateralmente pela rede, o testador deve girar em vários sistemas. O testador pode tentar instalar ferramentas adicionais ou plantar uma backdoor - esse processo é conhecido como persistência. O testador limpará o sistema, removendo as placas deixadas para trás.
+
+Nessa fase, o testador entrega à empresa documentação detalhada que inclui as vulnerabilidades identificadas, as ações tomadas e os resultados.
+
+ Tipos de exercícios
+Algumas empresas criam equipes concorrentes para realizar exercícios de penetração mais longos do que um teste de penetração.
+
+Por exemplo, nesse cenário, podem haver três ou quatro equipes:
+
+O time vermelho é o adversário, tentando atacar o sistema sem passar despercebido.
+Os membros da equipe azul são os defensores e eles tentam frustrar os esforços da equipe vermelha.
+A equipe branca é uma equipe neutra que define os objetivos e as regras e supervisiona o exercício. Os membros da equipe branca são menos técnicos, mas possuem conhecimento sobre governança e conformidade. A equipe branca é o árbitro deste exercício.
+Às vezes, há também uma equipe roxa, na qual os membros da equipe vermelha e azul trabalham juntos para identificar vulnerabilidades e explorar maneiras de melhorar os controles.

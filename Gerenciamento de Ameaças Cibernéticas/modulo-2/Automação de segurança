@@ -1,0 +1,27 @@
+Automação de segurança
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Vejamos agora algumas informações sobre as abordagens automatizadas de Security Information and Event Management (SIEM) e Security Orchestration Automation and Response (SOAR).
+
+Os sistemas de Security Information and Event Management (SIEM) usam coletores de log para agregar dados de log de fontes como dispositivos de segurança, dispositivos de rede, servidores e aplicações. Os logs podem gerar muitos eventos em um dia, então os sistemas SIEM ajudam a reduzir o volume de eventos combinando eventos semelhantes para reduzir a carga de dados do evento. O SIEM identifica desvios da norma e, em seguida, executa a ação apropriada.
+
+Os objetivos de um sistema SIEM para monitoramento de segurança são:
+
+Ameaças internas e externas
+Monitorar a atividade e o uso de recursos
+Realizar relatórios de conformidade para auditorias
+resposta a incidentes
+Quando o sistema SIEM detecta um possível problema, ele pode registrar informações adicionais, gerar um alerta e instruir outros controles de segurança para interromper o progresso de uma atividade. Os sistemas avançados de SIEM incluem análises de comportamento de usuários e entidades que buscam padrões que dependem do sentimento humano para reconhecer uma ameaça antes que ela se torne uma ameaça.
+
+A quantidade de dados registrados de sistemas essenciais é uma consideração importante ao implementar um sistema SIEM, pois você precisa revisar os relatórios gerados. Os sistemas SIEM são caros para compra e manutenção e são econômicos se a empresa tiver milhões de eventos gerados em um dia.
+
+As ferramentas de automação e resposta da orquestração (SOAR) permitem que uma empresa colete dados sobre ameaças à segurança de várias fontes e responda a eventos de nível inferior sem intervenção humana. O SOAR tem três recursos importantes:
+
+Gerenciamento de ameaças e vulnerabilidades
+Operações de segurança e resposta a incidentes
+operação de segurança
+Uma empresa pode integrar o SOAR em sua solução SIEM.
+
+SIEM é um subconjunto de recursos SOAR. Embora o SIEM só possa identificar e ajudar a correlacionar eventos, o SOAR também pode executar ações automatizadas.
+
+IEM é um subconjunto de recursos SOAR. Embora o SIEM possa apenas "ver" e ajudar a reunir eventos, o SOAR também pode executar ações automatizadas
+

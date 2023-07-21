@@ -1,0 +1,17 @@
+Utilitários de diagnóstico de linha de comando
+
+This component is a flipcard comprised of flippable cards containing display image. Select the front face image to flip to the back face of these card to display associated text.
+Há várias ferramentas de linha de comando que podem ser usadas para avaliar a posição de segurança de uma empresa 
+
+ipconfig exibe as configurações de TCP / IP (endereço IP, máscara de sub-rede, gateway padrão, informações de DNS e MAC (ifconfig é o equivalente em Mac / Linux).
+o ping testa a conectividade de rede enviando uma solicitação de ICMP para um host e determina se uma rota está disponível para um host.
+O arp fornece uma tabela que mapeia endereços MAC conhecidos para o endereço IP associado e é uma maneira rápida de encontrar o endereço MAC de um dispositivo final.
+O tracert rastreia a rota que um pacote leva até um destino e registra os saltos ao longo do caminho, ajudando a localizar onde um pacote está sendo desligado (traceroute é o equivalente em Mac / Linux).
+O nslookup consulta um servidor DNS para ajudar a solucionar um banco de dados DNS (dig é o equivalente em Mac / Linux).
+O netstat exibe todas as portas que um computador está ouvindo e pode determinar as conexões ativas.
+O nbtstat ajuda a solucionar problemas de resolução de nomes do NetBIOS em um sistema Windows.
+O nmap é usado na auditoria de segurança. Ele localiza hosts de rede, detecta sistemas operacionais e identifica serviços.
+O netcat coleta informações de conexões de rede TCP e UDP e pode ser usado para varredura de portas, monitoramento, captura de banner e cópia de arquivos.
+A hping monta e analisa pacotes e é usada para varredura de portas, descoberta de caminho, impressão digital do SO e testes de firewall.
+
+

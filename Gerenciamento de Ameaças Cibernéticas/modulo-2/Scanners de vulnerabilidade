@@ -1,0 +1,43 @@
+Scanners de vulnerabilidade
+Apresentação de slides Selecione o próximo botão para avançar.
+Um scanner de vulnerabilidades avalia computadores, sistemas de computador, redes ou aplicações, em busca de pontos fracos. Os scanners de vulnerabilidades ajudam a automatizar a auditoria de segurança ao buscar riscos de segurança na rede e produzir uma lista priorizada para abordar as vulnerabilidades.
+
+Um scanner de vulnerabilidades procura os seguintes tipos de vulnerabilidades:
+
+Uso de senhas padrão ou senhas comuns
+Patches não instalados
+Portas abertas
+Erro de configuração de software e de sistemas operacionais
+Endereços IP ativos, incluindo dispositivos inesperados conectados
+
+A verificação de vulnerabilidades é essencial para identificar vulnerabilidades, configurações incorretas e a falta de controles de segurança para empresas com redes que incluem segmentos, roteadores, firewalls, servidores e outros dispositivos.
+
+Os scanners de vulnerabilidade mais usados no mercado incluem Nessus, Retina, Core Impact e GFI LanGuard.
+
+As funções incluem:
+
+Executar a auditoria de conformidade.
+Proporcionar patches e atualizações.
+Identificar configurações erradas
+Suportar dispositivos móveis e sem fio.
+Rastrear malware.
+Identificar dados confidenciais.
+
+Tipos de varreduras
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Ao avaliar um scanner de vulnerabilidades, analise como ele é classificado com relação a precisão, confiabilidade, escalabilidade e geração de relatórios. Você pode escolher um verificador de vulnerabilidades no software ou na nuvem.
+
+Os scanners de vulnerabilidade se enquadram em uma das várias categorias:
+
+Os scanners de rede sondam os hosts em busca de portas abertas, enumeram informações sobre usuários e grupos e buscam vulnerabilidades conhecidas na rede.
+Os scanners de aplicativos acessam o código-fonte do aplicativo para testar uma aplicação de dentro para fora (eles não executam a aplicação).
+Os verificadores de aplicativos da Web identificam vulnerabilidades em aplicativos da web.
+
+As verificações invasivas tentam explorar vulnerabilidades e podem até travar o alvo, enquanto uma verificação não invasiva tentará não causar danos ao alvo.
+
+Em uma verificação credenciada, nomes de usuário e senhas fornecem acesso autorizado a um sistema, permitindo que o scanner colete mais informações. As verificações sem credenciais são menos invasivas e oferecem o ponto de vista de quem está de fora.
+
+No entanto, todos os tipos de verificador podem identificar por engano uma vulnerabilidade que não existe. Isso é conhecido como falso positivo, mas não identificar uma vulnerabilidade atual é falso negativo. As verificações credenciadas retornam menos falsos positivos e menos falsos negativos.
+
+Você precisa analisar todos os logs e configurações para cuidar de todas as vulnerabilidades que exigem atenção.
+
