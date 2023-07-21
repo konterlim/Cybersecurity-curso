@@ -1,0 +1,14 @@
+Princípios orientadores para recursos humanos
+Está certo.
+
+Para evitar que os funcionários sejam vítimas de tentativas de phishing, você precisa realizar um treinamento de conscientização de segurança. Isso pode envolver a exibição de pôsteres de conscientização de segurança, educar os funcionários sobre as principais políticas e enviar lembretes por e-mail aos funcionários.
+O princípio da "necessidade de saber" afirma que um funcionário só deve ter acesso às informações de que precisa para realizar seu trabalho. Portanto, cada um dos gerentes de projeto da @Apollo só deve ter autorização para acessar os dados do cliente dos projetos em que eles estão trabalhando. O acesso a todos os outros dados, incluindo outros dados do cliente, deve ser restrito pelos controles de acesso do usuário.
+Baixar arquivos ou programas não autorizados aumenta a probabilidade de infecções por malware. O @Apollo deve habilitar verificações automáticas de vírus em busca de anexos e downloads de e-mail, além de permitir o monitoramento de IDS/IPS para combater essa ameaça.
+Uma conexão VPN permite que funcionários que trabalham remotamente direcionem suas atividades on-line através de um servidor que os conecte diretamente à rede @Apollo. O desempenho irregular no trabalho e o uso da infraestrutura de TI fora do horário normal de trabalho podem ser sinais de que funcionários remotos estão usando VPNs não autorizadas em seus dispositivos de trabalho, que podem ser mitigados por meio do rastreamento e monitoramento do comportamento anormal dos funcionários.
+Outras medidas que as empresas podem implementar para gerenciar as ameaças dos usuários incluem:
+
+Vincular a conscientização sobre a segurança aos objetivos da análise de desempenho.
+Habilitar a filtragem de conteúdo para permitir ou negar domínios específicos de acordo com as políticas de uso aceitável.
+Desativar unidades de CD internas e portas USB.
+Ativar varreduras antivírus automáticas para unidades de mídia inseridas, arquivos e anexos de e-mail.
+Minimizar as permissões de gravação/exclusão apenas para o proprietário dos dados

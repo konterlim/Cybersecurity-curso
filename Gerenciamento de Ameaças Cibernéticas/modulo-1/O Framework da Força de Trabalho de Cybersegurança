@@ -1,0 +1,54 @@
+O Framework da Força de Trabalho de Cybersegurança Nacional
+
+O National Institute of Standards and Technologies (NIST) criou a National Cybersecurity Workforce Framework para apoiar organizações que buscam profissionais de segurança digital. A estrutura organiza o trabalho de segurança digital em sete categorias, descrevendo as principais funções, responsabilidades e habilidades necessárias para cada uma delas.
+
+inclui proporcionar o suporte, a administração e a manutenção necessários para garantir a segurança e o desempenho do sistema de TI.
+
+Identifica, analisa e mitiga ameaças a redes e sistemas internos.
+
+Investiga eventos de segurança digital e / ou ataques digitais que envolvem recursos de TI.
+
+Inclui as operações de negação e fraude especializadas e a coleta de informações de segurança cibernética.
+
+Realiza revisão e avaliação altamente especializada das informações de segurança cibernética recebidas para determinar sua utilidade para a inteligência.
+
+Fornece liderança, gerenciamento, direção ou desenvolvimento e advocacia para que uma organização possa conduzir efetivamente o trabalho de segurança cibernética.
+
+Conceitua, projeta, adquire ou cria sistemas de TI seguros.
+
+Localize o link para os controles críticos de segurança do CIS.
+Imagem com áreas selecionáveis. Selecione cada botão para mostrar mais informações.
+O Center for Internet Security (CIS) desenvolveu um conjunto de controles de segurança essenciais para ajudar empresas com diferentes níveis de recursos e conhecimentos à disposição a melhorar suas defesas digitais.
+
+Controles básico
+As empresas com recursos limitados e especialistas em segurança digital disponíveis devem implementar:
+
+Inventário e controle de ativos de hardware
+Inventário e controle de ativos de software
+gerenciamento de vulnerabilidade
+Uso controlado de privilégios administrativos
+Configurações seguras para hardware e software
+Manutenção, monitoramento e análise de registros de auditoria
+
+Controles fundamentais
+As empresas com recursos moderados e experiência em segurança digital disponíveis devem implementar os controles básicos e:
+
+Proteção de e-mail e navegador da Web
+Defesa contra malware
+Limitação e controle de portas de rede, protocolos e serviços
+Recursos de recuperação de desastres
+Configurações seguras para dispositivos de rede
+Defesa dos limites
+Proteção de dados
+Acesso controlado com base no princípio da "necessidade de saber"
+Configurações de controle de acesso sem fio
+Monitoramento e controle de energia
+
+Controles organizacionais
+As empresas com recursos significativos e a experiência em segurança digital disponíveis devem implementar os controles básicos e básicos, bem como:
+
+Conscientização e treinamento em segurança
+software de aplicativos
+Gerenciamento e resposta a incidentes
+Testes de penetração e exercícios em equipe vermelhos (exercícios de ataque simulados para avaliar os recursos de segurança de uma empresa)
+

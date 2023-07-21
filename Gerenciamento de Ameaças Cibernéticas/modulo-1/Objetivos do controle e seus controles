@@ -1,0 +1,33 @@
+Objetivos do controle e seus controles
+
+Apresentação de slides Selecione o próximo botão para avançar.
+Esses doze domínios são compostos de objetivos de controle (ISO 27001) e controles (ISO 27002).
+
+Objetivos de controle
+Os objetivos de controle definem os requisitos de alto nível para implementar um sistema abrangente de gerenciamento de segurança da informação em uma empresa e, geralmente, fornecem uma lista de verificação para uso durante uma auditoria do ISMS.
+
+A aprovação na auditoria indica que uma empresa está em conformidade com a ISO 27001 e oferece aos parceiros confiança na segurança dos dados e das operações da empresa.
+
+Controles
+Os controles definem como atingir os objetivos de controle de uma empresa. Eles estabelecem diretrizes para implementar, manter e melhorar o gerenciamento da segurança das informações em uma empresa.
+
+Por exemplo ...
+O objetivo de controle de uma organização é controlar o acesso às redes usando os mecanismos de autenticação apropriados para usuários e equipamentos.
+
+Um controle relevante, portanto, é usar senhas fortes que consistam em pelo menos oito caracteres e uma combinação de letras maiúsculas e minúsculas, números e símbolos.
+
+os controles definem como atingir os objetivos de controle de uma empresa e estabelecem diretrizes para implementar, manter e melhorar o gerenciamento da segurança das informações.
+
+Por exemplo, se o objetivo de controle de uma empresa é controlar o acesso a redes usando os mecanismos de autenticação adequados para usuários e equipamentos, um controle apropriado é usar senhas fortes que consistam em pelo menos oito caracteres e uma combinação de letras maiúsculas e minúsculas, números e símbolos.
+
+ISO 27000 e a tríade da CIA
+O padrão ISO 27000 é uma estrutura universal para cada tipo de empresa. Para usar a estrutura de forma eficiente, a empresa deve limitar quais domínios, objetivos de controle e aplicar a seu ambiente e a suas operações.
+
+A maioria das empresas faz isso produzindo uma declaração de aplicabilidade (SOA) que permite adaptar os objetivos e controles de controle disponíveis para melhor atender às prioridades de confidencialidade, integridade e disponibilidade. 
+
+ ISO 27000 e prrecauções
+
+Os controles ISO também fornecem orientação técnica para os objetivos de controle relacionados às políticas, aos procedimentos e às diretrizes de segurança digital definidos pela gerência sênior em uma empresa.
+
+Por exemplo, vamos imaginar que uma equipe de gerenciamento sênior estabeleça uma política para proteger todos os dados que entram ou saem de uma empresa. A responsabilidade de implementar e configurar as redes, os sistemas e os equipamentos para poder cumprir as diretrizes de política recairá sobre os profissionais de TI apropriados da empresa, e não sobre a equipe de gerenciamento sênior.
+

@@ -1,0 +1,34 @@
+Estrutura de gerenciamento de segurança de TI
+
+Doze domínios de segurança digital
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+A ISO / IEC 27000 é uma série de padrões de segurança da informação ou melhores práticas para ajudar as empresas a melhorar a segurança da informação. Publicado pela International Organization for Standardization (ISO) e pela International Electrotechnical Commission (ICO), os padrões ISO 27000 estabelecem requisitos abrangentes do sistema de gerenciamento de segurança da informação (ISMS). Um ISMS consiste em todos os controles administrativos, técnicos e operacionais para manter a informação segura dentro de uma empresa.
+
+Doze domínios independentes representam os componentes do padrão ISO 27000. Esses doze domínios fornecem a base para o desenvolvimento de padrões de segurança e práticas eficazes de gerenciamento de segurança nas empresas, além de ajudar a facilitar a comunicação entre as empresas.
+
+Esse processo determina o valor quantitativo e qualitativo de risco relacionado a uma situação específica ou ameaça reconhecida.
+
+Um documento que aborda as limitações e os comportamentos dos membros de uma empresa e muitas vezes especifica como os dados podem ser acessados e quais dados podem ser acessados por quem.
+
+Este é o modelo de governança estabelecido por uma empresa para a segurança da informação.
+
+É um inventário do esquema de classificação dos ativos da informação.
+
+Contempla os procedimentos de segurança no que diz respeito aos funcionários que são admitidos, transferidos e demitidos de uma empresa.
+
+Refere-se à proteção física das informações e das instalações de uma empresa.
+
+Descreve a gestão de controles técnicos de segurança em sistemas e redes.
+
+Isso se refere à segurança como parte integrante dos sistemas de informação de uma empresa.
+
+Isso descreve como uma empresa restringe os direitos de acesso a redes, sistemas, funções de aplicativos e dados para impedir o acesso de usuários não autorizados.
+
+Descreve como antecipar e responder a violações de segurança da informação.
+
+Isso descreve a capacidade de uma empresa de proteger, manter e recuperar atividades essenciais aos negócios após uma interrupção nos sistemas de informação.
+
+Descreve o processo de assegurar a conformidade com as políticas, normas e regulamentos de segurança da informação.
+
+A estrutura do modelo de segurança cibernética ISO é diferente do modelo OSI, pois usa domínios, e não camadas, para descrever as categorias de segurança. É um modelo não hierárquico, em que cada domínio tem uma relação direta com os outros domínios. É importante que os especialistas em segurança digital estejam cientes e compreendam esses dois modelos.
+
