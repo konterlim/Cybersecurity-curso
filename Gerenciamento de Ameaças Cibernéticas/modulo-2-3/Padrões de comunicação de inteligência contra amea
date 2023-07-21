@@ -1,0 +1,21 @@
+Padrões de comunicação de inteligência contra ameaças
+Organizações e profissionais de rede devem compartilhar informações para aumentar o conhecimento sobre os atores da ameaça e os ativos que desejam acessar. Vários padrões abertos de compartilhamento de inteligência evoluíram para permitir a comunicação em várias plataformas de rede. Esses padrões permitem a troca de inteligência contra ameaças cibernéticas (CTI) em um formato automatizado, consistente e legível por máquina.
+
+Três padrões comuns de compartilhamento de informações sobre ameaças incluem o seguinte:
+
+Expressão de Informações Estruturadas de Ameaças (STIX) - Este é um conjunto de especificações para a troca de informações sobre ameaças cibernéticas entre organizações. O padrão Cyber Observable Expression (CybOX) foi incorporado ao STIX.
+Troca Confiável e Automatizada de Informações de Indicadores (TAXII) – Esta é a especificação de um protocolo da camada de aplicativo que permite a comunicação de CTI sobre HTTPS. TAXII foi projetado para suportar STIX.
+CybOX - Este é um conjunto de esquemas padronizados para especificar, capturar, caracterizar e comunicar eventos e propriedades de operações de rede que oferecem suporte a muitas funções de segurança cibernética.
+Esses padrões abertos fornecem as especificações que auxiliam na troca automatizada de informações de inteligência de ameaças cibernéticas em um formato padronizado. Pesquise na Internet para saber mais sobre STIX, TAXII e CybOX.
+
+A Malware Information Sharing Platform (MISP) é uma plataforma de código aberto para compartilhar indicadores de comprometimento para ameaças recém-descobertas. O MISP é apoiado pela União Europeia e usado por mais de 6.000 organizações em todo o mundo. O MISP permite o compartilhamento automatizado de IOCs entre pessoas e máquinas usando STIX e outros formatos de exportação.
+
+Plataformas de inteligência de ameaças
+Como vimos, existem muitas fontes de informações de inteligência de ameaças, cada uma das quais pode ter seu próprio formato de dados. Acessar e usar várias fontes de inteligência de ameaças pode consumir muito tempo. Para ajudar o pessoal de segurança cibernética a fazer o melhor uso da inteligência de ameaças, as plataformas de inteligência de ameaças (TIP) foram desenvolvidas.
+
+Uma plataforma de inteligência de ameaças centraliza a coleta de dados de ameaças de várias fontes e formatos de dados. Existem três tipos principais de dados de inteligência de ameaças. O primeiro são indicadores de compromisso (IOC). O segundo são ferramentas, técnicas e procedimentos (TTP). A terceira são as informações de reputação sobre destinos ou domínios da Internet. O volume de dados de inteligência de ameaças pode ser esmagador, portanto, a plataforma de inteligência de ameaças foi projetada para agregar os dados em um só lugar e - o mais importante - apresentar os dados em um formato compreensível e utilizável.
+
+As organizações podem contribuir com informações sobre ameaças compartilhando seus dados de intrusão pela Internet, geralmente por meio de automação. Muitos serviços de inteligência de ameaças usam dados de assinantes para aprimorar seus produtos e se manter atualizados com o cenário de ameaças em constante mudança.
+
+Honeypots são redes simuladas ou servidores projetados para atrair atacantes. As informações relacionadas ao ataque coletadas de honeypots podem então ser compartilhadas com os assinantes da plataforma de inteligência de ameaças. No entanto, hospedar honeypots pode ser um risco. Basear um honeypot na nuvem isola o honeypot das redes de produção. Essa abordagem é uma alternativa atraente para coletar informações sobre ameaças.
+

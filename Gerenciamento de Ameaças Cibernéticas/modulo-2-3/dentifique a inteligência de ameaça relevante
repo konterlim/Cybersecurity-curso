@@ -1,0 +1,76 @@
+dentifique a inteligência de ameaça relevante
+
+Objetivos
+
+CVEs do MITRE de pesquisa
+A organização MITRE criou o banco de dados de Vulnerabilidades e Exposições Comuns (CVE) em 1999 para identificar, definir e catalogar vulnerabilidades de segurança digital divulgadas publicamente. Foi endossado pelo National Institute of Standards and Technology (NIST) em 2002 O banco de dados do CVE agora é o método padrão de registro e identificação de vulnerabilidades.
+
+Nesta parte, você pesquisará o programa CVE e usará a lista CVE para identificar ameaças.
+
+Pesquise CVEs no site do Cisco Security Advisories.
+Muitos sites de segurança e softwares se referem a CVEs. Por exemplo, o site cisco.com oferece o Cisco Security Advisories que identifica vulnerabilidades associadas a produtos da Cisco. Nesta etapa, você consultará este site para identificar uma ID de CVE.
+
+a.     Deixe o site cve.mitre.org aberto. Em outra guia do navegador, faça uma pesquisa na Internet por Cisco Security Advisories e clique no link para acessar a página da web tools.cisco.com.
+
+b.     Esta página lista todos os CVEs atualmente conhecidos. Para a coluna Impacto, clique na seta para baixo e desmarque tudo, exceto Crítica, e clique em Concluído.
+
+retornar ao site do CVE e pesquisar mais sobre o Cisco CVE escolhido.
+a.     Volte para o site cve.mitre.org, que ainda deve estar aberto em uma guia do navegador.
+
+b.     Clique em Pesquisar lista de CVE para abrir uma caixa de pesquisa.
+
+c.     No campo de pesquisa, insira a ID de CVE do comunicado crítico que você documentou na etapa anterior. A ID do CVE está no seguinte formato: CVE- [ano] - [id_number].
+
+Acesse a Base de Conhecimento MITRE ATT&CK
+O MITRE Adversarial Tactics, Techniques & Common Knowledge Framework (ATT&CK) permite detectar táticas, técnicas e procedimentos do atacante (TTP) como parte da defesa contra ameaças e atribuição de ataques. Nesta parte, você investigará o site MITRE ATT&CK para responder a perguntas.
+
+Etapa 1: acesse o site MITRE ATT&CK.
+Acesse o site https://attack.mitre.org.
+
+A página exibe uma matriz de ataque para empresas, que identifica várias táticas e as técnicas usadas pelos agentes de ameaças. Tática são os títulos das colunas de cabeçalho (por exemplo, reconhecimento, desenvolvimentos de recursos etc.) com as técnicas listadas abaixo. Uma frase curta para cada técnica resume o que um agente de ameaças poderia fazer para executar um ataque. Ao clicar na frase vinculada, você será direcionado a uma página para obter informações detalhadas sobre as técnicas e os métodos de mitigação.
+
+Observação: talvez você precise expandir a largura da janela do navegador para ver todas as 14 táticas. Como alternativa, mantenha a tecla Shift pressionada e role a roda do mouse para deslocar a janela para a esquerda e direita.
+
+Essa matriz é um excelente lugar para aprender mais sobre as diferentes táticas e técnicas que os agentes de ameaças usam para comprometer sistemas. Os analistas de segurança digital visitam regularmente este site para pesquisar ataques específicos e possíveis mitigações.
+
+Etapa 2: Investigar a tática de reconhecimento e a tática de phishing para informações.
+Use a página MITRE ATT&CK para responder às seguintes perguntas.
+
+Investigar a tática de comando e controle e a técnica de codificação de dados.
+Use a página MITRE ATT&CK para responder às seguintes perguntas.
+
+Observação: Comando e controle é a 12ª tática na matriz. Você pode precisar expandir a largura da janela do navegador para vê-la. Como alternativa, mantenha a tecla Shift pressionada e role a roda do mouse para deslocar a janela para a esquerda e direita.
+
+Investigar o possível malware
+Há uma série de ferramentas que um analista de segurança digital pode usar para validar software mal-intencionado. Nesta parte, você investigará um alerta IPS para ver se é um software mal-intencionado.
+
+Etapa 1: Gerar um hash SHA256 para um arquivo suspeito.
+Como analistas de segurança digital de Tier 1, você tem acesso a um sistema de gerenciamento de eventos de informações de segurança (SIEM) em sua estação de gerenciamento Linux. O SIEM acabou de enviar um alerta IPS referenciando um endereço IP local de 10.8.19.101. Você decide examinar o tráfego real identificado no alerta ao girar para o Wireshark.
+
+a.     Ao percorrer as várias capturas de pacotes do endereço IP 10.8.19.101, você percebe que um arquivo foi baixado pelo host,
+
+  Você decide exportar esse arquivo do Wireshark para análise de malware usando o comando Arquivo> Exportar objetos> HTTP e salva o arquivo com o nome ooiwy.pdf.
+
+c.     Em seguida, você gera o valor de hash SHA256 do arquivo salvo usando o comando sha256sum, como mostrado.
+
+[analyst@secOps~]:~$ sha256sum ooiwy.pdf
+
+f25a780095730701efac67e9d5b84bc289afea56d96d8aff8a44af69ae606404 ooiwy. pdf
+
+Observe que a assinatura de hash SHA256 foi gerada. Essa sequência pode ser validada em vários sites de reputação de arquivo para ver se o arquivo é malware.
+
+Etapa 2: Pesquisar o hash nos sites de reputação de arquivos.
+Há vários sites de reputação de arquivos que podem ser usados para investigar esse arquivo. Nesta etapa, você usará o site da Cisco Talos e o virustotal.com.
+
+a.     Pesquise "Cisco Talos" e clique no primeiro link para acessar o site do Cisco Talos Intelligence Group.
+
+b.     Localize os menus na parte superior e sobre o Centro de reputação para um submenu suspenso. Clique no link da página de pesquisa de reputação do arquivo Talos.
+
+c.     Copie o valor do hash SHA destacado da etapa anterior e cole-o na janela de pesquisa. Clique na caixa de seleção “Não sou um robô” e clique em Pesquisar.
+
+Pesquise e acesse o site da vírusTotal.
+
+f.       Clique em Pesquisar, cole o hash SHA256 no campo e pressione Enter. A página exibe todos os fornecedores de segurança que identificaram esse arquivo como mal-intencionado (à esquerda) e os nomes que essas empresas usam para identificar o arquivo mal-intencionado.
+
+g.     Observe os títulos das colunas DETECÇÃO, DETALHES, RELAÇÕES, COMPORTAMENTO e COMUNIDADE. Use as informações na página DETALHES para responder às seguintes perguntas.
+
