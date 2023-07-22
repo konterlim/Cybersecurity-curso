@@ -1,0 +1,32 @@
+O Processo CVSS
+O CVSS Base Metrics Group foi projetado como uma forma de avaliar vulnerabilidades de segurança encontradas em sistemas de software e hardware. Ele descreve a gravidade de uma vulnerabilidade com base nas características de uma exploração bem-sucedida da vulnerabilidade. Os outros grupos de métricas modificam a pontuação de gravidade base, contabilizando como a classificação de gravidade base é afetada por fatores de tempo e ambientais.
+
+A calculadora é como um questionário no qual são feitas escolhas que descrevem a vulnerabilidade para cada grupo de métricas. Depois que todas as escolhas são feitas, uma pontuação é gerada. O texto pop-up que explica cada métrica e valor métrico é exibido passando o mouse sobre cada um. As opções são feitas escolhendo um dos valores para a métrica. Apenas uma escolha pode ser feita por métrica.
+
+A calculadora CVSS pode ser acessada na parte CVSS do site FIRST.
+
+Um guia detalhado do usuário que define critérios métricos, exemplos de avaliações de vulnerabilidades comuns e a relação de valores métricos com a pontuação final está disponível para dar suporte ao processo.
+
+Uma string vetorial também é criada que resume as escolhas feitas. Se outros grupos métricos forem concluídos, esses valores serão anexados à string vetorial. A string consiste na (s) inicial (s) para a métrica e um valor abreviado para o valor métrico selecionado separado por dois-pontos. Os pares de valor métrico são separados por barras. As strings vetoriais permitem que os resultados da avaliação sejam facilmente compartilhados e comparados.
+
+Os valores para a cadeia de classificação de gravidade numérica CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N são listados na tabela.
+
+Para que uma pontuação seja calculada para os grupos de métricas Temporal ou Ambiental, o grupo Métrica Base deve primeiro ser concluído. Em seguida, os valores de métrica Temporal e Ambiental modificam os resultados da Métrica Base para fornecer uma pontuação geral. A interação das pontuações para os grupos métricos é mostrada na figura.
+
+Frequentemente, as pontuações do grupo de métricas Base e Temporal serão fornecidas aos clientes pelo aplicativo ou fornecedor de segurança em cujo produto a vulnerabilidade foi descoberta. A organização afetada completa o grupo de métricas ambientais para adaptar a pontuação fornecida pelo fornecedor ao contexto local.
+
+A pontuação resultante serve para orientar a organização afetada na alocação de recursos para resolver a vulnerabilidade. Quanto maior a classificação de gravidade, maior o impacto potencial de uma exploração e maior a urgência em abordar a vulnerabilidade. Embora não sejam tão precisos quanto os escores numéricos do CVSS, os rótulos qualitativos são muito úteis para se comunicar com os stakeholders que não conseguem se relacionar com os escores numéricos.
+
+Em geral, qualquer vulnerabilidade que exceda 3.9 deve ser resolvida. Quanto maior o nível de classificação, maior a urgência para remediação.
+
+Frequentemente, as pontuações do grupo de métricas Base e Temporal serão fornecidas aos clientes pelo aplicativo ou fornecedor de segurança em cujo produto a vulnerabilidade foi descoberta. A organização afetada completa o grupo de métricas ambientais para adaptar a pontuação fornecida pelo fornecedor ao contexto local.
+
+Outras fontes de informações sobre vulnerabilidades
+Existem outras fontes importantes de informações sobre vulnerabilidades. Estes trabalham em conjunto com o CVSS para fornecer uma avaliação abrangente da gravidade da vulnerabilidade. Existem dois sistemas que operam nos Estados Unidos:
+
+Vulnerabilidades e exposições comuns (CVE)
+
+Este é um dicionário de nomes comuns, na forma de identificadores CVE, para vulnerabilidades conhecidas de segurança cibernética. O identificador CVE fornece uma maneira padrão de pesquisar uma referência a vulnerabilidades. Quando uma vulnerabilidade for identificada, identificadores CVE podem ser usados para acessar correções. Além disso, os serviços de inteligência contra ameaças usam identificadores CVE e aparecem em vários logs do sistema de segurança. O site Detalhes do CVE fornece uma ligação entre as pontuações do CVSS e as informações do CVE. Ele permite a navegação de registros de vulnerabilidade CVE por classificação de gravidade CVSS.
+
+Isso utiliza identificadores CVE e fornece informações adicionais sobre vulnerabilidades, como pontuações de ameaças CVSS, detalhes técnicos, entidades afetadas e recursos para investigação adicional. O banco de dados foi criado e é mantido pela agência do National Institute of Standards and Technology (NIST) do governo dos EUA.
+

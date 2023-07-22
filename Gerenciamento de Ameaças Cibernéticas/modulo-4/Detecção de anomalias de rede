@@ -1,0 +1,29 @@
+Detecção de anomalias de rede
+O comportamento da rede é descrito por uma grande quantidade de dados diversos, como os recursos do fluxo de pacotes, os recursos dos próprios pacotes e a telemetria de várias fontes. Uma abordagem para a detecção de ataques de rede é a análise desses dados diversos e não estruturados usando técnicas de análise de Big Data. Isso é conhecido como análise de comportamento de rede (NBA).
+
+Isto implica a utilização de técnicas sofisticadas de aprendizagem estatística e de máquina para comparar as linhas de base de desempenho normais com o desempenho da rede num determinado momento. Desvios significativos podem ser indicadores de compromisso. Além disso, o comportamento da rede pode ser analisado quanto a comportamentos de rede conhecidos que indicam comprometimento.
+
+A detecção de anomalias pode reconhecer o tráfego de rede causado pela atividade de worm que exibe o comportamento de varredura. A detecção de anomalias também pode identificar hosts infectados na rede que estão verificando outros hosts vulneráveis.
+
+A figura ilustra uma versão simplificada de um algoritmo projetado para detectar uma condição incomum nos roteadores de fronteira de uma empresa.
+
+Teste de Vulnerabilidade de Rede
+A maioria das organizações conecta-se às redes públicas de alguma forma devido à necessidade de acessar a internet. Essas organizações também devem fornecer serviços voltados para a internet de vários tipos ao público. Devido ao grande número de potenciais vulnerabilidades e ao fato de que novas vulnerabilidades podem ser criadas dentro de uma rede da organização e seus serviços voltados para a Internet, testes periódicos de segurança são essenciais.
+
+Visão geral do CVSS
+O Common Vulnerability Scoring System (CVSS) é uma ferramenta de avaliação de risco projetada para transmitir os atributos comuns e a gravidade das vulnerabilidades em sistemas de hardware e software de computador. A terceira revisão, CVSS 3.0, é uma estrutura aberta e neutra do fornecedor, padrão do setor, para ponderar os riscos de uma vulnerabilidade usando uma variedade de métricas. Esses pesos combinam-se para fornecer uma pontuação do risco inerente a uma vulnerabilidade. A pontuação numérica pode ser usada para determinar a urgência da vulnerabilidade e a prioridade de abordá-la. Os benefícios do CVSS podem ser resumidos da seguinte forma:
+
+Ele fornece pontuações padronizadas de vulnerabilidade que devem ser significativas em todas as organizações.
+Ele fornece uma estrutura aberta com o significado de cada métrica abertamente disponível para todos os usuários.
+Ele ajuda a priorizar o risco de uma forma que seja significativa para organizações individuais.
+O Fórum de Equipes de Resposta a Incidentes e Segurança (FIRST) foi designado como guardião do CVSS para promover sua adoção globalmente. O padrão Versão 3 foi desenvolvido com contribuições da Cisco e de outros parceiros do setor. A versão 3.1 foi lançada em junho de 2019. A figura exibe a página de especificação do CVSS no site FIRST.
+
+Isso representa as características de uma vulnerabilidade que são constantes ao longo do tempo e em contextos. Ele tem duas classes de métricas:
+
+Explorabilidade- Esses são recursos da exploração, como vetor, complexidade e interação do usuário exigidas pela exploração.
+Métricas de impacto - Os impactos da exploração estão enraizados na tríade de confidencialidade, integridade e disponibilidade da CIA.
+
+Isso mede as características de uma vulnerabilidade que pode mudar ao longo do tempo, mas não em ambientes de usuário. Ao longo do tempo, a gravidade de uma vulnerabilidade mudará à medida que for detectada e serão desenvolvidas medidas para combatê-la. A gravidade de uma nova vulnerabilidade pode ser alta, mas diminuirá à medida que patches, assinaturas e outras contramedidas forem desenvolvidas.
+
+Isso mede os aspectos de uma vulnerabilidade que estão enraizados no ambiente de uma organização específica. Essas métricas ajudam a classificar as consequências dentro de uma organização e permitem o ajuste de métricas menos relevantes para o que uma organização faz.
+

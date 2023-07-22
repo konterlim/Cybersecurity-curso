@@ -1,0 +1,31 @@
+Gerenciamento de dispositivos móveis
+
+O gerenciamento de dispositivos móveis (MDM), especialmente na era do BYOD, apresenta desafios especiais para a gestão de ativos. Os dispositivos móveis não podem ser controlados fisicamente nas instalações de uma organização. Elas podem ser perdidas, roubadas ou adulteradas, colocando em risco o acesso a dados e à rede. Parte de um plano MDM é agir quando os dispositivos deixam a custódia da parte responsável. As medidas que podem ser tomadas incluem desativar o dispositivo perdido, criptografar os dados no dispositivo e aprimorar o acesso ao dispositivo com medidas de autenticação mais robustas.
+
+Devido à diversidade de dispositivos móveis, é possível que alguns dispositivos que serão usados na rede sejam inerentemente menos seguros do que outros. Os administradores de rede devem assumir que todos os dispositivos móveis não são confiáveis até que tenham sido adequadamente protegidos pela organização.
+
+Os sistemas MDM, como o Cisco Meraki Systems Manager, mostrado na figura, permitem que o pessoal de segurança configure, monitore e atualize um conjunto muito diversificado de clientes móveis a partir da nuvem.
+
+O gerenciamento de dispositivos móveis (MDM), especialmente na era do BYOD, apresenta desafios especiais para a gestão de ativos. Os dispositivos móveis não podem ser controlados fisicamente nas instalações de uma organização. Elas podem ser perdidas, roubadas ou adulteradas, colocando em risco o acesso a dados e à rede. Parte de um plano MDM é agir quando os dispositivos deixam a custódia da parte responsável. As medidas que podem ser tomadas incluem desativar o dispositivo perdido, criptografar os dados no dispositivo e aprimorar o acesso ao dispositivo com medidas de autenticação mais robustas.
+
+Devido à diversidade de dispositivos móveis, é possível que alguns dispositivos que serão usados na rede sejam inerentemente menos seguros do que outros. Os administradores de rede devem assumir que todos os dispositivos móveis não são confiáveis até que tenham sido adequadamente protegidos pela organização.
+
+Os sistemas MDM, como o Cisco Meraki Systems Manager, mostrado na figura, permitem que o pessoal de segurança configure, monitore e atualize um conjunto muito diversificado de clientes móveis a partir da nuvem.
+
+Gerenciamento de configurações
+O gerenciamento de configuração aborda o inventário e o controle das configurações de hardware e software dos sistemas. Configurações seguras de dispositivos reduzem o risco de segurança. Por exemplo, uma organização fornece muitos computadores e laptops para seus funcionários. Isso amplia a superfície de ataque para a organização, porque cada sistema pode ser vulnerável a explorações. Para gerenciar isso, a organização pode criar imagens de software de linha de base e configurações de hardware para cada tipo de máquina. Essas imagens podem incluir um pacote básico de software necessário, software de segurança de ponto de extremidade e políticas de segurança personalizadas que controlam o acesso do usuário a aspectos da configuração do sistema que poderiam ser tornados vulneráveis. As configurações de hardware podem especificar os tipos permitidos de interfaces de rede e os tipos permitidos de armazenamento externo.
+
+O gerenciamento de configuração se estende à configuração de software e hardware de dispositivos de rede e servidores também. Conforme definido pelo NIST, gerenciamento de configuração:
+
+Compreende uma coleção de atividades focadas no estabelecimento e manutenção da integridade de produtos e sistemas, através do controle dos processos de inicialização, mudança e monitoramento das configurações desses produtos e sistemas.
+
+A publicação especial NIST 800-128 sobre gerenciamento de configuração para segurança de rede está disponível para download no NIST.
+
+Para dispositivos de interrede, estão disponíveis ferramentas de software que farão backup de configurações, detectam alterações nos arquivos de configuração e habilitam a alteração em massa de configurações em vários dispositivos.
+
+Com o advento dos data centers em nuvem e da virtualização, o gerenciamento de vários servidores apresenta desafios especiais. Ferramentas como Puppet, Chef, Ansible e SaltStack permitem o gerenciamento eficiente de servidores usados na computação baseada em nuvem.
+
+Gerenciamento de patches corporativos
+O gerenciamento de patches está relacionado ao gerenciamento de vulnerabilidades. Vulnerabilidades aparecem frequentemente em sistemas operacionais e firmware críticos de cliente, servidor e dispositivo de rede. Software de aplicativos, especialmente aplicativos de Internet e estruturas como Acrobat, Flash e Java, também são freqüentemente descobertos como tendo vulnerabilidades. O gerenciamento de patches envolve todos os aspectos da aplicação de patches de software, incluindo a identificação de patches necessários, aquisição, distribuição, instalação e verificação de que o patch está instalado em todos os sistemas necessários. A instalação de patches é frequentemente a maneira mais eficaz de mitigar vulnerabilidades de software. Às vezes, eles são a única maneira de fazê-lo.
+
+O gerenciamento de patches é exigido por algumas regulamentações de conformidade, como Sarbanes Oxley (SOX) e a Lei de Portabilidade e Responsabilidade de Seguros de Saúde (HIPAA). A falha na implementação de patches de forma sistemática e oportuna pode resultar em falhas de auditoria e penalidades por não conformidade. O gerenciamento de patches depende dos dados de gerenciamento de ativos para identificar sistemas que executam software que exigem patches. O software de gerenciamento de patches está disponível em empresas como SolarWinds e LANDesk. O Microsoft System Center Configuration Manager (SCCM) é uma ferramenta de nível empresarial para distribuição automatizada de patches para um grande número de estações de trabalho e servidores Microsoft Windows.

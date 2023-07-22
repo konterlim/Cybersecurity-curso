@@ -1,0 +1,52 @@
+Lab Gerenciamento de risco
+
+O processo de uma empresa de identificar e avaliar riscos é um esforço contínuo, porque os tipos de ameaças mudam e nunca desaparecem completamente. O objetivo do gerenciamento de riscos é reduzir essas ameaças a um nível aceitável. Existem diferentes níveis de gerenciamento de riscos. As empresas devem gerenciar corretamente os riscos para proteger as informações e os sistemas de informação. O gerenciamento de riscos também ajuda a evitar ações legais, interrupções nas operações e protege a reputação das empresas.
+
+Níveis de ação de risco
+O gerenciamento de riscos é a identificação, avaliação e priorização de riscos. As empresas gerenciam os riscos de uma das quatro maneiras. Cada um pode ser uma escolha apropriada, dependendo das circunstâncias e do tipo de risco em questão:
+
+·          Prevenção (eliminação) - A prevenção de riscos é a remoção ou a eliminação completa dos riscos de uma ameaça específica. Por exemplo, evitar ou eliminar a ameaça de compartilhamento ou uso indevido de senhas dos usuários poderia envolver a implementação de um sistema de autenticação de impressão digital em todas as estações de trabalho dos usuários.
+
+·        Mitigação (redução) - A mitigação de riscos envolve a implementação de controles que permitem à empresa continuar a executar uma atividade enquanto usa mecanismos para reduzir o risco de uma determinada ameaça. Uma empresa também pode aumentar seus controles técnicos e a supervisão da rede para reduzir o risco de ameaças operacionais.
+
+·          Transferência - as empresas podem transferir riscos de ameaças específicas. O risco financeiro de uma ameaça pode ser gerenciado com a compra de uma apólice de seguro ou a contratação de um prestador de serviço para lidar com ameaças específicas.
+
+·         Aceitar - Aceitar o risco envolve a identificação das ameaças, mas não implementar processos de mitigação somente depois que uma decisão consciente for tomada para fazer isso. A decisão consciente é informada pela análise dos vários componentes do risco antes de prosseguir.
+
+Etapa 1: Gerenciar o risco.
+Nesta etapa, você descreverá exemplos de gerenciamento de riscos associados a ameaças específicas às informações ou aos sistemas de informações da empresa.
+
+a.     Uma empresa é regularmente solicitada a lidar com informações confidenciais de clientes. A divulgação dessas informações representa um sério risco para a empresa
+
+Parte 2: Conceitos de gerenciamento de riscos
+O gerenciamento de riscos é uma técnica usada para identificar e avaliar os fatores que podem ameaçar as informações e os sistemas de informação. O estudo de análise de risco inclui vários termos e conceitos comumente usados, incluindo o seguinte:
+
+Ativos - ativos são tudo de valor usado e necessário para a conclusão de uma tarefa comercial. Os ativos incluem itens tangíveis e intangíveis, como equipamentos, código de software, dados, instalações, pessoal, valor de mercado e opinião pública. O gerenciamento de riscos tem a ver com a proteção de recursos valiosos da empresa.
+
+Ameaças - As ameaças são um ato mal-intencionado ou um evento inesperado que danifica os sistemas de informações ou outros recursos organizacionais relacionados. Podem ser ações intencionais que resultam em perda ou dano a um ativo. As ameaças também podem ser não intencionais, como um acidente, um desastre natural ou falha de equipamento.
+
+Vulnerabilidade - Vulnerabilidades são qualquer falha ou fraqueza que permitiria que uma ameaça causasse dano e danificasse um ativo. Exemplos podem ser código de falha, configurações incorretas e falha ao seguir procedimentos.
+
+Impacto - O impacto ao risco é o dano ocorrido por um evento que causa a perda de um ativo ou a interrupção do serviço. Esse dano pode ser medido de forma quantitativa ou qualitativa com base no impacto nas operações da empresa.
+
+Risco - Risco é a probabilidade de perda devido a uma ameaça aos ativos de uma empresa.
+
+Contramedidas - Contramedidas são uma ação, um dispositivo ou uma técnica que reduz uma ameaça ou uma vulnerabilidade ao eliminá-la ou evitá-la. Um exemplo seria software antivírus, firewalls, políticas e treinamento.
+
+Avaliação de riscos - A avaliação de riscos é o processo de identificação de vulnerabilidades e ameaças e avaliação dos possíveis impactos para determinar onde implementar controles de segurança.
+
+O que é uma avaliação de risco à segurança? Uma avaliação de riscos identifica, quantifica e prioriza os riscos e vulnerabilidades em um sistema. Uma avaliação de risco identifica ameaças e agentes de ameaças reconhecidos e a probabilidade de que esses fatores resultem em uma exposição ou perda.
+
+Estudo de caso:
+Uma empresa gerencia um banco de dados de clientes que rastreia compras on-line dos produtos. Essas compras são feitas com contas do PayPal ou cartões de crédito. O servidor de banco de dados tem várias vulnerabilidades. O banco de dados está em um servidor na sala do servidor na sede da empresa. O servidor custou US $ 25.000. O banco de dados é composto por todos os 40.000 clientes e mais de 1,5 milhão de transações. O servidor registra mais de 120 transações por dia, gerando mais de 25 mil por dia em vendas. O backup da base de dados é feito diariamente às 2h da manhã. Todos os pedidos também são rastreados e conectados em sistemas separados em caso de falha do servidor. Esse processo pode levar até 50 horas/homem de entrada para processamento manual todos os dias.
+
+Parte 3: Processos de gerenciamento de riscos
+O gerenciamento de riscos é um processo formal que reduz o impacto de ameaças e vulnerabilidades. Não é possível eliminar completamente o risco, mas é possível gerenciá-lo a um nível aceitável. O gerenciamento de riscos mede o impacto de uma ameaça e o custo para implementar controles ou contramedidas para atenuar a ameaça. Todas as empresas aceitam algum risco. O custo de uma contramedida não deve ser superior ao valor do ativo que você está protegendo.
+
+Etapa 1: Estruturar e avaliar os riscos
+Identifique as ameaças em toda a organização que aumentam o risco. As ameaças identificadas incluem processos, produtos, ataques, falha potencial ou interrupção de serviços, percepção negativa da reputação da organização, potencial responsabilidade legal ou perda de propriedade intelectual.
+
+Depois que um risco é identificado, ele é avaliado e analisado para determinar a gravidade que a ameaça representa. Algumas ameaças podem paralisar toda a organização, enquanto outras ameaças são pequenas inconveniências. O risco pode ser priorizado pelo impacto financeiro real (análise quantitativa) ou um impacto em escala na operação da organização (análise qualitativa).
+
+Em nosso exemplo, as seguintes vulnerabilidades foram identificadas. Atribua um valor quantitativo a cada risco com base nas respostas do seu comitê. Justifique o valor que você determinou.
+

@@ -1,0 +1,40 @@
+Gerenciamento seguro de dispositivos
+
+Gerenciamento de risco
+O gerenciamento de riscos envolve a seleção e especificação de controles de segurança para uma organização. Faz parte de um programa contínuo de segurança da informação em toda a organização que envolve a gestão do risco para a organização ou para indivíduos associados à operação de um sistema.
+
+O risco é determinado como a relação entre ameaça, vulnerabilidade e a natureza da organização. Trata-se, em primeiro lugar, de responder às seguintes questões como parte de uma avaliação de risco:
+
+Quem são os atores que querem nos atacar?
+Quais vulnerabilidades os atores ameaçadores podem explorar?
+Como seríamos afetados por ataques?
+Qual é a probabilidade de que diferentes ataques ocorram?
+A publicação especial 800-30 do NIST descreve a avaliação de risco como:
+
+... o processo de identificação, estimativa e priorização dos riscos de segurança das informações. A avaliação do risco requer uma análise cuidadosa das informações sobre ameaças e vulnerabilidades para determinar a extensão em que circunstâncias ou eventos podem afetar negativamente uma organização e a probabilidade de tais circunstâncias ou eventos ocorrerem.
+
+A publicação completa está disponível para download no NIST.
+
+Uma atividade obrigatória na avaliação de riscos é a identificação de ameaças e vulnerabilidades e a correspondência de ameaças com vulnerabilidades no que geralmente é chamado de emparelhamento de ameaças (T-V). Os pares T-V podem então ser usados como uma linha de base para indicar o risco antes de os controles de segurança serem implementados. Esta linha de base pode, então, ser comparada com avaliações de risco contínuas como meio de avaliar a eficácia da gestão do risco. Esta parte da avaliação de risco é referida como a determinação do perfil de risco inerente de uma organização.
+
+Após a identificação dos riscos, eles podem ser pontuados ou ponderados como forma de priorizar estratégias de redução de risco. Por exemplo, as vulnerabilidades que se verificou terem correspondido a várias ameaças podem receber classificações mais altas. Além disso, os pares T-V que mapeiam para o maior impacto institucional também receberão ponderações mais elevadas.
+
+A tabela lista as quatro formas potenciais de responder aos riscos identificados, com base em suas ponderações ou pontuações.
+
+Gestão de Vulnerabilidade
+De acordo com o NIST, o gerenciamento de vulnerabilidades é uma prática de segurança projetada para impedir proativamente a exploração de vulnerabilidades de TI existentes em uma organização. O resultado esperado é reduzir o tempo e o dinheiro gasto para lidar com vulnerabilidades e a exploração dessas vulnerabilidades. O gerenciamento proativo de vulnerabilidades de sistemas reduzirá ou eliminará o potencial de exploração e envolverá consideravelmente menos tempo e esforço do que responder após uma exploração ter ocorrido.
+
+O gerenciamento de vulnerabilidades requer um meio robusto de identificar vulnerabilidades com base em boletins de segurança do fornecedor e em outros sistemas de informação, como o CVE. O pessoal de segurança deve ser competente para avaliar o impacto, se houver, das informações de vulnerabilidade recebidas. As soluções devem ser identificadas com meios eficazes de implementar e avaliar as consequências imprevistas das soluções implementadas. Finalmente, a solução deve ser testada para verificar se a vulnerabilidade foi eliminada.
+
+Inventário de todos os ativos na rede e identifique os detalhes do host, incluindo sistemas operacionais e serviços abertos, para identificar vulnerabilidades. Desenvolva uma linha de base da rede. Identifique vulnerabilidades de segurança em um agendamento automatizado regular.
+
+Categorize os ativos em grupos ou unidades de negócios e atribua um valor comercial a grupos de ativos com base na sua importância às operações de negócios.
+
+Determine um perfil de risco básico para eliminar riscos com base na importância, vulnerabilidade, ameaças e classificação de ativos.
+
+Meça o nível de risco comercial associado aos seus ativos de acordo com suas políticas de segurança. Documente um plano de segurança, monitore atividades suspeitas e descreva vulnerabilidades conhecidas.
+
+Priorize de acordo com o risco comercial e resolva vulnerabilidades por ordem de risco.
+
+Verifique se as ameaças foram eliminadas por meio de auditorias de acompanhamento.
+
