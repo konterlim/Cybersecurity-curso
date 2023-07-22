@@ -1,0 +1,33 @@
+ Auditoria de controles e conformidade
+O Center for Internet Security (CIS) criou um mapeamento de seus 18 controles de segurança essenciais para algumas das estruturas de conformidade comuns. Isso fornece orientações úteis para profissionais de segurança que estão trabalhando para criar e manter a conformidade com as estruturas necessárias.
+
+Uma pesquisa no Google no site: mapeamento e conformidade de cisecurity.org retorna uma página na qual o CIS fornece orientação sobre controles de segurança que são relevantes para estruturas essenciais de conformidade do setor, como PCI DSS, NIST Cybersecurity Framework, FISMA, HIPAA, GDPR e ISO / IEC 27001. Links e referências úteis são fornecidos para ilustrar como os controles do CIS fornecem conformidade com as diferentes estruturas.
+
+Além disso, os membros do CIS têm acesso à ferramenta de orientação e avaliação de controles do CIS-CAT Pro, que oferece assistência na avaliação da conformidade por meio dos mapeamentos dos controles do CIS para as estruturas de compliance individuais.
+
+Os controles de segurança preventiva impedem que atividades indesejadas e não autorizadas ocorram e / ou aplicam restrições a usuários autorizados.
+Controles dissuasivos desencorajam que algo aconteça.
+As detecções de controle de acesso identificam diferentes tipos de atividade não autorizada.
+Controles corretivos correções neutralizam algo que é indesejável.
+Os controles de recuperação restauram recursos, funções e recursos.
+Oscontroles de acesso compensatórios fornecem opções a outros controles para aumentar o reforço relacionado à sustentação de uma política de segurança.
+
+Atribuir privilégios de usuário a todos os usuários autorizados
+
+Controles preventivos
+Novo software antivírus
+
+Controle corretivo
+Câmeras de vigilância dentro da sala do servidor
+
+Controle de detecção
+Atualizações da política de segurança da empresa
+
+Controle corretivo
+Um novo regime abrangente de backup em nuvem
+
+Controle de recuperação
+Tráfego de texto sem criptografia HTTP em um túnel VPN criptografado
+
+Controle de compensação
+

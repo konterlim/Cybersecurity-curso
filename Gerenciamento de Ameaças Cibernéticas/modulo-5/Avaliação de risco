@@ -1,0 +1,37 @@
+Avaliação de risco
+
+A avaliação de ameaças é a base para a avaliação de riscos. Uma ameaça é o potencial que uma vulnerabilidade será identificada e explorada, enquanto um vetor de ameaças é o caminho que um invasor utiliza para afetar o alvo.
+
+Os tipos de fonte de ameaça são categorizados da seguinte forma e podem ser internos ou externos.
+
+Adversarial:   ameaças de indivíduos, grupos, organizações ou nações.
+Acidental:   ações que ocorrem sem uma intenção mal-intencionada.
+Estrutural:   falhas de equipamento e software.
+Ambiental:   desastres externos que podem ser naturais ou causados 
+pelo homem, como incêndios e inundações.
+
+ Metodologia de avaliação de Riscos
+Imagem com áreas selecionáveis. Selecione cada botão para mostrar mais informações.
+As empresas avaliam e examinam seus riscos operacionais ao realizar uma avaliação de risco para garantir que o gerenciamento de riscos atenda a todos os objetivos comerciais.
+
+Tentar determinar a probabilidade de um ataque de uma fonte de ameaça humana pode ser difícil e pode envolver a avaliação do nível de habilidade, motivação, oportunidade e tamanho.
+
+Ao avaliar a vulnerabilidade, fatores como facilidade de descoberta, capacidade de exploração, reconhecimento e detecção de intrusão desempenham um papel importante. Use uma combinação de estimativa e dados históricos para fornecer a probabilidade mais precisa de um evento ocorrer.
+
+Por fim, determine a magnitude do impacto. Uma simples medida de impacto pode variar de muito baixo a muito alto ou de um impacto insignificante a um impacto catastrófico.
+
+Análise de risco quantitativo
+Uma análise quantitativa atribui números para o processo de análise de risco. O valor do ativo é o custo de substituição do ativo. O valor de um ativo pode ser medido também pela receita adquirida com o uso do ativo.
+
+O fator de exposição (EF) é um valor subjetivo expresso como uma porcentagem do servidor de arquivos perdidos devido a uma ameaça específica. Se ocorrer uma perda total, o EF é igual a 1,0 (100%).
+
+ARO (taxa anualizada de ocorrência, Taxa anualizada de ocorrência) é a probabilidade de uma perda ocorrer durante o ano. Uma ARO pode ser maior que 100%, se uma perda pode ocorrer mais de uma vez por ano.
+
+O calculado da ALE (expectativa de perda anual, expectativa de perda anual) dá à gerência uma noção de quanto deve gastar para proteger o ativo.
+
+análise de risco qualitativo
+A análise qualitativa de riscos usa opiniões e cenários que descrevem a probabilidade de uma ameaça contra seu impacto. Por exemplo, a ameaça de uma falha no servidor pode ser provável, mas seu impacto pode ser apenas marginal.
+
+Uma matriz de riscos é uma ferramenta que ajuda a priorizar riscos para determinar para quais organizações a empresa precisa desenvolver uma resposta. Os resultados podem ser classificados e usados ​​como um guia para determinar se a empresa executa alguma ação.
+
+Quando a matriz de risco é codificada por cores, como mostrado aqui, ela é chamada de mapa de calor de risco.

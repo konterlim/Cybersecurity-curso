@@ -1,0 +1,112 @@
+aboratório - Análise de risco
+
+Objetivos
+Parte 1: Usar métodos de análise de risco
+
+Parte 2: Calcular riscos
+
+Histórico/Cenário
+Uma análise de risco determina possíveis vulnerabilidades e ameaças, sua probabilidade e consequências e as tolerâncias para tais eventos. Os resultados desse processo podem ser expressos usando um método quantitativo ou um método qualitativo. A análise de risco quantitativo envolve calcular para atribuir um valor a uma possível vulnerabilidade ou ameaça. Essa opção funciona melhor ao lidar com ativos tangíveis, como edifícios, computadores ou inventário. A análise de risco qualitativo atribui um nível usado para priorizar o risco potencial, para que as empresas possam adotar uma abordagem lógica para lidar com as ameaças mais importantes. Esse método funciona melhor para ativos intangíveis, como propriedade intelectual, acreditado da empresa ou contas a receber.
+
+Etapa 3: Calcular a expectativa de perda única
+Calcular a expectativa de perda única (SLE) usando o valor do ativo e multiplicando-o pelo fator de exposição. O resultado é uma perda de dólares esperada devido à ocorrência de um único evento. Um único ativo pode ter várias ameaças ou vulnerabilidades, e uma única expectativa de perda pode ser contínua para cada ocorrência.
+
+Por exemplo, estima-se que um ataque de negação de serviço tenha um fator de exposição ou impacto de 20% ou 0,2. Isso significa que o SLE é de US$ 135.000 x 0,2 = US$ 27.000.
+
+Estime o SLE se ocorrer uma falha no disco rígido ou na unidade de armazenamento em que o mesmo valor de ativo seja estimado em US $ 135.000. Esse tipo de perda resultaria em um fator de exposição de 0,5.
+
+Etapa 4: Calcular a taxa de ocorrência anualizada
+A taxa de ocorrência anualizada (ARO) é uma medida da frequência com que um evento ocorre em um único ano. O ARO é sempre expresso em uma classificação anual, mesmo se um incidente ocorre e é registrado em outras medidas de tempo. Em nosso exemplo, o servidor de banco de dados do cliente é afetado por um ataque de DoS ou DDoS a cada 120 dias ou 4 meses em média. Isso significa que o evento manipulado em média três vezes em um ano civil, então o ataque de DoS / DDoS tem um ARO de 3.
+
+a.      Nesse cenário, calcule o ARO de um ataque de ransomware no servidor de banco de dados do cliente empresarial. Em média, o servidor sofre ataques de ransomware a cada 24 meses ou dois anos.
+
+Etapa 5: Calcular a expectativa de perda anualizada
+A expectativa de perda anualizada (ALE) é o produto do ARO e do SLE. Para calcular o ALE, pegue o SLE e multiplique-o pelo ARO. Por exemplo, se uma queda de energia por determinado como tendo um SLE de US$ 50.000,00 e um ARO de 0,5, o ALE seria de US$ 25.000.
+
+Etapa 6: Calcular uma análise qualitativa de riscos
+Uma análise qualitativa compara o impacto de uma ameaça com probabilidade de sua ocorrência e usa rótulos como baixo, médio ou alto. O impacto de um evento é uma medida da perda quando uma ameaça explora uma vulnerabilidade. A probabilidade é de que o evento de ameaça.
+
+A análise qualitativa de riscos examina o nível de impacto geral na empresa. Esses problemas incluem perda de receita, perda de percepção e perda de clientes.
+
+Evento 1: Falha no disco rígido do servidor Web
+
+Matriz de impacto e risco
+
+Probabilidade de ocorrência
+
+muito baixa
+
+Baixa
+
+Meios de comunicação
+
+alta
+
+muito alta
+
+Altamente provável
+
+moderado
+
+Diretor
+
+Diretor
+
+Severo
+
+Severo
+
+Provável
+
+moderado
+
+moderado
+
+Diretor
+
+Diretor
+
+Severo
+
+Possível
+
+Secundário
+
+moderado
+
+moderado
+
+moderado
+
+Diretor
+
+Improvável
+
+Secundário
+
+moderado
+
+moderado
+
+moderado
+
+Diretor
+
+raro
+
+Secundário
+
+Secundário
+
+Secundário
+
+moderado
+
+moderado
+
+Linha em branco, sem informações adicionais
+
+No segundo evento, um ataque de negação de serviço é iniciado contra o servidor Web. Esse é um impacto de alto risco e uma probabilidade de ocorrência.
+
+
+

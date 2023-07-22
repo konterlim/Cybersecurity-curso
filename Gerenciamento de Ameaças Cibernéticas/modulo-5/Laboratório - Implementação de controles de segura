@@ -1,0 +1,56 @@
+Laboratório - Implementação de controles de segurança
+
+Objetivos
+● Analisar as necessidades de segurança de uma empresa.
+
+● Recomendar controles de segurança com base nas necessidades da empresa.
+
+Histórico/Cenário
+Neste laboratório, você recomendará controles de segurança com base nas necessidades do sistema de escolas públicas de Greenville.
+
+O sistema escolar é composto por um ensino médio, um ensino médio e três escolas de ensino fundamental. O distrito atende cerca de 2500 alunos, tem uma equipe de 210 professores, 220 administradores e funcionários de suporte e 25 funcionários de manutenção. O data center e o data center de Internet estão no colégio, que também abriga os escritórios administrativos. As escolas estão interconectadas ao ensino médio por uma rede de fibra ótica redundante. O data center abriga todos os servidores necessários em um local.
+
+Sua empresa foi contratada para analisar a segurança física e digital do sistema escolar de Greenville. Recentemente, ocorreu um incidente em que um aluno do ensino médio obteve as credenciais de um professor e se conectou à rede administrativa. O aluno alterou as notas, desativou as câmeras de CCTV e obteve números de telefone para os alunos.
+
+A diretora de segurança do distrito deixou recentemente seu emprego e a carga não havia sido preenchida. A segurança havia sido implementada por vários consultores e funcionários e não tinha sido bem documentada. Sua tarefa é propor controles de segurança que devem ser implementados e analisar o sistema atual para ver se ele utiliza esses controles. O superintendente e o conselho escolar compilaram a seguinte lista de preocupações de segurança. Você usará como ponto de partida para sua análise:
+
+● Uma grande variedade de computadores, com hardware e software antigos, está localizada ao acaso em todo o distrito, muitos em salas de aula e em laboratórios de aprendizagem.
+
+● Alguns distritos escolares de todo o país enfrentam processos de julgamento devido à perda de informações dos pais devido a violação de dados.
+
+● Outro distrito escolar do estado teve que desligar até os sistemas serem restaurados após um ataque de ransomware, dados criptografados pedidos em vários computadores na rede do distrito.
+
+● Os registros acadêmicos foram acessados ​​e alterados pelos alunos.
+
+● Um pai ou mãe que não estava autorizado a ver o filho teve acesso a uma atividade depois das aulas na escola que a criança frequentou.
+
+● O servidor de biblioteca no data center tinha sido desconectado pela equipe de limpeza no passado.
+
+● As informações do aluno foram divulgadas por um funcionário administrativo em resposta a um e-mail mal-intencionado.
+
+Recursos necessários
+●    Dispositivo com acesso à internet
+
+Instruções
+Parte 1: Revisar controles de segurança
+Analise as definições dos tipos e funções de controle de segurança abaixo.
+
+Os controles de segurança podem ser divididos em três tipos:
+
+1. Controles de segurança física - implementados para controlar o acesso físico a pessoas, equipamentos, instalações e informações.
+
+2. Controles técnicos de segurança - implementados para proteger os sistemas de hardware e software e as informações que esses sistemas transmitem, processam ou armazenam.
+
+3. Controles de segurança administrativos - são políticas, procedimentos, regras e diretrizes que são seguidas por funcionários para atingir as metas de segurança de uma empresa.
+
+Os controles de segurança são vistos como tendo três funções:
+
+1. Preventiva - impedir que ameacem à segurança
+
+2. Detetive - identifica atividade não autorizada
+
+3. Corretivo - direcionar atividades indesejadas ao restaurar os sistemas ao status normal da CIA
+
+Parte 2: Preencha uma grade de controles de segurança
+Agora você concluirá uma grade recomendando medidas específicas para cada uma das caixas vazias na grade. Você recomenda medidas, sistemas ou atividades gerais de segurança cibernética. Suponha que o distrito escolar não tenha segurança no momento.
+
