@@ -1,0 +1,262 @@
+Laboratório - Coletar informações do sistema após um incidente
+
+Objetivos
+=   Coletar informações do sistema após um incidente.
+
+=   Visualizar logs em busca de possíveis invasões.
+
+Histórico/Cenário
+Quando ocorre um incidente na empresa, as pessoas responsaveis devem saber como responder. Uma empresa precisa desenvolver um plano de resposta a incidente e monta uma CSIRT (Computer Security Incident Response Team, Equipe de resposta a incidente de segurança em computadores) para gerenciar a resposta. Neste laboratório, você coletará informações do sistema e revisará os logs após a ocorrência de um incidente. A realização dessas tarefas imediatamente após o incidente é importante porque todos os dados que residem na RAM desaparecerão quando o sistema for desligado.
+
+Recursos necessários
+PC com o CSE-LABVM instalado no VirtualBox
+
+Instruções
+Etapa 1: Abra uma janela de terminal no CSE-LABVM.
+ a.   Inicie o CSE-LABVM
+
+ b.     Clique duas vezes no ícone Terminal para abrir um terminal.
+
+Etapa 2: Coletar informações voláteis do sistema comprometido.
+Nesta etapa, você criará um arquivo chamado report.txt que inclui uma variedade de informações do sistema que podem ser usadas para análise de incidentes. Esse relatório pode ser transferido para uma unidade USB, enviado por e-mail ou carregado para um servidor em nuvem para preservar as informações. Em seguida, o sistema pode ser desativado.
+
+ a.  Alterne para o usuário root com o comando sudo su. Insira a senha como a senha root.
+
+cisco @ labvm: ~ $ sudo su
+
+[sudo] senha para cisco: senha
+
+root@labvm:/home/cisco#
+
+ b.  Insira o comando echo e especifique um cabeçalho para um arquivo recém-criado chamado report.txt. Insira o comando cat para revisar o novo arquivo.
+
+root@labvm:/home/cisco# echo Relatórios dos investigadores > report.txt
+
+root@labvm:/home/cisco# cat report.txt
+
+Relatórios dos investigadores
+
+root@labvm:/home/cisco#
+
+ c.   Insira o comando date e redirecione a data e o carimbo de hora para o arquivo report.txt. Certifique-se de usar os parênteses angulares (>>) para acrescentar ao arquivo report.txt. Caso contrário, você substituirá o conteúdo anterior.
+
+Observação: para documentar melhor o conteúdo armazenado em report.txt, use o comando echo para adicionar um subtítulo, como mostrado aqui para Data e hora de início. Cada subetapa especificará um subtítulo para você acrescentar antes de coletar informações.
+
+root@labvm:/home/cisco# echo ===== Data e hora de início ===== >> report.txt
+
+root@labvm:/home/cisco# date >> report.txt
+
+ d.  Insira o comando uname para imprimir as informações do sistema. Use a opção -a para acrescentar todas as informações do sistema ao arquivo report.txt.
+
+root@labvm:/home/cisco# echo ===== Informações do sistema ===== >> report.txt
+
+root@labvm:/home/cisco# uname -a >> report.txt
+
+ e.  Insira o comando ifconfig -a e acrescente todas as informações da interface de rede ao arquivo report.txt.
+
+root@labvm:/home/cisco# echo ===== Interfaces de rede ===== >> report.txt
+
+root@labvm:/home/cisco# ifconfig -a >> report.txt
+
+ f.    O comando netstat pode coletar todas as estatísticas de rede. Insira o comando com as opções -ano para coletar dados em todos os soquetes (-a), endereços IP em vez de nomes de domínio (-n) e informações relacionadas aos tempos de rede (-o). Anexar a saída ao arquivo report.txt.
+
+root@labvm:/home/cisco# echo ===== Estatísticas da rede ===== >> report.txt
+
+root@labvm:/home/cisco# netstat -ano >> report.txt
+
+ g.  O comando ps relata um snapshot dos processos atuais em execução no sistema. Insira o comando com as opções -axu para listar todos os processos em execução no sistema (-a e -x) e em um formato orientado para o usuário (-u). Anexar a saída ao arquivo report.txt.
+
+root@labvm:/home/cisco# echo ===== Processos ===== >> report.txt
+
+root@labvm:/home/cisco# ps axu >> report.txt
+
+ h.  O comando route lista a tabela de roteamento usada atualmente pelo sistema. Insira o comando com a opção -n para listar endereços IP em vez de tentar determinar os nomes de host. Anexar a saída ao arquivo report.txt.
+
+root@labvm:/home/cisco# echo ===== Tabela de roteamento ===== >> report.txt
+
+root@labvm:/home/cisco# route -n >> report.txt
+
+ i.  Insira o comando date e acrescente a data e o carimbo de hora no final do arquivo para concluir o relatório.
+
+root@labvm:/home/cisco# echo ===== Data e hora de término ===== >> report.txt
+
+root@labvm:/home/cisco# date >> report.txt
+
+ j.    Use o comando cat e canalize a saída para o comando less para visualizar o report.txt, uma página ou linha de cada vez. Pressione a barra de espaço para rolar a página para baixo ou pressione Enter para rolar uma única linha para baixo. Digite q quando terminar.
+
+root@labvm:/home/cisco# cat report.txt | less
+
+Relatórios dos investigadores
+
+===== Data e hora de início =====
+
+Qua 24 de março de 2021 05:06:53 PM UTC
+
+=====Informações do Sistema=====
+
+Linux labvm 5.4.0-67-genérico #75-Ubuntu SMP sex fev 19 18:03:38 UTC 2021 x86_64 x86_64 x86_64 GNU / Linux
+
+=====Interfaces de rede=====
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+
+        inet6 fe80::a00:27ff:fe82:75df  prefixlen 64  scopeid 0x20<link>
+
+        ether 08:00:27:b5:4b:b0  txqueuelen 1000  (Ethernet)
+
+       Pacotes RX 47719  bytes 36618515 (36,6 MB)
+
+       Erros RX 0  eliminados 0  excedem 0  quadros 0
+
+       Pacotes TX 31406  bytes 3590109 (3,5 MB)
+
+       Erros de TX 0  descartados 0 exceções 0  portadora 0  colisões 0
+
+ 
+
+lo: flags = 73<UP,LOOPBACK,RUNNING>  mtu 65536
+
+       inet 127.0.0.1  netmask 255.0.0.0
+
+       inet6 ::1  prefixo 128  escopo 0x10<host>
+
+       loop  txqueuelen 1000  (Loopback Local)
+
+       Pacotes RX 2292  bytes 244651 (244,6 KB)
+
+       Erros RX 0  eliminados 0  excedem 0  quadros 0
+
+       Pacotes TX 2292  bytes 244651 (244,6 KB)
+
+       Erros de TX 0  descartados 0 exceções 0  portadora 0  colisões 0
+
+ 
+
+=====estatísticas da rede=====
+
+Active Internet connections (servers and established)
+
+<output omitted>
+
+unix  3      [ ]         STREAM     CONNECTED     22100   
+
+unix  3      [ ]         STREAM     CONNECTED     18249   
+
+=====Processos=====
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+root           1  0.0  0.5 101896 10768 ?        Ss   Mar23   0:03 /sbin/init
+
+root           2  0.0  0.0      0     0 ?        S    Mar23   0:00 [kthreadd]
+
+root           3  0.0  0.0      0     0 ?        I<   Mar23   0:00 [rcu_gp]
+
+<output omitted>
+
+root        5319  0.0  0.0      0     0 ?        I    16:31   0:00 [kworker/0:2-events]
+
+root        5490  0.0  0.1  11492  3332 pts/1    R+   17:06   0:00 ps axu
+
+=====Tabela de Roteamento=====
+
+Tabela de roteamento IP do kernel
+
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+
+0.0.0.0         10.0.2.2        0.0.0.0         UG    100    0        0 enp0s3
+
+10.0.2.0        0.0.0.0         255.255.255.0   U     0      0        0 enp0s3
+
+10.0.2.2        0.0.0.0         255.255.255.255 UH    100    0        0 enp0s3
+
+=====Data e hora final=====
+
+Qua 24 de março de 2021 05:06:53 PM UTC
+
+(END) q
+
+root@labvm:/home/cisco#
+
+Etapa 3: Analise diferentes arquivos de log e aprenda a importância deles.
+Além de capturar as informações armazenadas na RAM, o sistema também mantém uma variedade de registros que devem ser revisados após um incidente. Esses arquivos de log também podem ser anexados ao arquivo report.txt ou armazenados separadamente do sistema, caso o sistema precise ser apagado. Os registros de particular interesse incluem, entre outros, o seguinte:
+
+=   auth.log - registra informações de autorização do sistema
+
+=   btmp.log - registra tentativas de login com falha
+
+=   wtmp.log - registra quem está conectado no sistema
+
+ a.  Use o comando cat para visualizar o auth.log e canalizá-lo para o comando less. Pressione a barra de espaço para rolar a página para baixo ou pressione Enter para rolar uma única linha para baixo. Digite q quando terminar. Sua saída será diferente.
+
+root@labvm:/home/cisco# cat /var/log/auth.log | less
+
+Mar 18 21:43:57 labvm sshd[375]: Server listening on 0.0.0.0 port 22.
+
+Mar 18 21:43:57 labvm sshd[375]: Server listening on :: port 22.
+
+Mar 18 21:43:57 labvm systemd-logind[366]: New seat seat0
+
+Mar 18 21:43:57 labvm systemd-logind[366]: Watching system buttons on /dev/input/event0 (Power Button)
+
+Mar 18 21:43:57 labvm systemd-logind[366]: Watching system buttons on /dev/input/event1 (Sleep Button)
+
+Mar 18 21:43:57 labvm systemd-logind[366]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+
+Mar 18 21:43:59 labvm sshd[408]: error: kex_exchange_identification: Connection closed by remote host
+
+Mar 18 21:43:59 labvm sshd[407]: Accepted password for cisco from 10.0.2.2 port 57067 ssh2
+
+Mar 18 21:43:59 labvm sshd[407]: pam_unix(sshd:session): session opened for user cisco by (uid=0)
+
+Mar 18 21:43:59 labvm systemd-logind[366]: New session 1 of user cisco.
+
+<output omitted>
+
+(END) q
+
+root@labvm:/home/cisco#
+
+ b.  O último comando mostra uma lista dos últimos usuários conectados. Insira o comando com a opção -f para especificar o arquivo de log. O arquivo de log de btmp mostra tentativas de login com falha. Sua saída será diferente.
+
+root@labvm:/home/cisco# last -f /var/log/btmp
+
+UNKNOWN  tty6                          Thu Mar 18 21:47    gone - no logout
+
+UNKNOWN  tty4                          Thu Mar 18 21:47    gone - no logout
+
+UNKNOWN  tty3                          Thu Mar 18 21:47    gone - no logout
+
+cisco    tty1                          Thu Mar 18 21:47    gone - no logout
+
+cisco    tty1                          Thu Mar 18 21:47 - 21:47  (00:00)
+
+ 
+
+btmp begins Thu Mar 18 21:47:05 2021
+
+root@labvm:/home/cisco#
+
+ c.   Insira o último comando novamente, especificando o arquivo wtmp para mostrar quem está conectado ao sistema. Sua saída será diferente.
+
+root@labvm:/home/cisco# last -f/var/log/wtmp
+
+cisco    tty7         :0               Tue Mar 23 19:38    gone - no logout
+
+reboot   system boot  5.4.0-67-generic Tue Mar 23 14:38   still running
+
+cisco    tty2                          Thu Mar 18 21:47 - 21:47  (00:00)
+
+reboot   system boot  5.4.0-67-generic Thu Mar 18 21:43 - 22:02  (00:18)
+
+ 
+
+wtmp begins Thu Mar 18 21:43:54 2021
+
+ d.  Insira o comando exit para voltar ao usuário cisco.
+
+root@labvm:/home/cisco# exit
+
+cisco@labvm:~$

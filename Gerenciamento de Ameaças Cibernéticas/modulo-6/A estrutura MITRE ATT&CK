@@ -1,0 +1,11 @@
+A estrutura MITRE ATT&CK
+Uma maneira de atribuir um ataque é modelar o comportamento do ator de ameaça. O MITRE Táticas e técnicas adversas & Estrutura de Conhecimento Comum (ATT&CK) permite detectar táticas, técnicas e procedimentos do atacante (TTP) como parte da defesa contra ameaças e atribuição de ataques. Isso é feito mapeando os passos em um ataque para uma matriz de táticas generalizadas e descrevendo as técnicas que são usadas em cada tática. As táticas consistem nos objetivos técnicos que um atacante deve realizar para executar um ataque e as técnicas são o meio pelo qual as táticas são realizadas. Por último, os procedimentos são as acções específicas tomadas pelos intervenientes ameaçadores nas técnicas identificadas. Os procedimentos são o uso documentado de técnicas no mundo real por atores ameaçadores.
+
+O MITRE ATT&CK Framework é uma base de conhecimento global do comportamento do ator de ameaças. Baseia-se na observação e análise de explorações do mundo real com o objetivo de descrever o comportamento do atacante, não o ataque em si. Ele foi projetado para permitir o compartilhamento automatizado de informações, definindo estruturas de dados para o intercâmbio de informações entre sua comunidade de usuários e MITRE.
+
+A figura mostra uma análise de uma exploração de ransomware a partir da excelente sandbox online ANY.RUN. As colunas mostram as táticas de matriz de ataque corporativo, com as técnicas usadas pelo malware organizadas sob as colunas. Clicar na técnica, em seguida, lista detalhes dos procedimentos que são usados pela instância de malware específica com uma definição, explicação e exemplos da técnica.
+
+Nota: Faça uma pesquisa na Internet no MITRE ATT&CK para saber mais sobre a ferramenta.
+
+Matriz MITRE ATT&CK para uma exploração de ransomware
+

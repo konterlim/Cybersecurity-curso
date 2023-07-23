@@ -1,0 +1,9 @@
+ Integridade e preservação dos dados
+Ao coletar dados, é importante que eles sejam preservados em sua condição original. O carimbo de data/hora (timestamp) dos arquivos deve ser preservado. Por esta razão, a prova original deve ser copiada e a análise deve ser realizada apenas em cópias do original. Isto é para evitar perda acidental ou alteração da evidência. Como os carimbos de data/hora podem fazer parte da evidência, abrir arquivos da mídia original deve ser evitado.
+
+O processo utilizado para criar cópias dos elementos de prova utilizados no inquérito deve ser registado. Sempre que possível, as cópias devem ser cópias diretas em nível de bits dos volumes de armazenamento originais. Deve ser possível comparar a imagem do disco arquivado e a imagem do disco investigada para identificar se o conteúdo do disco investigado foi adulterado. Por esta razão, é importante arquivar e proteger o disco original para mantê-lo em sua condição original, sem adulteração.
+
+Memória volátil pode conter evidências forenses, então ferramentas especiais devem ser usadas para preservar essa evidência antes que o dispositivo seja desligado e as evidências sejam perdidas. Os usuários não devem desconectar, desconectar da tomada ou desligar máquinas infectadas, a menos que explicitamente instruído pelo pessoal de segurança.
+
+Seguir estes processos garantirá que qualquer evidência de delito será preservada, e quaisquer indicadores de comprometimento podem ser identificados.
+

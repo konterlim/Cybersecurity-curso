@@ -1,0 +1,35 @@
+Tipos de evidencias
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Em processos judiciais, as provas são geralmente classificadas como diretas ou indiretas. Provas diretas são provas que estavam indiscutivelmente na posse do acusado, ou são testemunhas oculares de alguém que observou diretamente o comportamento criminoso.
+As provas são ainda classificadas como:
+
+Esta é evidência que está em seu estado original. Essas evidências podem ser dispositivos de armazenamento usados por um acusado, ou arquivos de arquivos que podem ser comprovados como inalterados.
+
+Esta é uma evidência que suporta uma afirmação que é desenvolvida a partir da melhor evidência.
+
+Esta é evidência que, em combinação com outros fatos, estabelece uma hipótese. Isso também é conhecido como evidência circunstancial. Por exemplo, a evidência de que um indivíduo cometeu crimes semelhantes pode apoiar a afirmação de que a pessoa cometeu o crime de que é acusado.
+
+Ordem de Coleta de Evidencias
+IETF RFC 3227 fornece diretrizes para a coleta de evidências digitais. Descreve uma ordem para a recolha de provas digitais com base na volatilidade dos dados. Os dados armazenados na RAM são os mais voláteis, e serão perdidos quando o dispositivo for desligado. Além disso, dados importantes na memória volátil podem ser substituídos por processos de rotina da máquina. Portanto, a coleta de evidências digitais deve começar com a evidência mais volátil e avançar para a menos volátil, como mostrado na figura.
+Prioridade de coleta
+
+Um exemplo da ordem de coleta de evidências mais volátil a menos volátil é o seguinte:
+Registros de memória, caches
+Tabela de roteamento, cache ARP, tabela de processo, estatísticas de kernel, RAM
+Sistemas de arquivos temporários
+Meios não voláteis, fixos e removíveis
+Dados de registro e monitoramento remotos
+Interconexões físicas e topologias
+Mídia de arquivamento, fita ou outros backups
+Detalhes dos sistemas a partir dos quais as provas foram recolhidas, incluindo quem tem acesso a esses sistemas e a que nível de permissões devem ser registadas. Essas informações devem incluir configurações de hardware e software para os sistemas a partir dos quais os dados foram obtid
+
+Cadeia de Custódia
+Embora possam ter sido recolhidas provas de fontes que apoiam a atribuição a um indivíduo acusado, pode-se argumentar que a evidência poderia ter sido alterada ou fabricada após a coleta. Para contrariar este argumento, deve ser definida e seguida uma rigorosa cadeia de custódia.
+
+A cadeia de custódia envolve a coleta, manuseio e armazenamento seguro de evidências. Devem ser conservados registos pormenorizados dos seguintes elementos:
+
+Quem descobriu e recolheu as provas?
+Todos os detalhes sobre o tratamento de evidências, incluindo horas, locais e pessoal envolvido.
+Quem tem a principal responsabilidade pelas provas, quando a responsabilidade foi atribuída e quando a custódia mudou?
+Quem tem acesso físico à evidência enquanto foi armazenada? O acesso deve ser limitado apenas ao pessoal mais essencial.
+
