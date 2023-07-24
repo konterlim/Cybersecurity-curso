@@ -1,0 +1,26 @@
+Identificar vulnerabilidades
+
+A identificação de ameaças fornece a uma organização uma lista de prováveis ​​ameaças para um ambiente específico. Ao identificar ameaças, é importante fazer várias perguntas:
+
+Quais são as possíveis vulnerabilidades de um sistema?
+Quem pode querer explorar essas vulnerabilidades para acessar ativos de informações específicas?
+Quais são as consequências se as vulnerabilidades do sistema foram exploradas e os ativos foram perdidos?
+
+ Identifique como Ameaças
+As organizações devem usar uma abordagem de defesa profunda para identificar ameaças e proteger ativos independentes. Essa abordagem usa várias camadas de segurança na borda da rede, na rede e nos pontos de extremidade da rede.
+
+A figura exibe uma topologia simples de uma abordagem de defesa em profundidade:
+
+Roteador de borda - A primeira linha de defesa é conhecida como um roteador de borda (R1 na figura). O roteador de borda tem um conjunto de regras especificando qual tráfego ele permite ou nega. Ele passa todas as conexões que se destinam à LAN interna para o firewall.
+Firewall - A segunda linha de defesa é o firewall. O firewall é um dispositivo de ponto de verificação que executa filtragem adicional e rastreia o estado das conexões. Ele nega o início de conexões de redes externas (não ansiosas) para a rede interna (confiável), enquanto permite que usuários internos estabeleçam conexões bidirecionais com as redes não internadas. Ele também pode executar autenticação de usuário (proxy de autenticação) para conceder aos usuários remotos externos acesso a recursos de rede interna.
+Roteador interno - Outra linha de defesa é o roteador interno (R2 na figura). Ele pode aplicar regras de filtragem final no tráfego antes de ser encaminhado para seu destino.
+
+A figura exibe uma topologia simples de uma abordagem de defesa em profundidade:
+
+Roteador de borda - A primeira linha de defesa é conhecida como um roteador de borda (R1 na figura). O roteador de borda tem um conjunto de regras especificando qual tráfego ele permite ou nega. Ele passa todas as conexões que se destinam à LAN interna para o firewall.
+Firewall - A segunda linha de defesa é o firewall. O firewall é um dispositivo de ponto de verificação que executa filtragem adicional e rastreia o estado das conexões. Ele nega o início de conexões de redes externas (não ansiosas) para a rede interna (confiável), enquanto permite que usuários internos estabeleçam conexões bidirecionais com as redes não internadas. Ele também pode executar autenticação de usuário (proxy de autenticação) para conceder aos usuários remotos externos acesso a recursos de rede interna.
+Roteador interno - Outra linha de defesa é o roteador interno (R2 na figura). Ele pode aplicar regras de filtragem final no tráfego antes de ser encaminhado para seu destino.
+Os roteadores e firewalls não são os únicos dispositivos que são usados ​​em uma abordagem de defesa profunda. Outros dispositivos de segurança incluem IPS (Intrusion Prevention Systems), Proteção Avançada contra Malware (AMP), sistemas de segurança de conteúdo da Web e de e-mail, serviços de identidade, controles de acesso à rede e muito mais.
+
+Na abordagem de segurança em declarações de defesa profunda, as negociações internacionais juntas para criar uma arquitetura de segurança diferente na qual a falha de uma salvaguarda não afeta a eficácia das outras salvaguardas.
+

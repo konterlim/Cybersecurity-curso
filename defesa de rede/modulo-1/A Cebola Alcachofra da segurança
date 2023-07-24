@@ -1,0 +1,44 @@
+ A Cebola Alcachofra da segurança
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Existem duas analogias comuns que são usadas para descrever uma abordagem de defesa em profundidade.
+
+Uma analogia comum usada para descrever uma abordagem de defesa em profundidade é chamada de “cebola de segurança”. Como ilustrado na figura, um ator de ameaça que descascaria as defesas de uma rede camada por camada de uma maneira semelhante a descascar uma cebola. Só depois de penetrar cada camada, o ator da ameaça alcançaria os dados ou o sistema de destino.
+
+Observação : A Security Onion descrita nesta página é uma forma de visualizar a defesa em profundidade. Isso não deve ser confundido com o conjunto Security Onion de ferramentas de segurança de rede.
+
+O cenário em mudança da rede, como a evolução das redes sem fronteiras, mudou essa analogia para a “alcachofra de segurança”, que beneficia o ator de ameaça.
+
+Conforme ilustrado na figura, os atores da ameaça não precisam mais descascar cada camada. Eles só precisam remover certas “folhas de alcachofra”. O bônus é que cada “folha” da rede pode revelar dados que não estão bem protegidos.
+
+Por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo móvel do que comprometer um computador ou servidor interno protegido por patentes de defesa. Cada dispositivo móvel é uma folha. E folha após folha, tudo leva o hacker a mais dados. O coração da alcachofra é onde os dados mais duradouros são encontrados. Cada folha fornece uma camada de proteção enquanto fornece simultaneamente um caminho para o ataque.
+
+Nem todas as folhas precisam ser removidas para chegar ao coração da alcachofra. O hacker arranca a armadura de segurança ao longo do perímetro para chegar ao “coração” da empresa.
+
+Enquanto os sistemas voltados para a Internet são geralmente muito bem protegidos e as proteções de limites são normalmente sólidas, hackers persistentes, auxiliados por uma mistura de habilidade e sorte, eventualmente encontram uma lacuna nesse exterior hard-core através do qual eles podem entrar e ir onde desejam.
+
+Estratégias de Defesa em Produndidade
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Se uma empresa tem apenas uma medida de segurança para proteger dados e informações, os criminosos digitais precisam passar por uma única defesa para roubar informações ou causar outros danos. Para garantir que as informações e os dados estejam disponíveis, uma empresa precisa criar diferentes camadas de proteção.
+
+Para garantir que as informações e os dados estejam disponíveis, uma empresa precisa criar diferentes camadas de proteção. Um bom exemplo de níveis é uma empresa que armazena seus documentos ultra-secretos em um servidor protegido por senha em um prédio trancado e cercado por uma cerca elétrica.
+
+Uma abordagem em camadas oferece a proteção mais abrangente porque, mesmo que os criminosos cibernéticos penetrem em uma camada, eles ainda precisam enfrentar várias outras defesas. Idealmente, cada camada deve ser mais complicada de superar!
+
+A defesa em profundidade não fornecerá um escudo cibernético impenetrável, mas ajudará a empresa a minimizar os riscos, mantendo-se um passo à frente dos criminosos virtuais.
+
+Limitar o acesso aos dados e às informações reduz a possibilidade de uma ameaça. Uma empresa deve restringir o acesso para que os usuários tenham apenas o nível de acesso necessário para fazer o seu trabalho.
+
+Uma empresa deve ter as ferramentas e as configurações certas, como permissões de arquivo, para limitar o acesso, bem como as medidas processuais certas, que definem etapas específicas para fazer qualquer coisa que possa afetar a segurança. Por exemplo, um procedimento de limitação que exige que os funcionários sempre consultem os documentos em uma sala com CCTV garante que eles nunca removam esses documentos das instalações.
+
+Se todas as barreiras protegidas fossem as mesmas, não seria muito difícil, para os criminosos virtuais, realizar um ataque bem-sucedido. As camadas devem ser diferentes para que, se uma camada for penetrada, a mesma técnica não funcionará em todas as outras, o que comprometeria todo o sistema. Uma empresa pode usar diferentes algoritmos de criptografia ou sistemas de autenticação para proteger os dados em diferentes estados.
+
+Para atingir o objetivo de diversidade nas defesas, as empresas podem usar produtos de segurança de diferentes empresas como diferentes fatores de autenticação, como um cartão de furto de uma empresa e um leitor de impressão digital fabricado por uma empresa diferente, bem como medidas de segurança concedidas, como bloqueio de tempo nos armários e supervisão por um membro da equipe de segurança ao desbloqueá-lo.
+
+A ofuscação de informações também pode proteger dados e informações. Uma empresa não deve revelar informações que os criminosos virtuais podem usar para descobrir a versão do sistema operacional em execução em um servidor ou o tipo de equipamento que ele usa.
+
+Por exemplo, as mensagens de erro não devem conter nenhum detalhe que os criminosos virtuais possam usar para determinar as vulnerabilidades que estão presentes. Oculte certos tipos de informação que dificultam ataques de criminosos virtuais em um sistema.
+
+A complexidade não garante, necessariamente, a segurança. Se uma empresa implementa sistemas complexos que são difíceis de entender e de solucionar problemas, o “tiro pode sair pela culatra”. Se os funcionários não entenderem como configurar uma solução complexa corretamente, pode ser tão fácil quando em uma solução mais simples para os criminosos virtuais cometerem esses sistemas.
+
+Para manter a disponibilidade, uma solução de segurança deve ser simples, do ponto de vista de dentro da empresa, mas complexa do ponto de vista externo.
+

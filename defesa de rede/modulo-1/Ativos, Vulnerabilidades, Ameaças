@@ -1,0 +1,16 @@
+Ativos, Vulnerabilidades, Ameaças
+
+Analistas de segurança cibernética devem se preparar para qualquer tipo de ataque. É seu trabalho proteger os ativos da rede da organização. Para fazer isso, os analistas de segurança cibernética devem primeiro identificar:
+
+Ativos - qualquer coisa de valor para uma organização que deve ser protegida, incluindo servidores, dispositivos de infraestrutura, dispositivos finais e os principais ativos, dados.
+Vulnerabilidades - Uma fraqueza em um sistema ou em seu design que pode ser explorada por um agente de ameaça.
+Ameaças - Qualquer perigo potencial para um ativo.
+
+ Identificar Ativos
+À medida que uma organização cresce, seus ativos também determinaram. Considere o número de ativos que uma grande organização teria de proteger. Pode igualmente adquirir outros ativos através de fusões com outras empresas. O resultado é que muitas organizações só têm uma ideia geral dos ativos que precisam ser protegidos.
+
+A coleta de todos os dispositivos e informações de propriedade ou gerenciadas pela organização são ativos. Os ativos constituem a superfície de ataque que os atores da ameaça podem atingir. Estes ativos devem ser inventariados e avaliados quanto ao nível de proteção necessário para impedir ataques potenciais.
+
+O gerenciamento de ativos consiste em inventários de todos os ativos e, em seguida, desenvolve e implementa políticas e procedimentos para protegê-los. Essa tarefa pode ser assustadora, considerando que muitas organizações precisam proteger usuários e recursos internos, trabalhadores móveis e serviços virtuais e baseados em nuvem.
+
+Além disso, as organizações precisam identificar onde os ativos de informações essenciais estão armazenados e como o acesso é obter a essas informações. Os ativos de informação mudam, assim como as ameaças contra eles. Por exemplo, uma empresa de varejo pode armazenar informações de cartão de crédito do cliente. Uma empresa de engenharia armazenará projetos e softwares sensíveis à concorrência. Um banco armazenará dados de clientes, informações de conta e outras informações financeiras. Cada um desses ativos pode atrair diferentes atores de ameaças que têm diferentes níveis de habilidade e motivações.
