@@ -1,0 +1,30 @@
+Visão geral do modelo Diamante (Diamond)
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+O Modelo Diamond de Análise de Intrusão é composto por quatro partes, como mostrado na figura. O modelo representa um incidente ou evento de segurança. No Modelo Diamond, um evento é uma atividade limitada ao tempo que é restrita a uma etapa específica em que um adversário usa uma capacidade sobre a infraestrutura para atacar uma vítima para alcançar um resultado específico.
+
+Os quatro principais recursos de um evento de intrusão são adversário, capacidade, infraestrutura e vítima:
+
+Estas partes são responsáveis ​​pela intrusão
+
+Esta é uma ferramenta ou técnica que o adversário usa para atacar uma vítima.
+
+Este é o caminho ou caminhos de rede que os adversários usam para estabelecer e manter o comando e o controle sobre suas capacidades.
+
+Este é o alvo do ataque No entanto, uma vítima pode ser o alvo inicialmente e, em seguida, usada como parte da infra-estrutura para lançar outros ataques.
+
+O adversário usa recursos sobre infraestrutura para atacar a vítima. O modelo pode ser interpretado como dizendo: “O adversário usa a infraestrutura para se conectar à vítima. O adversário desenvolve a capacidade de explorar uma vítima.” Por exemplo, um recurso como malware pode ser usado na infraestrutura de e-mail por um adversário para explorar uma vítima.
+
+Os meta-recursos expandem o modelo resistente para incluir os seguintes elementos importantes:
+
+Isso indica a hora de início e parada de um evento e é parte integrante do agrupamento de atividades mal-intencionadas.
+
+Isso é análogo às etapas da cadeia Cyber ​​Kill; atividade maliciosa inclui duas ou mais etapas executadas sucessivamente para alcançar o resultado desejado.
+
+Isso delineia o que o adversário ganhou com o evento. Os resultados podem ser documentados como um ou mais dos seguintes: confidencialidade comprometida, integridade comprometida e disponibilidade comprometida.
+
+Indica a direção do evento em todo o Modelo Diamond. Elas incluem infraestrutura adversária, infraestrutura para vítima, vítima para infraestrutura e infraestrutura para adversário.
+
+Ela é usada para classificar o tipo geral de evento, como varredura de portas, phishing, ataque de entrega de conteúdo, syn flood, etc.
+
+Estes são um ou mais recursos externos usados ​​pelo adversário para o evento de intrusão, como software, conhecimento do adversário, informações (por exemplo, nome do usuário/senhas) e ativos para realizar o ataque (hardware, fundos, instalações, acesso à rede).
+

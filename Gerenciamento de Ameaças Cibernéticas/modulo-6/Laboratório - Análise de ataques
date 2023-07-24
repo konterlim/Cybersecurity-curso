@@ -1,0 +1,88 @@
+Laboratório - Análise de ataques
+
+Objetivos
+Parte 1: Investigador IOCs
+
+Parte 2: Investigar a atividade mal-intencionada
+
+Parte 3: Investigue a atividade mais mal-intencionada
+
+Introdução
+Assim que um alerta para relatado e validado, a análise forense digital e a resposta a incidentes devem ser concluídos. Em uma grande empresa, os membros da equipe de resposta a incidentes (ou seja, CSIRT) são responsáveis ​​por esse processo. A equipe de resposta normalmente é composta por caçadores de emoções experientes e analistas e técnicos de segurança digital selecionados. Para ajudar a equipe de resposta a incidentes, várias ferramentas e recursos estão disponíveis.
+
+Neste laboratório, você usará o serviço interativo de busca de malware on-line ANY.RUN e a matriz Mitre ATT&CK para investigar possíveis atividades mal-intencionadas.
+
+O ANY.RUN oferece um serviço gratuito no qual os usuários da comunidade podem carregar arquivos suspeitos de malware para análise. Ele oferece um conjunto muito avançado de recursos de análise que permitem investigar com segurança o comportamento do malware. O sandbox ANY.RUN pode executar dinamicamente o malware e exibir detalhes do que o malware faz em uma interface de análise segura.
+
+Observação: você usará a versão gratuita do ANY.RUN, que tem recursos limitados e só pode executar o Sample de malware em uma máquina virtual do Windows 7 de 32 bits. Duas versões mais avançadas estão disponíveis em uma assinatura mensal. As versões Searcher e Hunter oferecem acesso a recursos avançados e outros sistemas operacionais (por exemplo, Windows 10).
+
+Cenário
+Você está trabalhando como um técnico cibernético e foi selecionado para trabalhar com a equipe de resposta a incidentes da XYZ, Inc. Um analista de segurança cibernética solicitou que você avaliasse os valores de hash dos alertas de segurança que foram gerados pelo Sistema de prevenção contra invasão (IPS). O IPS sinalizou uma série de eventos como potencialmente mal-intencionados.
+
+Você usará a ferramenta on-line ANY.RUN e a matriz Mitre ATT&CK para realizar análises forenses com base nos valores de hash fornecidos.
+
+Recursos necessários
+=   Um dispositivo com acesso à Internet.
+
+Instruções
+Parte 1: Investigação de IOCs
+Nesta parte, você usará o site ANY.RUN para categorizar os valores de hash identificados e verificar se eles são mal-intencionados, suspeitos ou benignos.
+
+Etapa 1: explorar o site ANY.RUN
+a.      Abra um navegador da Web e acesse a página ANY.RUN .
+
+b.      Na parte superior da página, há links disponíveis que iniciam com "POR QUE USAR". Clique em SERVIÇO no menu horizontal para ir para a interface de serviço do sandbox.
+
+c.      Clique em um dos países no mapa para mostrar a lista de envios públicos desse país. Os usuários da comunidade podem visualizar uma análise detalhada para cada envio.
+
+d.      Explore e familiarize-se com este painel. A ferramenta ANY.RUN tem muitas opções disponíveis que serão de grande valor para um analista de segurança digital. Aproveite esta oportunidade para saber mais sobre a ferramenta.
+
+Etapa 2: Validar hashes suspeitos
+Nesta etapa, você investigará alguns hash de arquivos MD5 que o analista de segurança digital identificou na tabela abaixo. Você verificará se eles são potencialmente mal-intencionados, suspeitos ou benignos.
+
+a.      Para pesquisar valores de hash, clique em Tarefas públicas no menu à esquerda.
+
+Isso abre a página Envios públicos , que exibe uma lista de tarefas públicas organizadas pelo envio mais recente. Observe que cada tarefa é rotulada com o veredicto de análise que identifica o envio como nenhuma ameaça suspeita (ou seja, benigna), atividade suspeita ou atividade mal-intencionada.
+
+Parte 2: Investigar a atividade mal-intencionada
+Nesta parte, você usará o site ANY.RUN para investigar uma atividade mal-intencionada identificada na parte anterior. Na ferramenta ANY.RUN, você vai trocar para diferentes ferramentas para examinar a atividade mal-intencionada. Por fim, você usará a matriz Mitre ATT&K para identificar as táticas e as técnicas usadas pelos agentes de ameaças.
+
+Etapa 1: Investigar a primeira árvore de processo de hash mal-intencionado.
+a.      Na página de envios públicos ANY.RUN, procure o primeiro valor de hash mal-intencionado identificado na Parte 1, Etapa 2b.
+
+b.      Clique na entrada resultante para abrir o sandbox ANY.RUN. A interface de análise ANY.RUN fornece informações sobre muitos aspectos do comportamento do malware.
+
+Observação: se mais de um envio para exibição, clique no envio com o nome do arquivo wireframe.exe .
+
+c.      No lado direito da tela, você verá a árvore de processo que exibe um grupo de barras horizontais em uma estrutura aninhada em forma de árvore. Ele mostra todos os processos de software que foram usados ​​na exploração. Alguns deles são componentes de software do Windows e outros fazem parte do malware.
+
+Etapa 2: investigar o relatório de texto de atividade mal-intencionada.
+Acima da árvore de processo, há três caixas de texto rotuladas como “Relatório de texto”, “Gráfico de processos” e matriz ATT&CK.
+
+a.      Clique no relatório de texto para abrir um relatório em uma nova janela do navegador da Web.
+
+b.      Papel o documento para ver o relatório gerado.
+
+
+Etapa 3: Investigar o gráfico de processos de atividades mal-intencionadas.
+a.      Volte à página da Web de análise e clique no gráfico de Processos.
+
+Etapa 4: Investigar uma atividade mal-intencionada na matriz ATT&CK
+a.      Volte à página de análise e clique na matriz ATT&CK para abrir a página Matriz Mitre ATT&CK.
+
+Parte 3: Investigue a atividade mais mal-intencionada
+Nesta parte, você repetirá as etapas na Parte 2 para examinar as outras duas entradas mal-intencionadas descobertas na Parte 1.
+
+Etapa 1: Investigar a segunda árvore de processo de hash mal-intencionado.
+a.      Retorne à página de envios públicos ANY.RUN e pesquise pelo segundo valor de hash mal-intencionado identificado na Parte 1, Etapa 2b.
+
+b.      Clique na entrada resultante para abrir o sandbox ANY.RUN.
+
+Etapa 2: Investigar a terceira árvore de processo de hash mal-intencionado
+a.      Retorne à página de envios públicos ANY.RUN e investigue pelo terceiro valor de hash mal-intencionado descoberto na Parte 1, Etapa 2b.
+
+b.      Clique na entrada resultante para abrir o sandbox ANY.RUN.
+
+
+
+

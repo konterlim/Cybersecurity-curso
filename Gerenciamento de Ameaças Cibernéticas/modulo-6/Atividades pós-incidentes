@@ -1,0 +1,46 @@
+Atividades pós-incidentes
+
+Depois que as atividades de resposta a incidentes erradicaram as ameaças e a organização começou a se recuperar dos efeitos do ataque, é importante dar um passo atrás e periodicamente se reunir com todas as partes envolvidas para discutir os eventos que ocorreram e as ações de todos os indivíduos, enquanto lidando com o incidente. Isso fornecerá uma plataforma para aprender o que foi feito corretamente, o que foi feito errado, o que poderia ser alterado e que deve ser melhorado.
+
+Endurecimento baseado em lições
+
+Após um incidente importante ter sido tratado, uma organização deve realizar uma reunião de “lições aprendidas” para analisar a eficácia do processo de manipulação de incidentes e identificar o reforço necessário para controles e práticas de segurança existentes. Exemplos de boas perguntas a serem respondidas durante uma reunião incluem o seguinte:
+
+Exatamente o que aconteceu, e quando?
+Quão bem a equipe e a gerência se comportaram ao lidar com o incidente?
+Os procedimentos documentados foram seguidos? Eram adequados?
+Quais informações foram necessárias antes?
+Foram tomadas quaisquer medidas ou medidas que possam ter inibido a recuperação?
+O que a equipe ea gerência fariam de forma diferente na próxima vez que ocorrer um incidente semelhante?
+Como o compartilhamento de informações com outras organizações pode ser aprimorado?
+Que medidas corretivas podem evitar incidentes semelhantes no futuro?
+Quais precursores ou indicadores devem ser observados no futuro para detectar incidentes semelhantes?
+Quais ferramentas ou recursos adicionais são necessários para detectar, analisar e mitigar incidentes futuros?
+
+Coleta e retenção de dados de incidentes
+Ao realizar reuniões de “lições aprendidas”, os dados coletados podem ser usados ​​para determinar o custo de um incidente por razões de orçamento, bem como para determinar a eficácia do CSIRT e identificar possíveis deficiências de segurança em todo o sistema. Os dados coletados precisam ser acionáveis. Colete apenas dados que podem ser usados ​​para definir e refinar o processo de manipulação de incidentes.
+
+Um maior número de incidentes tratados pode mostrar que algo na metodologia de resposta à incidência não está funcionando corretamente e precisa ser exigente. Também poderia mostrar incompetência no CSIRT. Um número menor de incidentes pode mostrar que a segurança da rede e do host foi melhorada. Também pode mostrar uma falta de detecção de incidentes. Contagens de incidentes separados para cada tipo de incidente podem ser mais eficazes para mostrar pontos fortes e transitórios do CSIRT e medidas de segurança comprometidas. Essas subcategorias podem ajudar a direcionar onde reside uma fraqueza, em vez de haver alguma fraqueza.
+
+O tempo de cada incidente fornece informações sobre a quantidade total de mão-de-obra usada e o tempo total de cada fase do processo de resposta a incidentes. O tempo até a primeira resposta também é importante, bem como quanto tempo levou para relatar o incidente e encaminhá-lo para além da organização, se necessário.
+
+É importante realizar uma avaliação objetiva de cada Incidente. A resposta a um incidente que foi resolvido pode ser determinante para determinar a sua eficácia. A Publicação Especial 800-61 do NIST fornece os seguintes exemplos de ativações realizadas durante uma avaliação objetiva de um incidente:
+
+Analisando logs, formulários, relatórios e outras documentações de incidentes para a adesão a políticas e procedimentos de resposta a incidentes.
+Identificando quais precursores e indicadores do incidente foram registrados para determinar com que eficácia o incidente foi registrado e identificado.
+Determinando se o incidente causou danos antes de ser detectado.
+Determinar se a causa real do incidente foi identificado e identificar o vetor de ataque, as vulnerabilidades exploradas e as características dos sistemas, redes e aplicativos alvo ou vitimizados.
+Determinando se o incidente é uma recorrência de um incidente anterior.
+Cálculo do dano estimado estimado do incidente (por exemplo, informações e processos comerciais funcionários empregados pelo incidente).
+Medir a diferença entre uma avaliação de impacto inicial e uma avaliação de impacto final.
+Identificar quais medidas, se houver, poderiam ter evitado o incidente.
+A avaliação subjetiva de cada incidente exige que os membros da equipe de resposta a incidentes avaliem seu próprio desempenho, bem como o de outros membros da equipe e de toda a equipe. Outra fonte valiosa de entrada é o proprietário de um recurso que foi atacado, a fim de determinar se o proprietário acha que o incidente foi tratado de forma eficiente e se o resultado foi alcançado.
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Deve haver uma política em vigor em cada organização que descreva quanto tempo a evidência de um incidente é mantida. Muitas vezes, as provas são retidas durante muitos meses ou muitos anos após um incidente ocorrido. Em alguns casos, os regulamentos de conformidade podem exigir o período de retenção. Estes são alguns dos fatores determinantes para a retenção de provas:
+
+Quando um atacante for processado por causa de um incidente de segurança, as provas devem ser mantidas até que todas as ações legais tenham sido concluídas. Isso pode ser vários meses ou muitos anos. Em ações judiciais, nenhuma prova deve ser ignorada ou considerada insignificante. A política de uma organização pode declarar que qualquer evidência que envolva um incidente que tenha sido envolvido em ações legais nunca deve ser excluída ou destruída.
+
+Uma organização pode especificar que tipos específicos de dados devem ser atendidos por um período de tempo específico. Itens como e-mail ou texto podem precisar ser atendidos apenas por 90 dias. Dados mais importantes, como os usados ​​em uma resposta a incidentes (que não tiveram ação legal), podem precisar ser atendidos por três anos ou mais.
+
+Se houver muita mídia de hardware e armazenamento que precisa ser armazenada por um longo período de tempo, ela pode se tornar dispendiosa. Lembre-se também de que, à medida que a tecnologia muda, os dispositivos funcionais que podem usar hardware desatualizado e mídia de armazenamento também devem ser mantidos.
+

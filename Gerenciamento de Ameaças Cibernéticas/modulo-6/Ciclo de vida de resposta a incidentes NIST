@@ -1,0 +1,16 @@
+Ciclo de vida de resposta a incidentes NIST
+
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+O NIST define quatro etapas no ciclo de vida do processo de resposta a incidentes, conforme mostrado na figura.
+
+
+Os membros do CSIRT são treinados para responder a um incidente. Os membros do CSIRT devem desenvolver continuamente o conhecimento das ameaças emergentes.
+
+Através do monitoramento contínuo, o CSIRT identifica, analisa e valida rapidamente um incidente.
+
+O CSIRT implementa procedimentos para conter a ameaça, erradicar o impacto nos ativos corporativos e usar backups para restaurar dados e software. Esta fase pode voltar à detecção e análise para reunir mais informações, ou para expandir o escopo da investigação.
+
+O CSIRT então documenta como o incidente foi tratado, recomenda alterações para resposta futura e especifica como evitar uma repetição.
+
+O ciclo de vida de resposta a incidentes destina-se a ser um processo de aprendizagem auto-reforçado, pelo qual cada incidente informa o processo para lidar com incidentes futuros. Cada uma dessas fases é tolerada com mais detalhes neste tópico.
+

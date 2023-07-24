@@ -1,0 +1,33 @@
+Contenção, erradicação e recuperação
+
+Depois que um incidente de segurança foi detectado e uma análise suficiente foi realizada para determinar se o incidente é válido, ele deve ser contido para determinar o que fazer sobre ele. Estratégias e procedimentos para contenção de incidentes precisam estar em vigor antes que um incidente tenha motivado e implementado antes que haja danos generalizados.
+
+Para cada tipo de incidente, uma estratégia de contenção deve ser criada e aplicada. Estas são algumas condições para determinar o tipo de estratégia a ser criada para cada tipo de incidente:
+
+Quanto tempo levar para implementar e concluir uma solução?
+Quanto tempo e quantos recursos serão necessários para implementar uma estratégia?
+Qual é o processo para preservar os documentos?
+Um invasor pode ser redirecionado para uma área restrita para que o CSIRT possa documentar com segurança a metodologia do invasor?
+Qual será o impacto na disponibilidade de serviços?
+Qual é a extensão dos danos aos recursos ou ativos?
+Quão eficaz é a estratégia?
+Durante a contenção, podem ocorrer danos adicionais. Por exemplo, nem sempre é aconselhável desconectar o host comprometido da rede. O processo malicioso pode notar essa desconexão para o controlador CNC e acionar um pagamento de dados ou criptografia no destino. É aqui que a experiência e a experiência podem ajudar a conter um incidente além do escopo da estratégia de contenção.
+
+Durante um incidente, as provas devem ser recolhidas para resolvê-lo. Os elementos de prova também são importantes para uma investigação posterior por parte das autoridades. Documentação clara e concisa sobre a preservação de evidências é fundamental. Para que as provas sejam admissíveis em tribunal, a recolha de provas deve estar em conformidade com regulamentos específicos. Após a coleta de provas, ela deve ser devidamente contabilizada. Isso é conhecido como cadeia de custódia. Estes são alguns dos itens mais importantes para registrar ao documentar comprovativo usado na cadeia de custódia:
+
+Localização da recuperação e armazenamento de todos os elementos de prova
+Quaisquer critérios de identificação para todas as evidências, como número de série, endereço MAC, nome de host ou endereço IP
+Informações de identificação para todas as pessoas que participaram da coleta ou manuseio dos documentos
+Hora e dados em que a evidência foi coletada e em cada instância foi tratada
+É vital educar qualquer pessoa envolvida no tratamento de evidências sobre como preservar as evidências de transferência.
+
+A identificação de invasores é secundária à contenção, erradicação e recuperação de hosts e serviços. No entanto, a identificação de invasores minimizará o impacto em ativos e serviços comerciais críticos. Estas são algumas das ações mais importantes a serem executadas para tentar identificar um atacante anfitrião durante um incidente de segurança:
+
+Use bancos de dados de incidentes para pesquisar atividades relacionadas. Esse banco de dados pode ser interno ou localizado em organizações que coletam dados de outras organizações e os consolidam em bancos de dados incidentes, como o banco de dados da comunidade VERIS.
+Valide o endereço IP do invasor para determinar se ele é viável. O host pode ou não responder a um pedido de conectividade. Isso pode ser porque ele foi configurado para ignorar as solicitações ou o endereço já foi reatribuído a outro host.
+Use um mecanismo de busca na internet para obter informações adicionais sobre o ataque. Pode ter ocorrido em outra organização ou indivíduo que tenha liberado informações sobre um ataque a partir do endereço IP de origem identificado.
+Monitore os canais de comunicação que alguns atacantes usam, como o IRC. Como os usuários podem ser disfarçados ou anonimizados em canais de IRC, eles podem falar sobre suas fachadas nesses canais. Freqüentemente, as informações coletadas desse tipo de monitoramento são enganosas e devem ser tratadas como pistas e não como fatos.
+
+Após a contenção, o primeiro passo para a erradicação é identificar todos os hospedeiros que precisam de correção. Todos os efeitos do incidente de segurança devem ser removidos. Isso inclui o fluxo de malware e contas de usuário que foram comprometidos. Todas as vulnerabilidades que foram exploradas pelo invasor também devem ser corrigidas ou corrigidas para que o incidente não tenha gerado novamente.
+
+Para recuperar hosts, use backups limpos e recentes ou reconstrua-os com mídia de instalação se não houver backups disponíveis ou se eles tiverem sido comprometidos. Além disso, atualize e corrija totalmente os sistemas operacionais e o software instalado de todos os hosts. Altere todas as senhas de host e senhas para sistemas críticos de acordo com a política de segurança de senhas. Esse pode ser um bom momento para validar e atualizar a segurança da rede, as estratégias de backup e as políticas de segurança. Os atacantes seguem atacando os sistemas novamente, ou usam um ataque semelhante para direcionar recursos adicionais, então não se esqueça de evitar isso da melhor forma possível. Concentre-se no que pode ser corrigido rapidamente enquanto prioriza sistemas e operações críticas.

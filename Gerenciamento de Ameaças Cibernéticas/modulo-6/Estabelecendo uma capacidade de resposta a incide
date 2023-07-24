@@ -1,0 +1,41 @@
+ Estabelecendo uma capacidade de resposta a incidentes
+A resposta a incidentes envolvendo os métodos, políticas e procedimentos usados ​​por uma organização para responder a um ataque cibernético. Os objetivos da resposta a incidentes são limitar o impacto do ataque, avaliar os danos causados ​​e implementar procedimentos de recuperação. Devido à perda potencial de propriedade e receita em grande escala que pode ser causada por ataques cibernéticos, é essencial que as organizações criem e mantenham planos detalhados de resposta a incidentes e designem pessoal responsável pela execução de todos os aspectos desse plano.
+
+As recomendações do NIST (Instituto Nacional de Padrões e Tecnologia, Instituto Nacional de Padrões e Tecnologia) dos EUA para responder a incidentes estão inscritos em sua Publicação Especial 800-61, revisão 2, intitulada “Computer Security Incident Handling Guide”, que mostra a figura.
+
+Observação : Embora este capítulo resuma grande parte do conteúdo do padrão NIST 800-61r2, você deve estar familiarizado com toda a publicação, pois ela aborda quatro conteúdos principais de exame para o exame Cisco Cybersecurity Operations Fundamentals da Cisco.
+
+O padrão NIST 800-61r2 fornece diretrizes para o tratamento de incidentes, especialmente para analisar dados relacionados a incidentes e determinar a resposta apropriada a cada incidente. As diretrizes podem ser seguidas independentemente de plataformas de hardware, sistemas operacionais, protocolos ou aplicativos específicos.
+
+O primeiro passo para uma organização é estabelecer uma capacidade de resposta a incidentes de segurança de computador (CSIRC). O NIST recomenda a criação de políticas, planos e procedimentos para estabelecer e manter um CSIRC.
+
+Uma política de resposta a incidentes detalhados como os incidentes deve ser tratada com base na missão, tamanho e função da organização. A política deve ser revista regularmente, de modo a ajustar-la de modo a atingir os objetivos do roteiro que foi elaborado. Os elementos de política incluem o seguinte:
+
+Declaração de compromisso de gestão
+Objetivos e objetivos da política
+Âmbito de aplicação da política
+Definição de incidentes de segurança informática e termos conexos
+Estrutura organizacional e definição de funções, responsabilidades e níveis de autoridade
+Priorização de classificações de gravidade de incidentes
+Medidas de desempenho
+Formulários de comunicação e contato
+
+Um bom plano de resposta a incidentes ajuda a minimizar os danos causados ​​por um incidente. Ele também ajuda a melhorar o programa geral de resposta a incidentes, ajustando-o de acordo com as lições aprendidas. Ele garantirá que cada parte entregue na resposta ao incidente tenha uma compreensão clara não só do que estará fazendo, mas também do que outros farão. Os elementos do plano são os seguintes:
+
+missão
+Estratégias e objetivos
+Aprovação da alta administração
+Abordagem organizacional para a resposta
+Como a equipe de resposta a incidentes se comunicará com o resto da organização e com outras organizações
+Métricas para medir a capacidade de resposta a incidentes
+Como o programa se encaixa na organização geral
+
+
+Os procedimentos que são seguidos durante uma resposta a incidentes devem seguir o plano de resposta a incidentes. Os elementos de procedimentos são os seguintes:
+
+Processos técnicos
+Uso de técnicas
+Preenchimento de formulários,
+Seguindo listas de verificação
+Estes são procedimentos operacionais padrão (SOPs) típicos. Esses POPs devem ser detalhados para que a missão e os objetivos da organização estejam em mente quando esses procedimentos forem seguidos. Os SOPs minimizam os erros que podem ser causados ​​por funcionários que estão sob estresse durante a participação no tratamento de incidentes. É importante compartilhar e praticar esses procedimentos, certificando-se de que eles são úteis, precisos e apropriados.
+

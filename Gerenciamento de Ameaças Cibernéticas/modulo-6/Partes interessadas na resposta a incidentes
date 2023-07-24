@@ -1,0 +1,43 @@
+Partes interessadas na resposta a incidentes
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Outros grupos e indivíduos dentro da organização também podem estar envolvidos com o tratamento de incidentes. É importante assegurar que cooperarão antes de um incidente estar em andamento. Sua experiência e habilidades podem ajudar uma equipe de resposta a incidentes de segurança informática (CSIRT) a lidar com o incidente de forma rápida e correta. Estas são algumas das partes interessadas que podem estar envolvidas na entrega de um incidente de segurança:
+
+Os gerentes contratados são as políticas que todos devem seguir. Eles também projetam o orçamento e são responsáveis ​​pela equipe de todos os departamentos. A gerência deve coordenar a resposta ao incidente com outras partes interessadas e minimizar os danos de um incidente.
+
+Esse grupo pode precisar ser chamado para coisas alterar como regras de firewall durante alguns incidentes de gerenciamento de incidentes, como contenção ou recuperação.
+
+Este é o grupo que trabalha com a tecnologia na organização e entende mais. Como o suporte de TI tem uma compreensão mais profunda, é mais provável que eles executem uma ação correta para minimizar a eficácia do ataque ou preservar a segurança.
+
+É uma prática recomendada fazer com que o departamento jurídico revise as políticas, os planos e os procedimentos de incidentes para garantir que eles não violem as normas locais ou federais. Além disso, se algum incidente tiver aspectos legais, um perito jurídico terá de se envolver. Isso pode incluir acusação, coleta de provas ou ações judiciais.
+
+Há momentos em que a mídia e o público podem precisar ser informados de um incidente, como quando suas informações pessoais foram comprometidas durante um incidente.
+
+O departamento de recursos humanos pode precisar executar medidas disciplinares se ocorrer um incidente causado por um funcionário.
+
+Incidentes de segurança podem alterar as continuidades dos negócios de uma organização. É importante que os responsáveis ​​pelo planejamento de continuidades de negócios estejam cientes dos incidentes de segurança e do impacto que tiveram sobre a organização como um todo. Isto permite-lhes-á fazer quaisquer alterações nos planos e nas estimativas de risco.
+
+Quando um incidente de segurança ocorre devido a um ataque físico, como tailgating ou surf no ombro, essas equipes podem precisar ser enfrentadas e envolvidas. É também da sua responsabilidade garantir que os visitantes tenham provas de uma investigação.
+
+A certificação do modelo de maturidade de segurança
+
+A estrutura de Certificação de Modelo de Maturidade de Segurança Cibernética (CMMC) foi criada para avaliar a capacidade das organizações que desempenham funções para o Departamento de Defesa dos EUA (DoD) para proteger a cadeia de suprimentos militares contra contínuas ou perdas devido a incidentes de segurança cibernética. Violações de segurança relacionadas às informações do DoD indicaram que os padrões do NIST não eram suficientes para atenuar o cenário de ameaças cada vez maior e em evolução, especialmente por parte dos atores do Estado/Nação. Para que as empresas recebam contratos do DoD, essas empresas devem ser certificadas. A certificação consiste em cinco níveis, com diferentes níveis exigidos dependendo do grau de segurança exigido pelo projeto.
+
+O CMMC especifica 17 domínios, cada um dos quais tem um número variável de recursos que estão associados a ele. A organização é classificada pelo nível de maturidade que foi alcançado para cada um dos domínios. Um dos domínios diz respeito à resposta a incidentes. Os recursos associados ao domínio de resposta a incidentes são os seguintes:
+
+Plano de resposta a incidentes
+Detectar e relatar eventos
+Desenvolver e implementar uma resposta a um incidente declarado
+Realizar revisões pós-incidentes
+Teste de resposta a incidentes
+O CMMC certifica organizações por nível. Para a maioria dos domínios, há cinco níveis, no entanto, para responder a incidentes, existem apenas quatro. Quanto maior o nível certificado, mais maduro será a capacidade de segurança cibernética da organização. Um resumo dos níveis de maturidade do domínio de resposta à incidência é mostrado abaixo.
+
+Estabeleça um plano de resposta a incidentes que seguem o processo do NIST. Detectar, relatar e priorizar eventos. Responda a eventos seguindo procedimentos predefinidos. Analise a causa dos incidentes para mitigar problemas futuros.
+
+Documentar e relatar incidentes às partes interessadas que foram identificadas no plano de resposta a incidentes. Teste a capacidade de resposta a incidentes da organização.
+
+Use o conhecimento de táticas, técnicas e procedimentos do atacante (TPT) para refinar o planejamento e a execução da resposta a incidentes. Estabeleça um centro de operações de segurança (SOC) que facilita um recurso de resposta 24/7.
+
+Utilize técnicas de coleta de dados forenses informáticas aceitas e sistemáticas, incluindo o trânsito e o armazenamento de seguros de dados forenses. Desenvolva e utilize respostas manuais e automatizadas em tempo real para possíveis incidentes que seguem padrões conhecidos.
+
+
+
