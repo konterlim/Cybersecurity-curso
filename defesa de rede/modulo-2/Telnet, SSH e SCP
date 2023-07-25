@@ -1,0 +1,31 @@
+Telnet, SSH e SCP
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+O Secure Shell (SSH) é um protocolo que fornece uma conexão com um dispositivo remoto de natureza segura (criptografado) e baseado em uma linha de comando. O Telnet é um protocolo mais antigo que usa transmissão de texto não criptografado, não protegido, tanto para autenticação de logon (nome de usuário e senha) quanto para dados transmitidos entre os dispositivos de comunicação. O SSH deve ser usado em vez do Telnet para gerenciar conexões, pois ele oferece criptografia forte. O SSH usa a porta TCP 22. Já o Telnet usa a porta 23.
+
+A SCP (Secure Copy, cópia segura) , transfere, com segurança, arquivos de computador entre dois sistemas remotos. O SCP usa o SSH para a transferência de dados (incluindo o elemento de autenticação), para que o SCP garanta a confidencialidade dos dados em trânsito.
+
+Protocolos de Seguros
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Os invasores podem penetrar na infraestrutura de uma rede por meio de serviços, protocolos e portas abertas. Protocolos mais antigos deixam uma rede em uma posição vulnerável, então os profissionais de segurança digital precisam garantir que os protocolos atuais estejam sendo usados.
+
+O SNMP coleta estatísticas de dispositivos TCP / IP para monitorar a rede e equipamentos de computador. O SNMPv3 é o padrão atual - ele usa criptografia para evitar espionagem e garantir que os dados não sejam violados durante o trânsito.
+
+
+O Hypertext Transfer Protocol (HTTP) fornece conectividade básica da Web e usa a porta 80. O HTTP contém segurança interna limitada e é aberto ao monitoramento de tráfego durante a transmissão de conteúdo, deixando o computador do usuário aberto para ataques. Vamos ver como outros protocolos fornecem uma conexão mais segura:
+
+A Secure Sockets Layer (SSL) gerencia a criptografia usando um handshake de SSL no início de uma sessão para fornecer confidencialidade e evitar a interceptação e violação.
+O Transport Layer Security (TLS) é um atualizado e mais seguro para SSL.
+O SSL / TLS criptografa a comunicação entre o cliente e o servidor. Onde é usado, o usuário verá HTTPS no campo de URL de um navegador em vez de HTTP.
+
+
+O File Transfer Protocol (FTP) oferece a capacidade de transferir arquivos entre um cliente e um servidor. No FTP, o cliente usa um nome de usuário e uma senha de texto sem formatação para se conectar. O File Transfer Protocol Secure (FTPS) é mais seguro - ele adiciona suporte a TLS e SSL para evitar a interceptação, violação e falsificação de mensagens trocadas.
+
+O e-mail usa Post Office Protocol (POP), IMAP (Internet Message Access Protocol) e MIME (Multipurpose Internet Mail Extensions) para anexar dados sem texto, como imagens ou vídeos, a uma mensagem de e-mail.
+
+Para proteger o POP (porta 110) ou IMAP (porta 143), use SSL / TLS para criptografar e-mails durante uma transmissão. O protocolo Secure / Multipurpose Internet Mail Extensions (S / MIME) oferece um método seguro de transmissão. Ele envia mensagens digitalmente assinadas e criptografadas que fornecem autenticação, integridade de mensagem e não-repúdio.
+
+
+O Secure Shell (SSH) é um protocolo que fornece uma conexão com um dispositivo remoto de natureza segura (criptografado) e baseado em uma linha de comando.
+A SCP (Secure Copy, cópia segura) , transfere, com segurança, arquivos de computador entre dois sistemas remotos.
+O Transport Layer Security (TLS) evita a interceptação e violação.
+

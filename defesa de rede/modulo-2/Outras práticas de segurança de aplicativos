@@ -1,0 +1,44 @@
+Outras práticas de segurança de aplicativos
+
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Como você pode ter certeza de que um software que você está instalando é autêntico ou que as informações são seguras ao navegar na Internet?
+
+Assinatura de código
+A assinatura de código ajuda a provar que um software é autêntico.
+
+Os executáveis 
+projetados para instalar e executar em um dispositivo são assinados digitalmente para validar a identidade do autor e fornecer garantia de que o código de software não foi alterado desde que foi assinado.
+
+Cookies seguros
+O uso de cookies seguros protege as informações armazenadas em cookies contra hackers.
+
+Quando o sistema do cliente interage com um servidor, o servidor envia uma resposta HTTP que instrui o navegador a criar pelo menos um cookie. O cookie armazena dados para mutação futura enquanto você estiver navegando no site.
+
+Os desenvolvedores da Web devem usar cookies com HTTPS para proteger os cookies e impedir que eles sejam transmitidos por HTTP não criptografado.
+
+
+
+As regras de validação verificam se os dados estão dentro de parâmetros predefinidos para garantir a integridade, a precisão e a compatibilidade dos dados.
+As verificações de integridade medem a consistência dos dados, obtendo um instantâneo dos dados em um instante para garantir que eles sejam inalterados.
+A assinatura de código valida digitalmente que o código de software não foi alterado e é autêntico.
+Os cookies armazenam dados de forma segura para serem futuramente adicionados enquanto você estiver navegando em um site.
+
+Controle de ameaças a aplicativos
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+As empresas podem implementar várias medidas para controlar ameaças ao domínio do aplicativo :
+
+Implementar políticas, padrões e procedimentos para os funcionários e para os visitantes, para garantir que as instalações sejam seguras.
+
+Desenvolver um plano de continuidade de negócios para aplicativos essenciais para manter a disponibilidade das operações.
+Desenvolver um plano de recuperação de desastres para aplicativos e dados essenciais.
+
+Desenvolver uma política para lidar com atualizações de software de aplicativo e do sistema operacional.
+Instale correções e atualizações regularmente.
+
+Use autenticação multifatorial.
+Monitorar arquivos de log
+
+Implementar padrões de classificação de dados.
+Implementar procedimentos de backup.
+
+Realize testes antes do lançamento do software.
