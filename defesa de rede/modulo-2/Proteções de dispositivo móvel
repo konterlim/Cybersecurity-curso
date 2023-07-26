@@ -1,0 +1,44 @@
+Proteções de dispositivo móvel
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Não importa se um dispositivo móvel é de propriedade da empresa ou é um dispositivo pessoal usado para o trabalho, medidas precisam ser adotadas para manter-lo protegido contra ameaças digitais.
+
+As seguranças para dispositivos móveis incluem:
+
+Roubo
+Perda
+acesso não autorizado
+riscos no sistema operacional
+riscos de aplicativos
+riscos de rede
+
+Jailbreaking, root e sideload são formas de contornar a limitação de um dispositivo para fazer coisas que o dispositivo está impedido de fazer. Os usuários podem tentar fazer o jailbreak (dispositivos da Apple) ou root (dispositivos Android) para executar um aplicativo que não está autorizado ou não está disponível na loja.
+
+O jailbreak remove a restrição de que apenas autorizados pela Apple podem ser executados no dispositivo. O enraizamento ignora a arquitetura de segurança do Android para permitir acesso administrativo completo ao dispositivo. Ambos representam um risco para a empresa. 
+
+Há soluções disponíveis que podem detectar um dispositivo com "jailbroken" ou "rooteado". Um dispositivo é então marcado como não compatível e removido da rede ou tem o acesso negado a aplicativos organizacionais.
+
+As lojas de aplicativos de terceiros também podem representar um risco para as empresas porque os aplicativos aos quais elas fornecem acesso não foram avaliados corretamente. O sideloading (carregamento lateral) ocorre quando o usuário percorre as configurações de aplicativo aprovado para instalar aplicativos não aprovados. Isso é menos invasivo do que fazer jailbreak ou rooting, mas ainda é um risco.
+
+As proteções contra ameaças a dispositivos móveis incluem:
+
+Os bloqueios de tela permitiam uma senha, um PIN ou um padrão para acessar o dispositivo.
+A autenticação biométrica usa uma característica física exclusiva (impressão digital, face, íris ou voz).
+A autenticação com reconhecimento de contexto usa o processamento da máquina para determinar o acesso com base no comportamento normal do usuário.
+A limpeza remota exclui os dados do dispositivo, caso ele seja roubado ou perdido.
+A criptografia completa do dispositivo pode criptografar todos os dados em um dispositivo móvel.
+
+Rastreamento de GPS
+
+O GPS (Global Positioning System, Sistema de posicionamento Global) usa satélites e computadores para determinar a localização de um dispositivo. A tecnologia de GPS é um recurso padrão em smartphones e oferece rastreamento de posição em tempo real que normalmente pode localizar um local a aproximadamente 5 metros.
+
+Muitos aplicativos de celular usam rastreamento por GPS para rastrear a localização do telefone. Por exemplo, o Facebook permite aos usuários fazer check-in em um local, que, em seguida, fica visível para as pessoas em suas redes. Alguns aplicativos usam a delimitação geográfica ou geolocalização, que usa a identificação por radiofrequência (RFID) para determinar uma área geográfica.
+
+As notificações por push às vezes também usam geolocalização e delimitação geográfica. Isso permite que as empresas locais “enviem” mensagens publicitárias com base nas configurações de localização de um usuário. Infelizmente, os invasores digitais cada vez mais experimentam a usar notificações push para capturar dados.
+
+Para impedir o acesso não autorizado , os dispositivos devem ser protegidos por senha usando os recursos do dispositivo.
+É necessário ter uma senha forte para acessar uma rede.
+Os funcionários podem baixar, instalar e usar automaticamente qualquer aplicativo que esteja na lista de aplicativos aprovados.
+Smartphones e tablets que não estão na lista de dispositivos compatíveis não têm permissão para se conectar à rede.
+O acesso dos funcionários aos dados da empresa é limitado de acordo com os perfis de usuários definidos pelo departamento de TI e aplicados automaticamente.
+A empresa pode usar a limpeza remota para excluir os dados do dispositivo, caso ele seja roubado ou perdido.
+

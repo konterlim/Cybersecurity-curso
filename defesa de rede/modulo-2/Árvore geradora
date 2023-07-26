@@ -1,0 +1,65 @@
+ Árvore geradora
+A redundância aumenta a disponibilidade da infraestrutura da rede, protegendo-a de um ponto único de falha, como um cabo ou um switch com falha na rede.
+
+Quando os designers projetam a redundância física em uma rede, podem haver loops e quadros duplicados. Os loops e quadros duplicados têm consequências graves para uma rede comutada.
+
+O Spanning Tree Protocol (STP) soluciona esses problemas. A função básica do STP é prevenir loops em uma rede, quando os switches se interconectam por vários caminhos. O STP garante que os links físicos redundantes estejam livres de loop e que apenas um caminho lógico seja executado entre todos os destinos na rede. O STP bloqueia intencionalmente os caminhos redundantes que poderiam provocar um loop.
+
+Bloquear os caminhos redundantes é fundamental para evitar loops na rede. Os caminhos físicos ainda existirão para fornecer redundância, mas o STP desativa esses caminhos para evitar que produziram loops. Se um cabo ou switch da rede falhar, o STP recalculará os caminhos e desbloqueará as portas necessárias, para permitir que o caminho redundante se torne ativo.
+
+Esta animação mostra a probabilidade de STP quando ocorre uma falha.
+
+O PC1 envia uma transmissão para a rede.
+O trunk link entre S2 e S1 falhou, causado em interrupção do caminho original.
+O S2  desbloqueia a porta anteriormente bloqueada do Tronco2 e permite que o tráfego de broadcast siga o caminho alternativo na rede, permitindo que a comunicação continue.
+Se o link entre S2 e S1 voltar a funcionar, o STP bloqueará novamente o link entre S2 e S3.
+
+
+Redundância de roteador
+Apresentação de slides Selecione o próximo botão para avançar.
+O gateway padrão é normalmente o roteador que fornece acesso dos dispositivos ao resto da rede ou à Internet. Se houver somente um roteador como gateway padrão, é um ponto único de falha. A empresa pode escolher instalar um roteador de espera adicional.
+
+O roteador de encaminhamento e o roteador em espera usam seus endereços IP físicos para trocar mensagens periódicas. O objetivo dessas mensagens é ter certeza de que os dois ainda estão on-line e disponíveis.
+
+Se o roteador em espera parar de receber essas mensagens periódicas do roteador de encaminhamento, ele perceberá que é o único roteador disponível e assumirá a função de encaminhamento. Enquanto isso, como os PCs na rede ainda se comunicam com o roteador virtual em 192.0.2.100, eles permanecem on-line apesar de tudo o que aconteceu, já que o roteador virtual agora encaminhado para o que era anteriormente o roteador de espera.
+
+A capacidade de uma rede de se recuperar dinamicamente da falha de um dispositivo que atua como um gateway padrão é conhecido como redundância de primeiro salto .
+
+ Redundância de local
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Uma empresa pode precisar pensar em redundância de local, dependendo das necessidades.
+
+Sincroniza os dois locais em tempo real
+Requer alta largura de banda
+Os locais devem ser próximos um do outro, para reduzir a latência
+
+Não sincronizados em tempo real, mas muito próximo disso
+Exigir menos largura de banda
+Os sites podem estar mais distantes, pois a latência é o menor dos problemas
+
+Atualizado periodicamente a localização dos dados de backup
+Mais conservador em termos de largura de banda, pois não exige uma conexão constante
+O equilíbrio correto entre custo e disponibilidade determinará a escolha correta para uma empresa.
+
+Projeto resiliente
+Apresentação de slides Selecione o próximo botão para avançar.
+Resiliência representa os métodos e configurações usados ​​para tornar um sistema ou rede tolerante a falhas.
+
+Por exemplo, uma rede pode ter links redundantes entre switches que executam o STP. Embora o STP proporcione um caminho alternativo pela rede se o link falhar, a transição pode não ser imediata, se a configuração não for ideal.
+
+Os protocolos de roteamento também fornecem resiliência, mas o ajuste fino pode melhorar a transição, para que os usuários da rede não percebam. Os administradores devem investigar as configurações não padrão em uma rede de testículos, para ver se podem melhorar os tempos de recuperação em uma rede.
+
+Como visto nos exemplos acima, o design resiliente é mais do que apenas adicionar redundância. É fundamental entender as necessidades comerciais da empresa e, em seguida, incorporar uma redundância para criar uma rede resiliente.
+
+
+Resiliência de aplicativo
+Resiliência de aplicativo é a capacidade do aplicativo de reagir a problemas em um de seus componentes sem parar de funcionar. Um administrador precisará, eventualmente, desativar aplicativos para aplicações de patches, atualizações de versão ou para implementar novas funcionalidades.
+
+Alcançar a resiliência da infraestrutura de aplicativos significa evitar a perda de clientes, de funcionários ou de negócios devido a uma falha de aplicativo.
+
+A figura mostra três soluções de disponibilidade para abordar a resiliência de aplicativos. À medida que o fator de disponibilidade de cada solução aumenta, a complexidade e os custos também aumentam.
+
+Hardware tolerante a falhas (mais complexo e mais caro) é um sistema projetado com a colocação de componentes múltiplos essenciais em um mesmo computador.  
+Arquitetura de cluster é um grupo de servidores que funciona como se fosse um único sistema.
+Backup e restauração Cópias de backup de arquivos com a finalidade de poder restaurá-los se ocorrer perda de dados (menos complexo e menos caro).
+

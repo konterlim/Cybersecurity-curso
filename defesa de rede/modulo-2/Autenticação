@@ -1,0 +1,52 @@
+ Autenticação
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Dispositivos móveis e sem fios são o tipo predominante de dispositivos na maioria das redes modernas. Eles oferecem mobilidade e acessibilidade, mas estão contemplados com diversos problemas de segurança digital. Essas vulnerabilidades incluem roubo, invasão e acesso remoto não autorizado, sniffing, ataques man in the middle e ataques contra o desempenho e a disponibilidade.
+
+A melhor forma de proteger uma rede sem fio é usar autenticação e criptografia. O padrão sem fio original, 801.11, substituiu dois tipos de login, como mostrado na figura:
+
+Autenticação de sistema aberto.
+Qualquer dispositivo sem fio pode se conectar à rede sem fio. Use esse método em situações em que a segurança não seja uma preocupação.
+
+autenticação de chave compartilhada
+Fornecer controle para autenticar e criptografar dados entre um cliente sem fio e um AP ou roteador sem fio.
+
+Protocolos de login
+O protocolo de autenticação extensível (EAP) é uma estrutura de autenticação usada em redes sem fio. Vamos descobrir como isso funciona.
+
+O usuário solicita uma conexão à rede sem fio através de um ponto de acesso.
+O ponto de acesso solicita dados de identificação (nome de usuário) do usuário, que é então enviado para um servidor de autenticação.
+O servidor de autenticação solicita uma prova de que a ID é válida.
+O ponto de acesso solicita prova de que a ID é válida do usuário, na forma de uma senha.
+O usuário fornece a senha ao ponto de acesso. O ponto de acesso envia de volta para o servidor de autenticação.
+O servidor confirma que o nome de usuário e a senha estão corretos e passam essas informações para o ponto de acesso e o usuário.
+Conecte-se à rede sem fio.
+Selecione os títulos abaixo para comparar quatro protocolos usados com EAP para fornecer autenticação para redes sem fio.
+
+Solicitar certificado de cliente: Sim
+Solicitar certificado de servidor: Sim
+Implantável facilmente: Dificuldade
+de segurança: alta
+
+Requer certificado de cliente: Não
+Requer certificado de servidor: Sim
+Implantável facilmente: Dificuldade
+de segurança: média
+
+Requer certificado de cliente: Não
+Requer certificado de servidor: Sim
+Implantável facilmente: Dificuldade
+de segurança: média
+
+Requer certificado de cliente: Não
+Requer certificado de servidor: Não
+Implantável facilmente: Dificuldade
+de segurança: média
+
+utenticação mútua
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Sua rede sem fio e seus dados estão sujeitos a acesso não autorizado por hackers que usam uma conexão sem fio. Mas o que você pode fazer para evitar um ataque?
+
+Quando você se conecta a um ponto de acesso não autorizado, o impostor que o configura pode solicitar e copiar dados do seu dispositivo. Esse tipo de ataque man in the middle é muito difícil de detectar e pode resultar em credenciais de logon roubadas e dados lidos.
+
+A autenticação mútua é a autenticação de duas vias que pode impedir pontos de acesso não autorizados. É um processo no qual as duas entidades em um link de comunicação se autenticam antes de se conectarem. Isso permite que os clientes detectem pontos de acesso não autorizados e evitem esses ataques MitM. 
+

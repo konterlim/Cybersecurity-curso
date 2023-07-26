@@ -1,0 +1,27 @@
+ Redundância N + 1
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+A redundância N+1 garante a disponibilidade do sistema, no caso de falha de um componente. Os componentes (N) precisam ter, no mínimo, um componente de backup (+1).
+
+Uma boa maneira de pensar sobre isso é que, no caso de um piso plano, um carro tem quatro pneus (N) e um sobressalente (+1) no porta-malas.
+
+Embora um sistema N + 1 triângulos redundante, não é um sistema totalmente redundante.
+
+Em um data center, a redundância N + 1 significa que o design do sistema pode suportar a perda de um componente.
+
+OS refere-se a cada componente diferente da infraestrutura que faz parte do sistema. Por exemplo, um data center inclui servidores, fontes de alimentação, switches e roteadores. O + 1 é o componente ou sistema adicional que está em espera, pronto para entrar em ação, se necessário. A redundância de N+1 em um data center que consiste nos elementos acima significa que temos um servidor, uma fonte de alimentação, um switch e um roteador em standby, pronto para entrar em linha se acontecer algo com o servidor principal, a fonte de alimentação principal, switch ou roteador.
+
+
+
+O RAID obtém os dados normalmente armazenados em um único disco e os espalha entre várias unidades. Se qualquer disco único RAID0 for perdido, o usuário poderá recuperar os dados de outros discos que também hospedam os dados.
+
+O RAID também pode aumentar a velocidade da recuperação de dados, já que várias unidades recuperam os dados solicitados mais rapidamente do que um disco fazendo o mesmo.
+
+Uma solução RAID pode ser baseada em software ou hardware. Uma solução baseada em hardware requer um controlador de hardware especializado, no sistema que se confunde com as unidades RAID.
+
+Os termos a seguir descrevem as várias maneiras pelas quais o RAID pode armazenar dados na matriz de discos.
+
+Espelhamento - Armazena dados duplicados em uma segunda unidade.
+Distribuição - Grava dados em várias unidades para que segmentos consecutivos sejam armazenados em unidades diferentes.
+Paridade - mais precisamente, tirar a paridade. Após a distribuição, são gerados somas de verificação para verificar se não há erros nos dados distribuídos. Esses somas de verificação são armazenados em uma terceira unidade.
+Existem outras arquiteturas RAID, que combinam principalmente os elementos acima.
+
