@@ -1,0 +1,44 @@
+ Internet das Coisas (IoT)
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Um dos setores mais rápidos da tecnologia da informação é o uso de sensores e dispositivos inteligentes. O setor de informática identifica esse setor como a Internet das Coisas (IoT).
+
+Empresas e consumidores usam dispositivos de IoT para automação de processos, monitoramento de condições ambientais e sistema de alerta ao usuário sobre condições adversas. A maioria dos dispositivos de IoT se conecta a uma rede por meio de tecnologia sem fio. A maioria dos dispositivos IoT se conecta a uma rede via tecnologia sem fio e inclui câmeras, fechaduras, sensores de proximidade, luzes e outros tipos de sensores usados ​​para coletar informações sobre o ambiente ou o status de um dispositivo. Vários fabricantes de dispositivos usam IoT para informar os usuários que precisam substituir peças, que componentes estão funcionando ou que suprimentos estão acabando.
+
+As empresas usam esses dispositivos para controlar inventário, veículos e pessoal. Os dispositivos IoT contêm sensores geoespaciais. Um usuário pode localizar, monitorar e controlar globalmente as variáveis ​​ambientais, como temperatura, umidade e iluminação. As aplicações de IoT usam um sistema operacional em tempo real (RTOS), um pequeno sistema operacional que permite uma troca rápida de tarefas que se concentram no tempo e não na taxa de transferência. Esses aplicativos são executados com tempo preciso e alta confiabilidade. A tecnologia RTOS é encontrada em dispositivos vestíveis, dispositivos médicos, sistemas no veículo e dispositivos de automação residencial.
+
+O setor de IoT constitui um enorme desafio para profissionais de segurança da informação, pois muitos dispositivos IoT capturam e transmitem informações com sucesso. As vulnerabilidades associadas ao RTOS incluem injeção de código, ataques de DoS e inversão de prioridade (onde uma tarefa de prioridade mais alta é antecipada por uma tarefa de prioridade mais baixa).  
+
+Para proteger dispositivos de IoT:
+
+Proteção da rede sem fio.
+Saiba exatamente quais dispositivos estão se comunicando em sua rede.
+Saiba o que cada um dos dispositivos de IoT na sua rede faz.
+Instale o software de segurança nos dispositivos sempre que possível.
+Proteja smartphones e aplicativos móveis usados ​​para se comunicar com dispositivos de IoT.
+
+Equipamento VoIP
+Apresentação de slides Selecione o próximo botão para avançar.
+Voz sobre IP (VoIP) usa redes como a Internet para fazer e receber chamadas de telefone.
+
+Selecione as configurações para saber mais.
+
+De que equipamento você precisa?
+Você precisa de uma conexão com a Internet e um telefone para VoIP. Várias opções estão disponíveis como configuração do telefone:
+
+Um telefone tradicional, com um adaptador (o adaptador atua como uma interface de hardware entre um telefone tradicional, analógico e uma linha digital VoIP)
+Um telefone ativado para VoIP
+Software VoIP instalado em um computador
+
+O VoIP é seguro?
+A maioria dos serviços de VoIP do consumidor usa a Internet para chamadas de telefone. Muitas organizações, no entanto, usam suas redes privadas porque elas fornecem mais segurança e melhor qualidade de serviço. A segurança de VoIP só é confiável se houver uma segurança de rede subjacente. Os criminosos virtuais direcionam esses sistemas para obter acesso a serviços de telefone gratuitos, espionar telefonemas, ou para garantir o desempenho e a disponibilidade.
+
+Como você pode proteger seu serviço de VoIP?
+Implemente as seguintes contramedidas para proteger o VoIP:
+
+Criptografe os pacotes de mensagens de voz para proteção contra espionagem.
+Use o SSH para proteger gateways e switches.
+Altere todas as senhas padrão.
+Use um sistema de detecção de invasão para detectar ataques, como envenenamento ARP.
+Use autenticação forte para mitigar o spoofing de registro (os criminosos virtuais roteiam todas as chamadas recebidas da vítima para eles), representação de proxy (engana a vítima para se comunicar com um proxy falso configurado pelos criminosos virtuais) e sequestro de chamadas (a chamada é interceptada e reencaminhada para um caminho diferente, antes de chegar ao destino).
+Implemente firewalls que reconhecem VoIP para monitorar os streams e filtrar sinais anormais.
+

@@ -1,0 +1,55 @@
+Sistema e backups de dados
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Uma empresa pode perder dados se os criminosos digitais o roubarem, se o equipamento falhar, ou se ocorrer um desastre ou outro erro, então é importante fazer backup dos dados regularmente.
+
+Um backup dos dados armazena uma cópia das informações de um computador na mídia de backup removível. Quando essa mídia é removível, o operador armazena essa mídia de backup em um local seguro.
+
+Fazer backup de dados é uma das formas mais eficazes de proteção contra perda de dados. Se houver falha no hardware do computador, o usuário pode restaurar os dados do backup, depois que o sistema estiver funcionando.
+
+Uma política de segurança sólida deve incluir backups de dados regulares. Os backups de dados são, normalmente, armazenados em outro local, para proteger a mídia de backup, se algo acontecer com a instalação principal.
+
+Frequência
+Os backups podem levar muito tempo. Às vezes é mais fácil fazer um backup completo mensal ou semanal, e depois backups parciais frequentes de todos os dados que tiveram mudados, desde o último backup completo. No entanto, ter muitos parciais de backup aumenta o tempo necessário para restaurar os dados.
+
+armazenamento
+Para segurança adicional, os backups devem ser transportados para um local de armazenamento externo aprovado em uma estação de trabalho diária, semanal ou mensal, conforme estipulado pela política de segurança.
+
+
+
+segurança
+Proteja os backups com senhas. Em seguida, o operador digita a senha, antes de restaurar os dados na mídia de backup.
+
+validação
+Valide sempre os backups para garantir a integridade dos dados e
+
+
+ Projetar um sistema de alta disponibilidade
+Imagem com áreas selecionáveis. Selecione cada botão para mostrar mais informações.
+A alta disponibilidade incorpora três grandes princípios para atingir a meta de acesso ininterrupto aos dados e serviços:
+
+Eliminação ou redução de pontos únicos de falha
+É importante compreender as maneiras de abordar um ponto único de falha. Um ponto único de falha pode incluir roteadores centrais ou switches, serviços de rede e, até mesmo, uma equipe de TI altamente qualificada.
+
+O que torna esses pontos únicos de falha é o fato de que uma perda ou falha desse sistema, processo ou pessoa teria um impacto muito disruptivo em todo o sistema, o que deve ser evitado. A chave é ter processos, recursos e componentes que reduzam os pontos únicos de falha.
+
+Clusters de alta disponibilidade é uma maneira de proporcionar redundância. Esses clusters consistem em um grupo de computadores que têm acesso ao mesmo armazenamento compartilhado e têm configurações de rede idênticas. Todos os servidores participam no processamento de um serviço simultaneamente. Se um servidor dentro do cluster falhar, os outros servidores continuarão a processar o mesmo serviço que o dispositivo com falha.
+
+Resiliência do sistema
+A resiliência de sistemas refere-se à capacidade de manter a disponibilidade de dados e de processamento operacional, apesar de ataques ou de eventos de interrupção. Geralmente, isso requer sistemas redundantes, em termos de energia e de processamento, para que, se um sistema falhar, o outro possa assumir as operações, sem nenhuma interrupção no serviço. Resiliência do sistema é mais do que a blindagem de dispositivos. Solicite que os dados e serviços estejam disponíveis, mesmo quando sob ataque.
+
+Potência
+Apresentação de slides Selecione o próximo botão para avançar.
+Uma questão crítica na proteção de sistemas de informação são os sistemas de energia elétrica e as considerações sobre energia. Um fornecimento contínuo de energia elétrica é fundamental nas instalações de armazenamento de dados e de servidores atuais.
+
+Aqui estão algumas regras gerais na construção de sistemas eficazes de alimentação elétrica:
+
+Data centers devem ser uma fonte de alimentação diferente do resto do edifício.
+Fontes de alimentação redundantes: dois ou mais feeds (fontes de alimentação) provenientes de duas ou mais subestações elétricas.
+Condições de alimentação.
+Backup de sistemas de energia são, muitas vezes, necessários.
+Uma UPS deve estar disponível para sistemas de desligamento normal.
+
+ aquecimento, ventilação e ar-condicionado (HVAC)
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Sistemas HVAC são críticos para a segurança de pessoas e sistemas de informação nas instalações da empresa. Ao projetar instalações modernas de TI, esses sistemas desempenham um papel muito importante na segurança geral.
+

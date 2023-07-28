@@ -1,0 +1,11 @@
+Tecnologias de engano
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+As empresas usam tecnologias de dissimulação para prender os invasores das redes de produção. Eles também os usam para aprender os métodos de um invasor e para alertar sobre possíveis ataques que poderiam ser lançados contra a rede. A dissimulação adiciona uma camada falsa à infraestrutura da empresa.
+
+Um honeypot é um sistema de isca configurado para imitar um servidor na rede da empresa. Ela é intencionalmente deixada exposta para atrair invasores. Quando um invasor vai atrás do honeypot, suas atividades são registradas e monitoradas para análise posterior. O honeypot prendeu o invasor dos recursos de rede reais da empresa.
+
+Uma empresa pode até criar uma rede de mel, uma coleção de honeypots ( honeynet ), para imitar sua rede e prender os invasores. Enquanto isso, os arquivos Honey são arquivos falsos que atraem um invasor, mas não contêm informações reais. 
+
+Um DNS sinkhole impede a resolução de nomes de host para URLs específicos e pode afastar os usuários de recursos mal-intencionados.
+
+

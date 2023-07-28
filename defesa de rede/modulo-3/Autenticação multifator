@@ -1,0 +1,29 @@
+Autenticação multifator
+Como abordamos anteriormente, a autenticação multifatorial usa pelo menos dois métodos de verificação - como uma senha e algo que você tem, por exemplo, um chaveiro de segurança. Isso pode ser conduzido um passo adiante adicionando algo que você é, como uma verificação de impressão digital.
+
+A autenticação multifator pode reduzir a incidência de roubo de identidade online porque significa que saber uma senha não dará aos cibercriminosos acesso à conta de um usuário.
+
+Por exemplo, um site de banco on-line pode exigir uma senha e um PIN que o usuário recebe em seu smartphone. Nesse caso, o primeiro fator é a senha e o segundo, o PIN temporário, porque prova que você tem acesso ao que é registrado como seu telefone.
+
+Retirar dinheiro de uma caixa eletrônica é outro exemplo simples de autenticação multifatorial, pois o usuário deve ter o cartão do banco e saber o PIN antes da caixa eletrônica distribuir dinheiro.
+
+Observe que autenticação de dois fatores (2FA) é um método de autenticação de vários fatores que envolve dois fatores em particular, mas os dois termos são frequentemente usados de forma alternada.
+
+Autorização
+Imagem com áreas selecionáveis. Selecione cada botão para mostrar mais informações.
+A autorização controla o que um usuário pode e não pode fazer na rede após um login com sucesso. Depois que um usuário prova sua identidade, o sistema verifica quais recursos de rede o usuário pode acessar e o que pode fazer com os recursos.
+
+Quando implementar a autorização
+A autorização usa um conjunto de atributos que descreve o acesso do usuário à rede para responder à pergunta: "Quais privilégios de leitura, cópia, edição, criação e exclusão esse usuário tem?"
+
+O sistema compara esses atributos com as informações contidas no banco de dados de autenticação, determina um conjunto de restrições para aquele usuário e o entrega ao dispositivo local onde o usuário está conectado.
+
+A autorização é automática e não exige que os usuários executem etapas adicionais após a autenticação. Os administradores do sistema configuraram a rede para implementar a autorização imediatamente após a autenticação do usuário.
+
+Usando autorizado
+Definir as regras de autorização é a primeira etapa no controle de acesso. Uma política de autorização estabelece essas regras.
+
+Uma política de associação baseada em grupo define a autorização com base nos membros de um grupo específico. Todos os funcionários de uma empresa podem ter um cartão de furto, por exemplo, que fornece acesso às instalações, mas pode não permitir o acesso a uma sala do servidor. Pode ser que apenas funcionários de nível sênior e membros da equipe de TI possam acessar uma sala do servidor com seus cartões de furto.
+
+Uma política de nível de autoridade define como permissões de acesso com base na posição de um funcionário na organização.
+
