@@ -1,0 +1,54 @@
+Registros de Contabilidade AAA
+O AAA centralizado também permite o uso do método de contabilidade. Os registros contábeis de todos os dispositivos são enviados para repositórios centralizados, o que simplifica a auditoria das ações do usuário.
+
+AAA Accounting coleta e relata dados de uso em registros AAA. Essas toras são úteis para auditorias de segurança. Os dados coletados incluem os horários de conexão inicial e final, comandos executados, número de pacotes e número de bytes.
+
+Um uso amplamente divulgado da contabilidade é combinado com um login AAA. Isso ajuda a gerenciar o acesso a dispositivos de interrede pela equipe administrativa da rede. Contabilidade fornece mais segurança do que apenas login. Os servidores AAA mantêm um registro detalhado de exatamente o que o usuário autenticado faz no dispositivo, conforme mostrado na figura. Isso inclui todos os comandos EXEC e de configuração emitidos pelo usuário. O log contém vários campos de dados, incluindo o nome de usuário, a data e a hora, e o comando real que foi inserido pelo usuário. Esta informação é útil na solução de problemas de dispositivos. Ele também fornece evidências contra indivíduos que desencadearam ações maliciosas.
+
+
+Quando um usuário realiza o login, o processo de contabilização AAA gera uma mensagem inicial para iniciar a contabilização.
+Quando o usuário termina, uma mensagem de parada é inserida e o processo independente finaliza.
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+A seguir são exibidos os vários tipos de informações contábeis que podem ser coletadas.
+
+A contabilidade de rede captura informações para todas as sessões PPP (Point-to-Point Protocol), incluindo contagens de pacotes e bytes.
+
+Contabilidade de conexão captura informações sobre todas as conexões de saída feitas a partir do cliente AAA, como por SSH.
+
+A contabilidade EXEC captura informações sobre sessões de terminal EXEC do usuário (shells do usuário) no servidor de acesso à rede, incluindo nome do usuário, dados, horas de início e parada e endereço IP do servidor de acesso.
+
+A contabilidade do sistema captura informações sobre todos os eventos no nível do sistema (por exemplo, quando o sistema é reinicializado ou quando a contabilidade é ativada ou desativada).
+
+A contabilidade de comandos captura informações sobre os comandos do shell EXEC para um nível de privilégio especificado, bem como a data e hora em que cada comando foi executado e o usuário que o executou.
+
+A implementação da Cisco de contabilidade AAA captura o suporte de registro de “iniciar” e “parar” para conexões que passaram pela autenticação do usuário. O recurso adicional de geração de registros de “parada” para conexões que falham na autenticação como parte da autenticação do usuário também é suportado. Esses registros são necessários para que os usuários que utilizam registros contábeis gerenciem e monitorem suas redes.
+
+
+
+Registra o que o usuário faz, incluindo o que é acessado, a quantidade de tempo que o recurso é acessado e quaisquer alterações que foram feitas
+
+Contabilidade
+Usa um conjunto criado de atributos que descreve o acesso do usuário à rede
+
+Autorização
+Estabelecido usando combinação de nome de usuário e senha, perguntas de desafio e resposta, cartões de token e outros métodos
+
+Autenticação
+Coleta e relata dados de uso para que possam ser usados ​​para fins de auditoria ou faturamento
+
+Contabilidade
+Os usuários e administradores devem provar que são quem dizem ser
+
+Autenticação
+O que um usuário pode e não pode fazer na rede
+
+Autorização
+Quais recursos o usuário pode acessar e quais operações o usuário tem permissão para realizar
+
+Autorização
+Fornecer alavancagem contra indivíduos que executam ações mal
+
+Contabilidade
+Uma forma de controlar quem tem permissão para acessar uma rede
+
+Autenticação

@@ -1,0 +1,41 @@
+Políticas de conta no Windows
+Introdução de slides Selecione o próximo botão para avançar.
+Na maioria das redes que usam computadores Windows, um administrador configura o Active Directory com domínios em um servidor Windows. Os computadores Windows que ingressam no domínio se tornam membros do domínio.
+
+O administrador configura uma política de segurança de domínio que se aplica a todos os computadores que ingressam no domínio. Por exemplo, as políticas de conta são definidas automaticamente quando um usuário faz login no Windows.
+
+Quando um computador não faz parte de um domínio do Active Directory, o usuário configura políticas por meio da Política de Segurança Local do Windows Em todas as versões do Windows exceto na Home
+
+Política de senhas
+Um administrador pode configurar políticas de conta de usuário, como políticas de senha e políticas de bloqueio.
+
+No exemplo mostrado, os usuários devem alterar suas senhas a cada 90 dias e usar cada nova senha por pelo menos um dia. As senhas devem conter oito caracteres e três das quatro categorias a seguir: letras maiúsculas, minúsculas, números e símbolos. Por último, o usuário pode reutilizar uma senha somente depois de 24 senhas exclusivas. 
+
+Este é apenas um exemplo; É possível definir políticas de senha diferentes, dependendo dos requisitos e das necessidades da empresa.
+
+Política de bloqueio de conta
+Uma política de bloqueio de conta bloqueia uma conta por um período definido quando ocorrem muitas tentativas de login incorretas.
+
+Por exemplo, a política mostrada aqui permite que o usuário digite o nome de usuário e/ou senha errada cinco vezes. Depois de cinco tentativas, a conta é travada por 30 minutos. Depois de 30 minutos, o número de tentativas é redefinido para zero e o usuário pode tentar entrar novamente.
+
+política de auditoria
+Mais configurações de segurança estão disponíveis selecionando a pasta 'políticas locais' no Windows. Uma política de auditoria cria um arquivo de log de segurança usado para rastrear os seguintes eventos:
+
+Eventos de login da conta.
+Gestão de contas de auditoria.
+Acesso ao serviço de diretório.
+Acesso a objetos.
+Mudanças de política.
+Privilégio de utilização.
+Acompanhamento de processos.
+Eventos do sistema.
+
+Gerenciamento de Autenticação
+
+Os problemas de autenticação e autorização incluem credenciais não criptografadas, permissões externas e violações de acesso. Mas como evitar os criminosos digitais e facilitar o login de usuários autorizados? O gerenciamento de login tem como objetivo garantir a entrada segura, proporcionando facilidade de uso.
+
+Uma solução de logon único (SSO) permite que o usuário utilize um conjunto de credenciais de login para autenticar em vários aplicativos. Dessa forma, o usuário só precisa lembrar uma senha forte. 
+OAuth é um padrão que permite que as informações de conta de um usuário sejam usadas por serviços de terceiros, como o Facebook ou o Google.  
+Um cofre de senha pode proteger e armazenar as credenciais do usuário com uma única senha forte necessária para acessá-las.
+Muitas empresas implementam autenticação baseada em conhecimento (KBA) para fornecer uma redefinição de senha caso um usuário esqueça sua senha. A KBA é baseada em informações pessoais conhecidas pelo usuário ou em uma série de perguntas.
+

@@ -1,0 +1,33 @@
+Operação AAA
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+Uma rede deve ser projetada para controlar quem tem permissão para se conectar a ela e que eles têm permissão para fazer quando estão conectados. Estes requisitos de design são identificados na política de segurança de rede. A política especifica como administradores de rede, usuários corporativos, usuários remotos, parceiros de negócios e clientes acessam recursos de rede. A política de segurança de rede também pode exigir a implementação de um sistema de contabilidade que rastreia quem iniciou a sessão e quando eo que fez durante uma sessão iniciada. Alguns regulamentos de conformidade podem especificar que o acesso deve ser registrado e os logs de tolerâncias por um determinado período de tempo.
+
+O protocolo AAA (Authentication, Authorization and Accounting) fornece a estrutura necessária para habilitar a segurança de acesso escalonável.
+
+As três funções de segurança independentes fornecidas pela estrutura de arquitetura AAA.
+
+Os usuários e administradores devem provar quem são.
+A autenticação pode ser estabelecida usando combinação de nome de usuário e senha, perguntas e respostas de desafio, tokens e outros métodos.
+A autenticação AAA fornece uma maneira centralizada de controlar o acesso à rede.
+
+Após a autenticação do usuário, os serviços de autorização determinam quais recursos o usuário pode acessar e quais operações ele tem permissão para executar.
+Um exemplo é "O usuário 'aluno' pode acessar o host do servidor XYZ usando apenas SSH".
+
+O registro contábil o que o usuário faz, incluindo o que é acessado, a quantidade de tempo em que o recurso é acessado e todas as alterações efetuadas.
+A contabilidade rastreia como os recursos de rede são usados.
+Um exemplo é "O usuário 'aluno' acessa o servidor host XYZ usando SSH por 15 minutos".
+
+autenticação AAA
+Lista de seções expansíveis. Selecione cada botão para expandir o conteúdo.
+A autenticação AAA pode ser usada para autenticar usuários para o acesso administrativo ou pode ser usada para autenticar usuários para o acesso à rede remota.
+
+Esse método às vezes é conhecido como autônomo porque usuários autenticados contra nomes de usuário e senhas armazenados localmente, como mostrado na figura. O AAA local é ideal para redes pequenas.
+
+Esse método se autentica em um servidor AAA central que contém os nomes de usuário e senhas para todos os usuários, conforme mostrado na figura. A autenticação AAA baseada em servidor é permitida para redes de médio a grande porte.
+
+O AAA centralizado é mais escalável e gerenciável do que um login AAA local e, portanto, é a implementação AAA preferida.
+
+Um sistema AAA centralizado pode manter bancos de dados independentemente para autenticação, autorização e contabilidade. Ele pode aproveitar o Active Directory ou o Lightweight Directory Access Protocol (LDAP) para autenticação de usuário e associação de grupo, mantendo seus próprios bancos de dados de autorização e contabilidade.
+
+Os dispositivos se comunicam com o servidor AAA centralizado usando os protocolos RADIUS (Remote Authentication Dial-In User Service) ou Terminal Access Controller Access Control System (TACACS+).
+

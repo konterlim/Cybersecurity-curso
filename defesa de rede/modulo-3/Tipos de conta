@@ -1,0 +1,40 @@
+Tipos de conta
+Este componente é um flipcard composto por cartões flippable contendo imagem de exibição. Selecione a imagem da face frontal para virar para a face posterior desses cartões para exibir o texto associado.
+Uma empresa não deve compartilhar contas de usuários, administradores ou aplicativos privilegiados. A conta de administrador só deve ser usada para administrar um sistema. Se um usuário acessar um site infectado por malware ou abrir um e-mail mal-intencionado enquanto estiver usando uma conta de administrador, isso colocaria a empresa em risco.
+
+Os administradores devem estar cientes do grupo padrão e das contas de usuário que podem ser instaladas por um sistema operacional. Conhecer essas contas ajuda um administrador a decidir qual delas deve ser permitida e qual delas deve ser desativada.
+
+Isso ocorre porque contas padrão, como a conta de convidado ou administrador, podem representar um risco à segurança de sistemas mais antigos, já que os invasores estão familiarizados com as configurações padrão usadas. Para melhorar a segurança, sempre substitua as contas padrão e verifique se todos os tipos de conta são uma senha.
+
+É importante gerenciar as contas corretamente para manter a segurança.
+
+Ao contratar um novo funcionário, crie um perfil de identidade, registre o computador e os dispositivos móveis do funcionário e permita o acesso à rede da empresa. Como provedor de identidade (IdP), a empresa é responsável por autenticar sua identidade.
+Desative ou desative as contas que não são mais necessárias e recupere dados organizacionais ou aplicativos dos dispositivos do usuário.
+Conceda a um usuário o acesso necessário para executar tarefas atribuídas (privilégio mínimo).
+Analise o acesso do usuário para identificar as configurações de controle de acesso que precisam ser feitas.
+Use as restrições de horário do dia para controlar quando um usuário pode fazer login.
+Use restrições de local para controlar de onde um dispositivo ou usuário pode fazer login.
+A delimitação geográfica é usada para acionar uma ação quando um usuário entra ou sai de um limite geográfico.
+A localização geográfica identifica um dispositivo com base em sua localização geográfica.
+A marcação geográfica adiciona um identificador a algo com base na localização (como uma foto tirada em um smartphone marcada com as coordenadas de onde a foto foi tirada).  
+
+Contas privilegiadas
+Os criminosos digitais têm como alvo contas privilegiadas. Porque? Porque essas são as contas mais poderosas da empresa com acesso elevado e irrestrito aos sistemas. Os administradores usam essas contas para implantar e gerenciar sistemas operacionais, aplicativos e dispositivos de rede.
+
+As organizações devem adotar práticas robustas para proteger contas privilegiadas.
+
+Identificar e reduzir o número de contas com privilégios
+Aplicação do princípio do privilégio mínimo. O princípio significa que usuários, sistemas e processos só têm acesso a recursos (redes, sistemas e arquivos) que são absolutamente necessários para executar a função atribuída.
+Revogar os direitos de acesso quando os funcionários deixarem ou mudarem de emprego.
+Eliminar contas compartilhadas com senhas que não expiram
+Proteger o armazenamento de senha.
+Eliminar as credenciais compartilhadas por vários administradores
+Alterar automaticamente as senhas de contas com privilégio a cada 30 ou 60 dias
+Registro de sessões com privilégios
+Implementar um processo alterar para senhas criadas para scripts e contas de serviço
+Registrar todas as atividades do usuário
+Gerar alertas para comportamento incomum
+Desativar contas inativas com privilégios
+Use autenticação de vários fatores para todos os acessos administrativos
+Implemente um gateway entre o usuário final e os ativos para limitar a exposição da rede a malware.
+Proteger e bloquear continuamente contas privilegiadas é fundamental para a segurança da organização. Avalie regularmente esse processo e faça ajustes para melhorar a proteção.
