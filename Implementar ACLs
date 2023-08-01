@@ -1,0 +1,65 @@
+Implementar ACLs
+
+Aplique uma ACL
+Depois de criar uma ACL, o administrador pode aplicá-lo de várias maneiras diferentes. O seguinte mostra a sintaxe de comando para aplicar uma ACL a uma interface ou para as linhas VTY.
+
+Router(config-if)# ip access-group {acl-# | name} {in | out}
+Router(config-line)# ip access-class {acl-# | name} {in | out}
+A figura abaixo mostra uma ACL padrão nomeada aplicada ao tráfego de saída.
+
+R1(config)# ip access-list standard NO_ACCESS
+R1(config-std-nacl)# deny host 192.168.11.10
+R1(config-std-nacl)# permit any
+R1(config-std-nacl)# exit
+R1(config)# interface g0/0
+R1(config-if)# ip access-group NO_ACCESS out
+Esta figura mostra dois ACLs estendidos nomeados. A ACL SURFING é aplicado ao tráfego de entrada e o ACL BROWSING é aplicado ao tráfego de saída.
+
+R1(config)# ip access-list extended SURFING
+R1(config-ext-nacl)# permit tcp 192.168.10.0 0.0.0.255 any eq 80
+R1(config-ext-nacl)# permit tcp 192.168.10.0 0.0.0.255 any eq 443
+R1(config-ext-nacl)# exit
+R1(config)# ip access-list extended BROWSING
+R1(config-ext-nacl)# permit tcp any 192.168.10.0 0.0.0.255 established
+R1(config-ext-nacl)# exit
+R1(config)# interface g0/0
+R1(config-if)# ip access-group SURFING in
+R1(config-if)# ip access-group BROWSING out
+Chamado ACL em linhas VTY com log
+
+Ativar o parâmetro log em um roteador ou switch Cisco afeta seriamente o desempenho desse dispositivo. O parâmetro de log deve ser usado somente quando a rede estiver em ataque, e um administrador está tentando determinar quem é o invasor.
+
+Aplicando ACLs para interfaces e linhas é apenas um dos seus muitos usos possíveis. A ACLs também são parte integrante de outras configurações de segurança, como a tradução de endereços de rede (NAT), firewalls baseados em zona e redes privadas virtuais.
+
+R1(config)# ip access-list standard VTY_ACCESS
+R1(config-std-nacl)# permit 192.168.10.10 log
+R1(config-std-nacl)# deny any
+R1(config-std-nacl)# exit
+R1(config)# line vty 0 4
+R1(config-line)# access-class VTY_ACCESS in
+R1(config-line)# end
+R1#
+R1# !The administrator accesses the vty lines from 192.168.10.10
+R1#
+*Feb 26 18:58:30.579: %SEC-6-IPACCESSLOGNP: list VTY_ACCESS permitted 0
+192.168.10.10 -> 0.0.0.0, 5 packets
+R1# show access-lists
+Standard IP access list VTY_ACCESS
+   10 permit 192.168.10.10 log (6 matches)
+   20 deny any
+Para remover uma ACL de uma interface, primeiro digite o comando no ip access-group interface configuration. No entanto, a ACL ainda será configurada no roteador. Para remover a ACL do roteador, use o comando de configuração global no access-list.
+]
+Onde posicionar as ACLs
+Cada ACL deve ser colocado onde é o mais eficiente.
+
+A figura ilustra onde as ACLs padrão e estendidas devem estar localizadas em uma rede corporativa. Assuma que o objetivo é impedir o tráfego que se origina na rede 192.168.10.0/24 de atingir a rede 192.168.30.0/24.
+
+As ACLs estendidas devem estar localizadas o mais perto possível da origem do tráfego a ser filtrada. Dessa forma, o tráfego não desejado é negado perto da rede de origem sem atravessar a infraestrutura de rede.
+
+As ACLs padrãodevem ser localizadas o mais perto possível do destino. Se uma ACL padrão foi colocada na origem do tráfego, a “permissão” ou “negação” ocorrerá com base no endereço de origem especificado, independentemente do destinho do tráfego.
+
+Exemplo de posicionamento de ACL padrão
+Seguindo as diretrizes para o posicionamento da ACL, as ACLs padrão devem estar localizadas o mais próximo possível do destino.
+
+Na Figura, o administrador deseja impedir que o tráfego originado na rede 192.168.10.0/24 acesse a rede 192.168.30.0/24.
+
