@@ -1,0 +1,7 @@
+Mitigar Ataques SNMP
+Protocolos de gerenciamento, como SNMP, são úteis para monitoramento remoto e gerenciamento de dispositivos em rede. No entanto, eles ainda podem ser explorados. Se o SNMP for necessário, a exploração de vulnerabilidades SNMP pode ser mitigada aplicando ACLs de interface para filtrar pacotes SNMP de sistemas não autorizados. Uma exploração ainda pode ser possível se o pacote SNMP for provido de um endereço que foi falsificado e é permitido pela ACL.
+
+Essas medidas de segurança são úteis, mas os meios mais eficazes de prevenção de exploração é desativar o servidor SNMP em dispositivos iOS para os quais não é necessário. Como mostrado na figura, use o comando no snmp-server para desativar os serviços SNMP nos dispositivos Cisco IOS.
+
+Router(config)# no snmp-server
+

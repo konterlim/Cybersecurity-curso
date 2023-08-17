@@ -1,0 +1,19 @@
+Configurar ACLs de IPv6
+Uma ACL do IPv6 contém uma negação implícita no deny ipv6 any any. Cada IPv6 ACL também contém regras de licença implícitas para permitir a descoberta vizinha do IPv6. O IPv6 Neighbor Discovery Protocol (NDP) requer o uso da camada de rede IPv6 para enviar anúncios vizinhos (NAS) e solicitações vizinhas (NSS). Se um administrador configurar o comando deny ipv6 any Sem permitir explicitamente permitir o neighbor discovery, o NDP será desativado.
+
+Na figura, R1 está permitindo o tráfego de entrada em G0 / 0 a partir de 2001: DB8: 1: 1 :: / 64 rede. Os pacotes Na e NS são explicitamente permitidos. O tráfego proveniente de qualquer outro endereço IPv6 é explicitamente negado. Se o administrador configurasse apenas a primeira instrução de permissão, a ACL teria o mesmo efeito. No entanto, é uma boa prática documentar as declarações implícitas explicitamente configurando-as.
+
+R1(config)# ipv6 access-list LAN_ONLY
+R1(config-ipv6-acl)# permit 2001:db8:1:1::/64 any
+R1(config-ipv6-acl)# permit icmp any any nd-na
+R1(config-ipv6-acl)# permit icmp any any nd-ns
+R1(config-ipv6-acl)# deny ipv6 any any
+R1(config-ipv6-acl)# end
+R1# show ipv6 access-list
+IPv6 access list LAN_ONLY
+    permit ipv6 2001:DB8:1:1::/64 any sequence 10
+    permit icmp any any nd-na sequence 20
+    permit icmp any any nd-ns sequence 30
+    deny ipv6 any any sequence 40
+R1#
+

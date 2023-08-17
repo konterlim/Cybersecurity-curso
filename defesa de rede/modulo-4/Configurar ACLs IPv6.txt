@@ -1,0 +1,94 @@
+Configurar ACLs IPv6
+
+Configurar, aplicar e verificar uma ACL IPv6
+Os registros indicam que um computador na rede 2001: db8: 1: 11 :: 0/64 está atualizando repetidamente uma página da web. Isso está causando um ataque de negação de serviço (DoS) contra o Server3. Até que o cliente possa ser identificado e limpo, você deve bloquear o acesso HTTP e HTTPS para essa rede com uma lista de acesso.
+
+Etapa 1:Configure uma ACL que bloqueie o acesso HTTP e HTTPS.
+Configure uma ACL nomeada BLOCK_HTTP em R1 com as instruções a seguir:
+
+a.    Impeça o tráfego HTTP e HTTPS de acessar Servidor3.
+
+R1(config)# deny tcp any host 2001:db8:1:30::30 eq www
+
+R1(config)# deny tcp any host 2001:db8:1:30::30 eq 443
+
+b.     Permita que qualquer outro tráfego IPv6 passe.
+
+Etapa 2: Aplique a ACL à interface correta.
+Aplique a ACL na interface mais próxima da origem do tráfego a ser bloqueado.
+
+Etapa 3: verifique a implementação da ACL.
+Verifique se a ACL está operando conforme pretendido, realizando os seguintes testes:
+
+= Abra o navegador da Web do PC1 para http: // 2001: db8: 1: 30 :: 30 ou https: // 2001: db8: 1: 30 :: 30. O site web deve aparecer.
+
+= Abra o navegador da Web do PC2 para http: // 2001: db8: 1: 30 :: 30 ou https: // 2001: db8: 1: 30 :: 30. O site deve ser bloqueado.
+
+= Ping de PC2 para 2001: db8: 1: 30 :: 30. O ping deve obter êxito.
+
+Parte 2: Configurar, aplicar e verificar uma segunda ACL IPv6
+Os registros indicam que agora o servidor está recebendo ping de muitos endereços IPv6 diferentes em um ataque de negação de serviço distribuído (DDoS). Você deve filtrar solicitações de ping do ICMP para seu servidor.
+
+Etapa 1:Crie uma lista de acesso para bloquear ICMP.
+Configure uma ACL nomeada BLOCK_ICMP em R3 com as instruções a seguir:
+
+a.     Bloqueie todo tráfego ICMP de todos os hosts para qualquer destino.
+
+b.     Permita que qualquer outro tráfego IPv6 passe.
+
+Etapa 2: Aplique a ACL à interface correta.
+Nesse caso, o tráfego ICMP pode ter qualquer origem. Para garantir que o tráfego ICMP seja bloqueado, independentemente de sua origem ou de quaisquer alterações que ocorram na topologia da rede, aplique a ACL mais próxima do destino.
+
+Verifique se a lista de acesso apropriada funciona.
+a.     Ping de PC2 para 2001: db8: 1: 30 :: 30. O ping falhará.
+
+b.    Ping de PC1 para 2001: db8: 1: 30 :: 30. O ping falhará.
+
+c.    Abra o navegador da Web do PC1 para http: // 2001: db8: 1: 30 :: 30 ou https: // 2001: db8: 1: 30 :: 30. O site web deve exibir.
+
+-----------------
+
+Roteador R1
+
+-----------------
+
+enable
+
+config t
+
+ipv6 access-list BLOCK_HTTP
+
+ deny tcp any host 2001:db8:1:30::30 eq www
+
+ deny tcp any host 2001:db8:1:30::30 eq 443
+
+ permitir ipv6 any any
+
+interface GigabitEthernet0/1
+
+ ipv6 traffic-filter BLOCK_HTTP in
+
+finalizar
+
+-----------------
+
+Roteador R3
+
+-----------------
+
+enable
+
+config t
+
+ipv6 access-list BLOCK_ICMP
+
+ deny icmp any any
+
+ permitir ipv6 any any
+
+interface GigabitEthernet0/0
+
+ ipv6 traffic-filter BLOCK_ICMP out
+
+end
+
