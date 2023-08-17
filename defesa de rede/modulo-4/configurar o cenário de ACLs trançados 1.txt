@@ -1,0 +1,284 @@
+configurar o cenário de ACLs trançados 1
+
+Parte 1: Configurar, aplicar e verificar uma ACL trançada numerada
+
+Parte 2: Configurar, aplicar e verificar uma ACL trançada nomeada
+
+Histórico/Cenário
+Dois funcionários precisam acessar os serviços fornecidos pelo servidor. O PC1 precisa somente de acesso ao FTP, enquanto o PC2 precisa somente do acesso à Web. Ambos os computadores precisam poder executar ping no servidor, mas não um ao outro.
+
+Instruções
+Parte 1: Configurar, Aplicar e Verificar ACL Numerada Estendida
+Etapa 1: Configure uma ACL para permitir FTP e ICMP a partir da LAN PC1 .
+a.     No modo de configuração global em R1 , insira o comando a seguir para determinar o primeiro número válido para uma lista de acesso seguido.
+
+Abra uma janela de configuração
+
+R1(config)# lista de acesso ?
+
+  <1-99> lista de acesso padrão IP
+
+  <100-199> Lista de acesso estendida de IP
+
+b.     Adicione 100 ao comando, seguido por um ponto de interrogação.
+
+R1(config)# lista de acesso 100 ?
+
+  deny Especificações pacotes para descartar.
+
+  licença Especifica pacotes para encaminhar.
+
+  remark Comentários da entrada da ACL.
+
+c.     Para permitir o tráfego de FTP, insira permissão , seguido por um ponto de interrogação.
+
+R1(config)# access-list 100 permit ?
+
+  protocolo de cabeçalho de autenticação ahp
+
+  protocolo de roteamento eigrp EIGRP da Cisco
+
+  esp Encapsulation Security Payload
+
+  gre Tunelamento GRE da Cisco
+
+  icmp Internet Control Message Protocol
+
+  ip Qualquer protocolo de Internet
+
+  ospf protocolo de roteamento OSPF
+
+  protocolo de controle de transmissão tcp
+
+  udp Protocolo de datagrama de usuário
+
+d.     Quando configurado e aplicado, esse ACL deve permitir FTP e ICMP. O ICMP está listado acima, mas o FTP não. Isso ocorre porque o FTP é um protocolo de camada de aplicativo que usa TCP na camada de transporte. Digite TCP para refinar ainda mais a ajuda da ACL.
+
+R1(config)# access-list 100 permit tcp ?
+
+  ABCD Endereço de origem
+
+  qualquer Qualquer host de origem
+
+  host Unico host de origem
+
+e.     O endereço de origem pode representar um único dispositivo, como PC1, usando a palavra-chave host e, em seguida, o endereço IP de PC1. Usar a palavra-chave any permite qualquer host em qualquer rede. A filtragem também pode ser feita por um endereço de rede. Nesse caso, é qualquer host que possuía um endereço pertencente à rede 172.22.34.64/27. Digite este endereço de rede, seguido de um ponto de interrogação.
+
+R1(config)# access-list 100 permit tcp 172.22.34.64 ?
+
+  ABCD Bits do curinga de origem
+
+f.     Calcule a mask curinga determinando o oposto binário da máscara de sub-rede / 27.
+
+11111111.11111111.11111111.111 00000 = 255.255.255.224
+
+00000000.00000000.00000000.000 11111 = 0.0.0.31
+
+g.     Digite a máscara curinga, seguida por um ponto de interrogação.
+
+R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 ?
+
+  ABCD Endereço de destino
+
+  qualquer Qualquer host de destino
+
+  eq Equivalente a uma porta específica
+
+  gt Porta "maiores que"
+
+  host Destino único
+
+  lt Portas "menores que"
+
+  neq porta "diferente de"
+
+  range Portas "nesse intervalo"
+
+h.     Configure o endereço de destino. Nesse cenário, estamos filtrando o tráfego para um único destino, que é o servidor. Digite a palavra-chave host em seguida do endereço IP do servidor.
+
+R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 ?
+
+  dscp Faz match nos pacotes com o valor de dscp
+
+  eq Equivalente a uma porta específica
+
+  estabelecido se a conexão já estiver estabelecida
+
+  gt Porta "maiores que"
+
+  lt Portas "menores que"
+
+  neq porta "diferente de"
+
+  precedência Faça match com o valor de precedência
+
+  range Portas "nesse intervalo"
+
+  <cr>
+
+eu.    Observe que uma das opções é <cr> (código de fim de linha). Em outras palavras, você pode pressionar Enter e a instrução permitirá todo o tráfego TCP. No entanto, somente permitimos tráfego de FTP; portanto, insira a palavra-chave eq , seguida por um ponto de interrogação para exibir as opções disponíveis. Em seguida, insira ftp e pressione Enter .
+
+R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ?
+
+<0-65535> Número da porta
+
+ FTP Protocolo de Transferência de Arquivos (File Transfer Protocol)
+
+  pop3 Post Office Protocol v3 (110)
+
+  smtp Protocolo Simples de Transporte de Correio (25)
+
+  Telnet Telnet (23)
+
+  www World Wide Web (HTTP, 80)
+
+R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp
+
+j.     Crie uma segunda declaração da lista de acesso para permitir o tráfego ICMP (ping, etc.) do PC1 para o servidor. Observe que o número da lista de acesso permanece o mesmo e um tipo específico de tráfego ICMP não precisa ser determinado.
+
+R1(config)# access-list 100 permit icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+
+k.     Todo o outro tráfego é negado, por padrão.
+
+eu.     Execute o comando show access-list e verifique se a lista de acesso 100 contém as instruções corretas. Observe que a instrução negar qualquer qualquer não aparece no final da lista de acesso. A execução padrão de uma lista de acesso é que, se um pacote não corresponder a uma instrução na lista de acesso, ele não é permitido através da interface.
+
+R1# mostra listas de acesso
+
+Lista de acesso IP estendida 100
+
+    10 permitem tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp
+
+    20 permitir icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+
+Etapa 2: aplique o ACL na interface correta para filtrar o tráfego.
+Da perspectiva de R1 , a ACL é aplicada ao tráfego que entra na interface Gigabit Ethernet 0/0. Entre no modo configuração de interface e aplique a ACL.
+
+Observação : Em uma rede operacional real, não é uma boa prática aplicar uma lista de acesso não testou a uma interface ativa.
+
+R1(config)# interface gigabitEthernet 0/0
+
+R1(config-if)# ip access-group 100 in
+
+Etapa 3: verificar a implementação da ACL.
+a.     Faça ping de PC1 para o Servidor. Se os pings não tiverem sucesso, verifique os endereços IP antes de continuar.
+
+b.     Faça ping de PC1 para o Servidor. O nome de usuário e a senha são cisco .
+
+PC> ftp 172.22.34.62
+
+c.     Saia do serviço FTP.
+
+ftp> sair
+
+fechar janela de configuração
+
+d.     Faça ping de PC1 para o Servidor. O host de destino deve estar inacessível, porque a ACL não permitiu explicitamente o tráfego.
+
+Parte 2: Configurar, Aplicar e Verificar ACL Nomeada Estendida
+Etapa 1: Configure uma ACL para permitir o acesso HTTP e ICMP a partir da LAN PC2 .
+a.     As ACLs nomeadas começam com a palavra-chave ip . No modo de configuração global de R1 , insira o seguinte comando, seguido por um ponto de interrogação.
+
+Abra uma janela de configuração
+
+R1(config)# ip access-list ?
+
+  lista de acesso estendida estendida
+
+  lista de acesso padrão padrão
+
+b.     Você pode configurar ACLs padrão e trançados nomeados. Esta lista de acesso filtrará os endereços IP origem e destino; portanto, deve ser puxada. Insira HTTP_ONLY como o nome. (Para rastrear o rastreador de pacotes, o nome diferencia casos e ocorrências e as instruções de lista de acesso deve ser a ordem correta.)
+
+R1(config)# ip access-list estendida HTTP_ONLY
+
+c.     O pronto muda. Você está agora no modo de configuração de ACL puxado nomeada. Todos os dispositivos na LAN de PC2 precisam de acesso TCP. Digite o endereço de rede, seguido de um ponto de interrogação.
+
+R1(config-ext-nacl)# permit tcp 172.22.34.96 ?
+
+  ABCD Bits do curinga de origem
+
+d.     Outra maneira de calcular uma máscara curinga é subtrair a máscara de sub-rede de 255.255.255.255.
+
+  255.255.255.255
+
+- 255.255.255.240
+
+-----------------
+
+= 0,0. 0. 15
+
+R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15
+
+e.     Termine uma instrução especificando o endereço do servidor como você fez na Parte 1 e filtrando o tráfego www.
+
+R1(config-ext-nacl) # permit tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www
+
+f.      Crie uma segunda declaração da lista de acesso para permitir o tráfego ICMP (ping, etc.) do PC2 para o servidor . Observação: o prompt permanece o mesmo e um tipo específico de tráfego ICMP não precisa ser determinado.
+
+R1(config-ext-nacl)# permit icmp 172.22.34.96 0.0.0.15 host 172.22.34.62
+
+g.     Todo o outro tráfego é negado, por padrão. Saia do modo de configuração chamado ACL projetado.
+
+h.     Execute o comando show access-list e verifique se a lista de acesso HTTP_ONLY contém as instruções corretas.
+
+R1# mostra listas de acesso
+
+Lista de acesso IP estendida 100
+
+10 permitem tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp
+
+20 permitir icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+
+Lista de acesso IP estendida HTTP_ONLY
+
+10 permitir tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www
+
+20 permitir icmp 172.22.34.96 0.0.0.15 host 172.22.34.62
+
+Etapa 2: aplique o ACL na interface correta para filtrar o tráfego.
+Da perspectiva de R1 , a lista de acesso HTTP_ONLY é aplicada ao tráfego que entra na interface Gigabit Ethernet 0/1. Entre no modo configuração de interface e aplique a ACL.
+
+Observação : Em uma rede operacional real, não é uma boa prática aplicar uma lista de acesso não testou a uma interface ativa. Deve ser evitado, se possível.
+
+R1(config)# interface gigabitEthernet 0/1
+
+R1(config-if)# ip access-group HTTP_ONLY in
+
+Etapa 3: verificar a implementação da ACL.
+a.     Faça ping de PC2 para o Servidor. Se o ping não tiver sucesso, verifique os endereços IP antes de continuar.
+
+b.     No PC2, abra um navegador da Web e digite o endereço IP do servidor. A página da Web do Servidor deve ser exibida.
+
+c.     Faça ping de PC2 para o Servidor. A conexão deve falhar. Caso contrário, solucione problemas das instruções de lista de acesso e das configurações de grupo de acesso nas interfaces.
+
+Fechar janela de configuração
+
+resultados oculares
+----------------
+
+Roteador R1
+
+----------------
+
+habilitar
+
+configurar terminal
+
+lista de acesso 100 permite tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp
+
+lista de acesso 100 permite icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+
+interface gigabitEthernet 0/0
+
+ grupo de acesso ip 100 em
+
+lista de acesso ip estendida HTTP_ONLY
+
+ licença tcp 172.22.34.96 0.0.0.15
+
+ permitir tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www
+
+ permitir icmp 172.22.34.96 0.0.0.15 host 172.22.34.62
+
+interface gigabitEthernet 0/1
+
+grupo de acesso ip HTTP_ONLY em

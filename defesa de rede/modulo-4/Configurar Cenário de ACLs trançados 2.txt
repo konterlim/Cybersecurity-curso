@@ -1,0 +1,220 @@
+Configurar Cenário de ACLs trançados 2
+
+Parte 1: Configurar uma ACL trançado nomeada
+
+Parte 2: Aplique e verifique o ACL trançado
+
+Histórico/Cenário
+Neste cenário, os dispositivos específicos na LAN são permitidos a vários serviços nos servidores localizados na Internet.
+
+Instruções
+Parte 1: Configurar uma ACL trançado nomeada
+Configure uma ACL nomeada para implementar a seguinte política:
+
+·         Bloqueie o acesso HTTP e HTTPS do PC1 ao Server1 e Server2 . Os servidores estão dentro da nuvem e você conhece apenas os endereços IP deles.
+
+·         Bloqueie o acesso FTP de PC2 ao Server1 e Server2 .
+
+·         Bloqueie o acesso ICMP de PC3 ao Server1 e Server2 .
+
+Nota: Para fins de verificação, você deve configurar as instruções na ordem especificada nas etapas a seguir.
+
+Etapa 1: Negue acesso do PC1 aos serviços HTTP e HTTPS no Server1 e Server2 .
+a.      Crie uma lista de acesso IP puxado nomeada no roteador RT1 que negará o acesso do PC1 aos serviços HTTP e HTTPS do Server1 e Server2 . São necessárias quatro declarações de controle de acesso. Use ACL como o nome da lista de acesso nomeada nesta atividade.
+
+Pergunta:
+Qual é o comando para iniciar a configuração de uma lista de acesso puxada com o nome ACL ?
+
+Área de resposta
+Digite suas respostas aqui.
+ACL estendida da lista de acesso IP
+
+Ocultar resposta
+Abra uma janela de configuração
+
+b.      Comece a configuração da ACL com uma instrução que negue o acesso de PC1 ao Server1 , somente para HTTP (porta 80). Consulte a tabela de endereçamento para o endereço IP de PC1 e Server1 .
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.101 host 64.101.255.254 eq 80
+
+c.      Em seguida, insira a instrução que nega acesso de PC1 ao Server1 , somente para HTTPS (porta 443).
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.101 host 64.101.255.254 eq 443
+
+d.      Insira uma instrução que nega o acesso de PC1 ao Server2 , apenas para HTTP. Consulte a tabela de endereçamento para o endereço IP de Server 2.
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.101 host 64.103.255.254 eq 80
+
+e.      Insira uma instrução que nega o acesso de PC1 ao Server2 , apenas para HTTPS.
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.101 host 64.103.255.254 eq 443
+
+Etapa 2: Negar o acesso do PC2 aos serviços FTP em Server1 e Server2 .
+Consulte a tabela de endereçamento para obter o endereço IP do PC2 .
+
+a.      Insira uma instrução que nega o acesso de PC2 ao Server1 , apenas para FTP (porta 21 somente).
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.102 host 64.101.255.254 eq 21
+
+b.      Insira uma instrução que nega o acesso de PC2 ao Server2 , apenas para FTP (porta 21 somente).
+
+RT1(config-ext-nacl)# deny tcp host 172.31.1.102 host 64.103.255.254 eq 21
+
+Etapa 3: Negar PC3 fazer ping para Server1 e Server2.
+Consulte a tabela de endereçamento para o endereço IP de PC3 .
+
+a.      Insira uma instrução que nega o acesso ICMP de PC3 ao Server1 .
+
+RT1(config-ext-nacl)# deny icmp host 172.31.1.103 host 64.101.255.254
+
+b.      Insira uma instrução que nega o acesso ICMP de PC3 para Server2 .
+
+RT1(config-ext-nacl)# deny icmp host 172.31.1.103 host 64.103.255.254
+
+Etapa 4:Permitir todo o outro tráfego IP.
+Por padrão, uma lista de acesso nega todo tráfego que não corresponde a nenhuma regra na lista. Insira o comando que permite todo o tráfego que não corresponde a nenhuma das instruções de lista de configurações de acesso.
+
+Etapa 5: Verifique a configuração da lista de acesso antes de aplicá-la a uma interface.
+Antes de qualquer lista de acesso ser aplicada, a configuração precisa ser verificada para garantir que não haja erros tipográficos e que as instruções estejam na ordem correta. Para visualizar a configuração atual da lista de acesso, use o comando show access-lists ou show running-config .
+
+RT1# mostra listas de acesso
+
+Lista de acesso IP estendida ACL
+
+10 negar tcp host 172.31.1.101 host 64.101.255.254 eq www
+
+20 nega host tcp 172.31.1.101 host 64.101.255.254 eq 443
+
+30 negar tcp host 172.31.1.101 host 64.103.255.254 eq www
+
+40 negar tcp host 172.31.1.101 host 64.103.255.254 eq 443
+
+50 negar tcp host 172.31.1.102 host 64.101.255.254 eq ftp
+
+60 negar tcp host 172.31.1.102 host 64.103.255.254 eq ftp
+
+70 negar icmp host 172.31.1.103 host 64.101.255.254
+
+80 negar icmp host 172.31.1.103 host 64.103.255.254
+
+90 permitir ip qualquer qualquer
+
+ 
+
+RT1# show running-config | iniciar lista de acesso
+
+ACL estendida da lista de acesso IP
+
+negar tcp host 172.31.1.101 host 64.101.255.254 eq www
+
+negar tcp host 172.31.1.101 host 64.101.255.254 eq 443
+
+negar tcp host 172.31.1.101 host 64.103.255.254 eq www
+
+negar tcp host 172.31.1.101 host 64.103.255.254 eq 443
+
+negar tcp host 172.31.1.102 host 64.101.255.254 eq ftp
+
+negar tcp host 172.31.1.102 host 64.103.255.254 eq ftp
+
+negar host icmp 172.31.1.103 host 64.101.255.254
+
+negar host icmp 172.31.1.103 host 64.103.255.254
+
+permitir ip qualquer qualquer
+
+Fechar janela de configuração
+
+Nota : A diferença entre a saída do comando show access-lists e a saída do comando show running-config é que o comando show access-lists inclui os números de sequências atribuídas às instruções de configuração. Esses números de sequência permitem a edição, exclusão e inserção de linhas únicas na configuração da lista de acesso. Os números de sequência também definem a ordem de processamento das instruções de controle de acesso individual, iniciando com o número de sequência mais abaixo.
+
+Parte 2: Aplique e verifique o ACL trançado
+O tráfego a ser filtrado virá da rede 172.31.1.96/27 e é destinado a redes remotas. A colocação correta da ACL também depende da relação do tráfego em relação a RT1 . Em geral, as listas de acesso devem ser colocadas na interface mais próxima da origem do tráfego.
+
+Etapa 1: Aplique um ACL à interface correta e na direção correta.
+Observação : Em uma rede operacional real, uma ACL não testada nunca deve ser aplicada a uma interface ativa. Esta não é uma boa prática e pode interromper a operação da rede.
+
+Pergunta:
+Em qual interface a ACL nomeada deve ser aplicada e em que direção?
+
+Área de resposta
+Digite suas respostas aqui.
+Interface Gigabit Ethernet 0/0, em.
+
+Ocultar resposta
+Abra uma janela de configuração
+
+Digite os comandos de configuração para aplicar uma ACL à interface.
+
+Etapa 2: Teste o acesso para cada PC.
+a.      Acesse os sites do Server1 e Server2 usando o navegador do PC1. Use os protocolos HTTP e HTTPS. Use o comando show access-lists para exibir qual instrução de lista de acesso permitido ou recusado o tráfego. A saída do comando show access-lists exibe o número de pacotes que correspondem a cada instrução desde a última vez que os contadores foram limpos ou o roteador foi reinicializado.
+
+Observação : Para limpar os contadores em uma lista de acesso, use o comando clear access-list counters .
+
+RT1# mostra listas de acesso IP
+
+Lista de acesso IP estendida ACL
+
+10 negar tcp host 172.31.1.101 host 64.101.255.254 eq www (12 correspondência(es))
+
+20 negar tcp host 172.31.1.101 host 64.101.255.254 eq 443 (12 correspondência(es))
+
+30 negar tcp host 172.31.1.101 host 64.103.255.254 eq www
+
+40 negar tcp host 172.31.1.101 host 64.103.255.254 eq 443
+
+50 negar tcp host 172.31.1.102 host 64.101.255.254 eq ftp
+
+60 negar tcp host 172.31.1.102 host 64.103.255.254 eq ftp
+
+70 negar icmp host 172.31.1.103 host 64.101.255.254
+
+80 negar icmp host 172.31.1.103 host 64.103.255.254
+
+90 permitir ip qualquer qualquer
+
+Fechar janela de configuração
+
+b.      Acesse o FTP de Server1 e Server2 usando PC1 . O nome de usuário e senha são cisco .
+
+c.      Faça ping em Servidor1 e Servidor2 do PC1 .
+
+d.      Repita o Passo 2a ao Passo 2c com PC2 e PC3 para verificar a operação correta da lista de acesso.
+
+resultados oculares
+--------------------
+
+Rotador RT1
+
+--------------------
+
+habilitar
+
+configurar terminal
+
+ACL estendida da lista de acesso IP
+
+ negar tcp host 172.31.1.101 host 64.101.255.254 eq www
+
+ negar tcp host 172.31.1.101 host 64.101.255.254 eq 44 3
+
+ negar tcp host 172.31.1.101 host 64.103.255.254 eq www
+
+ negar tcp host 172.31.1.101 host 64.103.255.254 eq 443
+
+ negar tcp host 172.31.1.102 host 64.101.255.254 eq ftp
+
+ negar tcp host 172.31.1.102 host 64.103.255.254 eq ftp
+
+ negar host icmp 172.31.1.103 host 64.101.255.254
+
+ negar host icmp 172.31.1.103 host 64.101.255.254
+
+ permitir ip qualquer qualquer
+
+interface GigabitEthernet0/0
+
+ ACL do grupo de acesso IP em
+
+fim
+
+Fim do documento
+

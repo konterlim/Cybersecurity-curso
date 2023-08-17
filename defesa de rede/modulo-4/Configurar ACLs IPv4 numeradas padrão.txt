@@ -1,0 +1,159 @@
+Configurar ACLs IPv4 numeradas padrão
+
+Histórico/Cenário
+As listas de controle de acesso padrão (ACLs) são os scripts de configuração do roteador que controlam se um roteador permite ou nega pacotes com base no endereço de origem. Esta atividade se concentra em definir critérios de filtragem, configuração das ACLs padrão, aplicação de ACLs às interfaces do roteador e verificação e teste da implementação da ACL. Os roteadores já estão configurados, incluindo os endereços IP e o roteamento EIGRP (Enhanced Interior Gateway Routing Protocol).
+
+Instruções
+Parte 1: Planejar uma
+Etapa 1 de Implementação de ACL: Investigar a configuração de rede atual.
+Antes de aplicar qualquer ACL a uma rede, é importante confirmar se você tem conectividade completa. Verifique se a rede tem conectividade completa escolhendo um PC e fazendo ping em outros dispositivos na rede. Você deve poder acessar cada dispositivo com êxito.
+
+Etapa 2: Avalie duas políticas de rede e implementações do plano ACL.
+a.     As seguintes políticas de rede são integradas em R2 :
+
+=   A rede 192.168.11.0/24 não é permitido acesso ao WebServer na rede 192.168.20.0/24.
+
+=   Todos os outros acessos são permitidos.
+
+Para restringir o acesso da rede 192.168.11.0/24 ao WebServer em 192.168.20.254 sem interferir com outro tráfego, uma ACL deve ser criada em R2 . A lista de acesso deve ser colocada na interface de saída para o WebServer . Uma segunda regra deve ser criada em R2 para permitir todo o outro tráfego.
+
+b.     As seguintes políticas de rede são integradas em R3 :
+
+=   A rede 192.168.10.0/24 não tem permissão para se comunicar com a rede 192.168.30.0/24.
+
+=   Todos os outros acessos são permitidos.
+
+Para restringir o acesso da rede 192.168.10.0/24 à rede 192.168.30/24 sem interferir com outro tráfego, uma lista de acesso preciso será criada em R3 . A ACL deve ser colocada na interface de saída para PC3 . Uma segunda regra deve ser criada em R3 para permitir todo o outro tráfego.
+
+Parte 2: Configurar, Aplicar e Verificar uma ACL Padrão
+Etapa 1: Configurar e aplicar uma ACL padrão numerada no R2 .
+a.      Crie umACL usando o número 1 em R2 com uma declaração que nega acesso a rede 192.168.20.0/24 a partir da rede 192.168.11.0/24.
+
+Abra uma janela de configuração
+
+R2(config)# access-list 1 nega 192.168.11.0 0.0.0.255
+
+b.     Por padrão, uma lista de acesso nega todo o tráfego que não corresponde a nenhuma regra. Para permitir todo tráfego restante, configure a seguinte instrução:
+
+R2(config)# access-list 1 permite qualquer
+
+c.      Antes de aplicar uma lista de acesso a uma interface para filtrar o tráfego, é uma prática recomendada rever o conteúdo da lista de acesso, a fim de verificar se ele irá filtrar o tráfego conforme o esperado.
+
+R2# mostra listas de acesso
+
+Lista de acesso IP padrão 1
+
+10 negar 192.168.11.0 0.0.0.255
+
+20 permitir qualquer
+
+d.      Para que o ACL realmente filtre o tráfego, ela deve ser aplicada a algumas operações do roteador. Aplique a ACL posicionando-a para tráfego de saída noGigabitEthernet 0/0 interface. Observação: Em uma rede operacional real, não é uma boa prática aplicar uma lista de acesso não testada a uma interface ativa.
+
+R2(config)# interface GigabitEthernet0/0
+
+R2(config-if)# ip access-group 1 out
+
+Etapa 2: configurar e aplicar um ACL padrão numerado em R3 .
+a.     Crie uma ACL usando o número 1 em R3 com uma declaração que nega acesso a rede 192.168.30.0/24 da rede PC1 (192.168.10.0/24).
+
+R3(config)# access-list 1 nega 192.168.10.0 0.0.0.255
+
+b.     Por padrão, uma ACL nega todo o tráfego que não corresponde a nenhuma regra. Para permitir qualquer outro tráfego, crie uma segunda regra para a ACL 1.
+
+R3(config)# access-list 1 permite qualquer
+
+c.     Verifique se a lista de acesso está configurada corretamente.
+
+R3# mostra listas de acesso
+
+Lista de acesso IP padrão 1
+
+10 negar 192.168.10.0 0.0.0.255
+
+20 permitir qualquer
+
+d.      Aplique a ACL posicionando-a para tráfego de saída na interface GigabitEthernet 0/0.
+
+R3(config)# interface GigabitEthernet0/0
+
+R3(config-if)# ip access-group 1 out
+
+Etapa 3: verifique a configuração e a funcionalidade da ACL.
+a.     Digite o comando show run ou comando show ip interface gigabitethernet 0/0 para verificar os canais da ACL.
+
+b.     Com as duas ACLs integradas, o tráfego de rede é restrito de acordo com as políticas específicas na Parte 1. Use os seguintes testes para verificar as implementações da ACL:
+
+=   Um ping de 192.168.10.10 a 192.168.11.10 é bem sucedido.
+
+=   Um ping de 192.168.10.10 a 192.168.20.254 é bem sucedido.
+
+=   Um ping de 192.168.11.10 a 192.168.20.254 falhou.
+
+=   Um ping de 192.168.10.10 a 192.168.30.10 falha.
+
+=   Um ping de 192.168.11.10 a 192.168.30.10 é bem-sucedido.
+
+=   Um ping de 192.168.30.10 a 192.168.20.254 é bem sucedido.
+
+c.      Execute o comando show access-lists novamente nos roteadores R2 e R3 . Você deve ver a saída que indica o número de pacotes que corresponderam a cada linha da lista de acesso. Observação: o número de correspondências mostradas para seus roteadores pode ser diferente, devido ao número de pings enviados e recebidos.
+
+R2# mostra listas de acesso
+
+Lista de acesso IP padrão 1
+
+10 negar 192.168.11.0 0.0.0.255 (4 correspondência(es))
+
+20 permitem qualquer (8 partida(s))
+
+ 
+
+R3# mostra listas de acesso
+
+Lista de acesso IP padrão 1
+
+10 negar 192.168.10.0 0.0.0.255 (4 correspondência(es))
+
+20 permitem qualquer (8 partida(s))
+
+Fechar janela de configuração
+
+resultados oculares
+-----------
+
+Roteador R2
+
+-----------
+
+habilitar
+
+configurar terminal
+
+interface GigabitEthernet0/0
+
+ip access-group 1 out
+
+lista de acesso 1 negar 192 .168.11.0 0.0.0.255
+
+lista de acesso 1 permite qualquer
+
+finalizar
+
+-----------
+
+Roteador R3
+
+-----------
+
+habilitar
+
+configurar terminal
+
+interface GigabitEthernet0/0
+
+ ip access-group 1 out
+
+lista de acesso 1 negar 192.168.10.0 0.0.0.255
+
+lista de acesso 1 permite qualquer
+
+fim
