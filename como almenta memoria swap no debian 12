@@ -1,0 +1,57 @@
+como almenta o swap no debian 12
+
+Passos para aumentar o swap no Debian
+Verificar o swap atual e espaço disponível
+Confira se já existe swap ativo e quanto de espaço livre há no disco:
+
+bash
+sudo swapon --show
+free -h
+df -h
+Criar um arquivo de swap novo com o tamanho desejado
+Por exemplo, para criar um arquivo de 4 GB:
+
+bash
+sudo fallocate -l 4G /swapfile
+Caso o fallocate não funcione, pode usar o dd:
+
+bash
+sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+Ajustar as permissões do arquivo para segurança
+
+bash
+sudo chmod 600 /swapfile
+Configurar o arquivo como espaço de swap
+
+bash
+sudo mkswap /swapfile
+Ativar o swap criado
+
+bash
+sudo swapon /swapfile
+Verificar se o swap está ativo
+
+bash
+sudo swapon --show
+free -h
+Tornar a configuração permanente
+Para que o swap seja ativado automaticamente no boot, adicione a seguinte linha no arquivo /etc/fstab:
+
+bash
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+(Opcional) Ajustar o parâmetro swappiness
+O valor swappiness controla a frequência com que o sistema usa o swap. O padrão é 60, mas para servidores pode ser interessante reduzir para 10 ou 20 para evitar uso excessivo do swap:
+
+bash
+cat /proc/sys/vm/swappiness
+sudo sysctl vm.swappiness=10
+Para tornar permanente, adicione vm.swappiness=10 em /etc/sysctl.conf.
+
+Resumo dos comandos principais
+bash
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+Esse procedimento aumenta a memória swap de forma segura e eficaz no Debian, melhorando o desempenho do sistema quando a memória RAM estiver cheia
