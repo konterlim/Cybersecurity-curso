@@ -1,0 +1,305 @@
+Você já se sentiu incomodado com a quantidade de anúncios, rastreadores e ameaças digitais ao navegar no seu celular? Já percebeu que, além dos anúncios, muitos aplicativos e sites estão de olho nos seus dados, colocando sua privacidade em risco?
+
+
+
+A boa notícia é que proteger seu Android contra anúncios invasivos, rastreadores e sites perigosos é mais fácil do que parece – e você não precisa ser um especialista em tecnologia para isso! Com as ferramentas certas, é possível navegar com muito mais segurança, privacidade e tranquilidade, bloqueando a maioria dos anúncios e dificultando o rastreamento dos seus dados.
+
+http://whslinux.blogspot.com/2025/07/como-bloquear-anuncios-e-proteger.html?m=1
+
+
+Neste tutorial completo, você vai aprender passo a passo como configurar seu aparelho para:
+
+
+
+Bloquear anúncios e rastreadores em todos os aplicativos e navegadores
+
+
+
+Proteger sua privacidade contra espionagem digital
+
+
+
+Aumentar a segurança contra sites maliciosos
+
+
+
+Navegar mais rápido e economizar dados
+
+
+
+Tudo isso sem precisar de root e usando apenas aplicativos gratuitos e configurações simples, acessíveis para qualquer pessoa.
+
+
+
+Se você quer um celular mais limpo, seguro e privado, siga este guia e compartilhe com amigos e familiares.
+
+Todos merecem navegar com liberdade e proteção na internet!
+
+Como Bloquear Anúncios e Proteger a Privacidade no Android: Tutorial Completo com PersonalDNSFilter, Cloudflare One e DNS Privado AdGuard
+
+Introdução
+
+Neste guia, você vai aprender o passo a passo para bloquear anúncios, rastreadores e sites maliciosos em todo o seu Android, sem root, usando três ferramentas poderosas:
+
+
+
+PersonalDNSFilter (bloqueio local e personalizado)
+
+
+
+Cloudflare One (VPN para privacidade e criptografia)
+
+
+
+DNS Privado AdGuard (bloqueio de DNS no nível do sistema)
+
+
+
+Essa combinação oferece proteção máxima para quem quer navegar sem anúncios, com mais privacidade e segurança.
+
+
+
+Índice
+
+Por que usar bloqueio por DNS?
+
+
+
+Configurando o DNS Privado AdGuard no Android
+
+
+
+Configurando o PersonalDNSFilter
+
+
+
+Configurando o Cloudflare One (1.1.1.1)
+
+
+
+Como os três funcionam juntos?
+
+
+
+Testando sua proteção
+
+
+
+Dicas avançadas e solução de problemas
+
+
+
+Conclusão
+
+
+
+Por que usar bloqueio por DNS?
+
+Bloqueia anúncios e rastreadores em todo o sistema (não só no navegador)
+
+
+
+Protege contra sites maliciosos
+
+
+
+Reduz o consumo de dados
+
+
+
+Aumenta a velocidade de navegação
+
+
+
+Melhora a privacidade
+
+
+
+Configurando o DNS Privado AdGuard no Android
+
+Importante: Faça este passo antes de instalar outros apps de bloqueio.
+
+
+
+Abra as Configurações do Android.
+
+
+
+Toque em Rede e Internet > DNS Privado.
+
+
+
+Selecione Nome do host do provedor de DNS privado.
+
+
+
+Digite:
+
+
+
+text
+
+dns.adguard-dns.com
+
+Confirme e salve.
+
+
+
+Pronto! Agora, todo o tráfego DNS do seu aparelho já passa pelo AdGuard DNS, que bloqueia muitos anúncios e sites perigosos antes mesmo de outros filtros entrarem em ação.
+
+
+
+Configurando o PersonalDNSFilter
+
+Baixe e instale o PersonalDNSFilter (ou pela Play Store).
+
+
+
+Abra o app e permita a criação de uma VPN local.
+
+
+
+Toque em Configurações Avançadas.
+
+
+
+Em Hosts filter sources, adicione estas listas (um por linha):
+
+
+
+text
+
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+https://small.oisd.nl/domains.txt
+
+https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
+
+Salve e recarregue o filtro.
+
+
+
+Ative as opções:
+
+
+
+Início Automático
+
+
+
+Ativar bloqueio
+
+
+
+Atualização automática (recomendo a cada 7 dias)
+
+
+
+Volte à tela principal e toque em Iniciar.
+
+
+
+Configurando o Cloudflare One (1.1.1.1)
+
+Baixe e instale o Cloudflare One (1.1.1.1).
+
+
+
+Abra o app e permita a criação de uma VPN.
+
+
+
+Ative o serviço tocando no botão central.
+
+
+
+(Opcional) Faça login na sua conta Cloudflare para usar recursos avançados, como WARP+ ou Cloudflare Tunnel.
+
+
+
+Como os três funcionam juntos?
+
+DNS Privado AdGuard: Bloqueia anúncios e sites perigosos no nível do sistema, antes de qualquer app.
+
+
+
+PersonalDNSFilter: Filtra e bloqueia domínios localmente, aplicando listas personalizadas.
+
+
+
+Cloudflare One: Criptografa todo o tráfego do aparelho, aumentando a privacidade e segurança.
+
+
+
+Dica:
+
+Em alguns aparelhos, PersonalDNSFilter e Cloudflare One podem funcionar juntos (veja a imagem abaixo), oferecendo proteção dupla. Se não for possível, alterne entre eles conforme sua prioridade (bloqueio de anúncios ou privacidade máxima).
+
+
+
+Testando sua proteção
+
+Acesse adblock-tester.com no navegador.
+
+
+
+Veja sua pontuação (acima de 60 já é ótimo para bloqueio por DNS).
+
+
+
+Se aparecerem “blocos vazios” nos banners, significa que o conteúdo foi bloqueado.
+
+
+
+Para bloqueio total (inclusive scripts e GIFs), use um navegador com extensão como uBlock Origin (ex: Kiwi Browser).
+
+
+
+Dicas avançadas e solução de problemas
+
+Atualize suas listas de bloqueio regularmente no PersonalDNSFilter.
+
+
+
+Adicione listas específicas se quiser bloquear rastreadores ou categorias especiais.
+
+
+
+Se algum site ou app não funcionar, adicione o domínio à lista de exceções do PersonalDNSFilter.
+
+
+
+Se não conseguir usar PersonalDNSFilter e Cloudflare juntos, use um de cada vez conforme sua necessidade.
+
+
+
+Conclusão
+
+Com este tutorial, você terá um Android muito mais protegido contra anúncios, rastreadores e ameaças, com privacidade reforçada.
+
+A combinação de DNS privado AdGuard, PersonalDNSFilter e Cloudflare One oferece uma das melhores soluções de bloqueio e privacidade sem root!
+
+
+
+Se gostou, compartilhe este guia para ajudar mais pessoas a navegar com segurança e sem anúncios no Android!
+
+
+
+Dica final:
+
+Se quiser bloqueio ainda mais completo em sites, use um navegador que aceite extensões e instale o uBlock Origin.
+
+Com esta configuração, você terá um sistema robusto de bloqueio de anúncios e proteção de privacidade em todo o seu dispositivo Android. O PersonalDNSFilter bloqueia anúncios e rastreadores no nível do DNS, enquanto o Cloudflare One (quando compatível) adiciona uma camada de criptografia para seu tráfego.
+
+
+
+Lembre-se de que o bloqueio por DNS tem limitações naturais, mas oferece a melhor solução para bloqueio em todo o sistema sem root. Para bloqueio perfeito em navegadores, combine esta solução com extensões como uBlock Origin em navegadores compatíveis.
+
+
+
+Mantenha suas listas de bloqueio atualizadas e ajuste as configurações conforme necessário para equilibrar proteção e desempenho.
+
+
+
+Este tutorial foi criado para ajudar usuários a melhorar sua privacidade e experiência online no Android. As técnicas descritas são legais e éticas, focadas em proteger sua privacidade e melhorar sua experiência, não em prejudicar criadores de conteúdo.
+
